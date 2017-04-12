@@ -1,0 +1,3 @@
+# Ignore the JS files output by Webpack for CSS.
+# This should be updated if we ever have custom JS.
+*.js

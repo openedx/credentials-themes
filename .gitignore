@@ -60,8 +60,6 @@ output/*/index.html
 # Sphinx
 docs/_build
 docs/modules.rst
-docs/{{ cookiecutter.app_name }}.rst
-docs/{{ cookiecutter.app_name }}.*.rst
 
 # Private requirements
 requirements/private.in
@@ -72,3 +70,5 @@ tests/__init__.py
 
 # Development task artifacts
 default.db
+
+node_modules/

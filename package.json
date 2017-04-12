@@ -12,5 +12,18 @@
   ],
   "author": "edX",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/edx/credentials-themes"
+  "homepage": "https://github.com/edx/credentials-themes",
+  "devDependencies": {
+    "css-loader": "^0.28.0",
+    "edx-pattern-library": "0.16.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "font-awesome": "^4.7.0",
+    "imports-loader": "^0.7.1",
+    "node-sass": "^4.5.2",
+    "purifycss-webpack": "^0.6.0",
+    "sass-loader": "^6.0.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.3"
+  }
 }
