@@ -40,7 +40,7 @@ setup(
     author_email='oscm@edx.org',
     url='https://github.com/edx/credentials-themes',
     packages=[
-        '{{ cookiecutter.app_name }}',
+        'edx_credentials_themes',
     ],
     include_package_data=True,
     install_requires=[
