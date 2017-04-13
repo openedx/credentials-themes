@@ -10,17 +10,22 @@
 // ------------------------------
 .accomplishment-rendering {
   background-color: palette(grayscale, white-t);
-  font-family: $font-family-serif;
+  font-family: $font-family-sans-serif;
 }
 
 .wrapper-accomplishment-org {
 
+  margin-bottom: 0;
+
   .organization-name {
     @extend %hd-5;
     color: $headings-emphasized-color;
+    margin-bottom: 0;
 
     @include susy-breakpoint($bp-screen-md, $susy) {
       font-size: rem(32);
+      font-family: Helvetica;
+      font-weight: bold;
     }
   }
 }
@@ -43,15 +48,15 @@
 
 .wrapper-accomplishment-statement {
 
-  .accomplishment-summary,
-  .accomplishment-statement-detail,
   .accomplishment-statement-about {
     font-size: font-size(large);
   }
 
   .accomplishment-summary,
   .accomplishment-statement-detail {
+    font-family: TradeGothicLTStd-LightObl;
     font-style: italic;
+    font-size: 1em;
   }
 
   .accomplishment-recipient {
@@ -76,6 +81,19 @@
     .accomplishment-course-type {
       text-transform: uppercase;
       font-weight: $headings-font-weight-normal;
+    }
+
+    .accomplishment-course-name {
+      font-family: TradeGothicLTStd-BdCn20;
+      font-size: 0.9em;
+    }
+
+    .accomplishment-program-type {
+      display: block;
+      font-family: TradeGothicLTStd-Cn18;
+      font-size: 0.8em;
+      font-weight: 400;
+      margin: 10px 0 15px 0;
     }
   }
 
@@ -112,10 +130,11 @@
 
   .signatory-name {
     margin-top: spacing-vertical(x-small);
-    margin-bottom: spacing-vertical(xx-small);
+    margin-bottom: 0;
     border-top: rem(2) solid palette(grayscale, light);
     padding-top: spacing-vertical(x-small);
     color: $headings-emphasized-color;
+    font-family: TradeGothicLTStd-BdCn20;
     font-size: rem(14);
     font-weight: $headings-font-weight-bold;
   }
@@ -123,13 +142,12 @@
   .signatory-credentials {
     @extend %copy-micro;
     color: palette(grayscale, dark);
+    display: inline;
+    font-size: rem(14);
 
     .role {
+      font-family: TradeGothicLTStd-Cn18;
       white-space: pre-line;
-    }
-
-    .organization {
-      display: block;
     }
   }
 }
