@@ -321,16 +321,19 @@ body {
 
 .accomplishment-rendering {
   background-color: #fff;
-  font-family: Georgia,Times,Times New Roman,serif;
+  font-family: TradeGothicLTStd,sans-serif;
 }
 
 .wrapper-accomplishment-org .organization-name {
   color: #000;
+  margin-bottom: 0;
 }
 
 @media (min-width:768px) {
   .wrapper-accomplishment-org .organization-name {
     font-size: 2rem;
+    font-family: Helvetica;
+    font-weight: 700;
   }
 }
 
@@ -346,11 +349,9 @@ body {
 }
 
 .wrapper-accomplishment-statement .accomplishment-statement-detail,.wrapper-accomplishment-statement .accomplishment-summary {
-  font-size: 1.125rem;
-}
-
-.wrapper-accomplishment-statement .accomplishment-statement-detail,.wrapper-accomplishment-statement .accomplishment-summary {
+  font-family: TradeGothicLTStd-LightObl;
   font-style: italic;
+  font-size: 1em;
 }
 
 .wrapper-accomplishment-statement .accomplishment-recipient {
@@ -382,6 +383,19 @@ body {
   font-weight: 400;
 }
 
+.wrapper-accomplishment-statement .accomplishment-course .accomplishment-course-name {
+  font-family: TradeGothicLTStd-BdCn20;
+  font-size: .9em;
+}
+
+.wrapper-accomplishment-statement .accomplishment-course .accomplishment-program-type {
+  display: block;
+  font-family: TradeGothicLTStd-Cn18;
+  font-size: .8em;
+  font-weight: 400;
+  margin: 10px 0 15px;
+}
+
 .wrapper-accomplishment-statement .accomplishment-course-dates,.wrapper-accomplishment-statement .accomplishment-course-time {
   font-size: 1.125rem;
   font-weight: 400;
@@ -410,24 +424,24 @@ body {
 
 .signatory .signatory-name {
   margin-top: .625rem;
-  margin-bottom: .3125rem;
+  margin-bottom: 0;
   border-top: .125rem solid #d2d0d0;
   padding-top: .625rem;
   color: #000;
+  font-family: TradeGothicLTStd-BdCn20;
   font-size: .875rem;
   font-weight: 600;
 }
 
 .signatory .signatory-credentials {
   color: #6b6969;
+  display: inline;
+  font-size: .875rem;
 }
 
 .signatory .signatory-credentials .role {
+  font-family: TradeGothicLTStd-Cn18;
   white-space: pre-line;
-}
-
-.signatory .signatory-credentials .organization {
-  display: block;
 }
 
 .header-app .logo {
@@ -454,7 +468,7 @@ body {
 }
 
 .wrapper-accomplishment-org {
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
 }
 
 .wrapper-accomplishment-org .organization-logo {
@@ -695,7 +709,7 @@ body {
   }
 
   .wrapper-accomplishment-org {
-    margin-bottom: .625rem!important;
+    margin-bottom: 0;
   }
 
   .wrapper-accomplishment-org .organization-logo {
