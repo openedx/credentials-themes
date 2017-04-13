@@ -5,67 +5,69 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 const webpack = require('webpack');
 
 
-module.exports = {
-    cache: true,
+function generateConfig(theme) {
+    let config = {
+        cache: true,
 
-    context: __dirname,
+        context: path.resolve(`./edx_credentials_themes/static/${theme}/`),
 
-    entry: {
-        'mitpe.certificate.style-ltr': './edx_credentials_themes/static/mitpe/sass/certificate-ltr.scss',
-        'mitpe.certificate.style-rtl': './edx_credentials_themes/static/mitpe/sass/certificate-rtl.scss'
-    },
+        entry: {},
 
-    output: {
-        path: path.resolve('./edx_credentials_themes/static/'),
-        filename: '[name]-[hash].js'
-    },
+        output: {
+            path: path.resolve(`./edx_credentials_themes/static/${theme}/`),
+            filename: '[name]-[hash].js'
+        },
 
-    plugins: [
-        new ExtractTextPlugin('css/[name].css'),
-        new PurifyCSSPlugin({
-            minimize: true,
-            verbose: true,
-            paths: glob.sync(path.join(__dirname, 'edx_credentials_themes/templates/**/*.html'))
-        })
-    ],
+        plugins: [
+            new ExtractTextPlugin('css/[name].css'),
+            new PurifyCSSPlugin({
+                minimize: false,
+                verbose: true,
+                paths: glob.sync(path.join(__dirname, `edx_credentials_themes/templates/${theme}/**/*.html`))
+            })
+        ],
 
-    module: {
-        rules: [
-            {
-                test: /\.s?css$/,
-                use: ExtractTextPlugin.extract({
-                    use: [
-                        {
-                            loader: 'css-loader'
-                        },
-                        {
-                            loader: 'sass-loader'
+        module: {
+            rules: [
+                {
+                    test: /\.s?css$/,
+                    use: ExtractTextPlugin.extract({
+                        fallback: 'style-loader',
+                        use: [
+                            {
+                                loader: 'css-loader'
+                            },
+                            {
+                                loader: 'sass-loader'
+                            }
+                        ]
+                    })
+                },
+                {
+                    test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+                    use: [{
+                        loader: 'file-loader',
+                        options: {
+                            name: 'fonts/[name].[ext]',
+                            publicPath: '../'
                         }
-                    ]
-                })
-            },
-            {
-                // TODO Make this work properly
-                test: /\.woff2?$/,
-                // Inline small woff files and output them below font
-                loader: 'url-loader',
-                query: {
-                    name: 'font/[name].[ext]',
-                    limit: 5000,
-                    mimetype: 'application/font-woff'
+                    }]
+
                 }
-            },
-            {
-                test: /\.(ttf|eot|svg)$/,
-                loader: 'file-loader',
-                query: {
-                    name: 'font/[name].[ext]'
-                }
-            }
-        ]
-    },
-    resolve: {
-        modules: ['./node_modules'],
-        extensions: ['.css', '.scss']
-    }
-};
+            ]
+        },
+        resolve: {
+            modules: ['./node_modules'],
+            extensions: ['.css', '.js', '.scss']
+        }
+    };
+
+    config.entry[`${theme}.certificate.style-ltr`] = './sass/certificate-ltr.scss';
+    config.entry[`${theme}.certificate.style-rtl`] = './sass/certificate-rtl.scss';
+
+    return config
+}
+
+
+let targets = ['mitpe'].map(generateConfig);
+module.exports = targets;
