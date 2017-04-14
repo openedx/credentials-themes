@@ -556,8 +556,13 @@ body {
   }
 }
 
-.accomplishment-statement .accomplishment-course-dates,.accomplishment-statement .accomplishment-course-time {
+.accomplishment-statement .accomplishment-course-dates {
   display: block;
+}
+
+.accomplishment-statement .accomplishment-course-time {
+  display: block;
+  font-size: .45em;
 }
 
 .signatory {
