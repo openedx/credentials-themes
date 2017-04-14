@@ -86,9 +86,13 @@
     }
   }
 
-  .accomplishment-course-dates,
+  .accomplishment-course-dates {
+    display:block;
+  }
+  
   .accomplishment-course-time {
     display: block;
+    font-size: 0.45em;
   }
 }
 
