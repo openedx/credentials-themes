@@ -100,7 +100,7 @@
   padding: 0;
 }
 
-.accomplishment-statement .copy a,.copy-lead a,.link,.signatory .signatory-credentials a,a {
+.accomplishment-statement .copy a,.copy-base a,.copy-lead a,.link,.signatory .signatory-credentials a,a {
   -webkit-transition: color .125s ease-in-out 0s;
   -moz-transition: color .125s ease-in-out 0s;
   transition: color .125s ease-in-out 0s;
@@ -121,14 +121,14 @@
   color: #0079bc;
 }
 
-.accomplishment-statement .copy a,.copy-lead a,.signatory .signatory-credentials a {
+.accomplishment-statement .copy a,.copy-base a,.copy-lead a,.signatory .signatory-credentials a {
   -webkit-transition: box-shadow .125s ease-in-out 0s;
   -moz-transition: box-shadow .125s ease-in-out 0s;
   transition: box-shadow .125s ease-in-out 0s;
   box-shadow: 0 1px 0 0 transparent;
 }
 
-.accomplishment-statement .copy a:active,.accomplishment-statement .copy a:focus,.accomplishment-statement .copy a:hover,.copy-lead a:active,.copy-lead a:focus,.copy-lead a:hover,.signatory .signatory-credentials a:active,.signatory .signatory-credentials a:focus,.signatory .signatory-credentials a:hover {
+.accomplishment-statement .copy a:active,.accomplishment-statement .copy a:focus,.accomplishment-statement .copy a:hover,.copy-base a:active,.copy-base a:focus,.copy-base a:hover,.copy-lead a:active,.copy-lead a:focus,.copy-lead a:hover,.signatory .signatory-credentials a:active,.signatory .signatory-credentials a:focus,.signatory .signatory-credentials a:hover {
   box-shadow: 0 1px 0 0 #0079bc;
 }
 
@@ -248,7 +248,7 @@ h6 {
   line-height: 1.6;
 }
 
-.accomplishment-statement .copy,.copy-lead,.signatory .signatory-credentials {
+.accomplishment-statement .copy,.copy-base,.copy-lead,.signatory .signatory-credentials {
   color: #4d4b4b;
 }
 
@@ -259,6 +259,15 @@ h6 {
 
 .copy-lead p,.copy-lead ul {
   margin-bottom: 1.875rem;
+}
+
+.copy-base {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.copy-base p,.copy-base ul {
+  margin-bottom: 1.25rem;
 }
 
 .accomplishment-statement .copy {
@@ -308,6 +317,10 @@ ul {
 
 ul {
   list-style-type: disc;
+}
+
+.item.has-block-link a {
+  display: block;
 }
 
 body {
