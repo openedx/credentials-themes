@@ -522,18 +522,18 @@ body {
 .wrapper-accomplishment-org .organization-logo {
   display: block;
   margin: 0 auto 1.25rem;
-  width: 65.95745%;
+  width: 14.89362%;
 }
 
 @media (min-width:480px) {
   .wrapper-accomplishment-org .organization-logo {
-    width: 31.91489%;
+    width: 14.89362%;
   }
 }
 
 @media (min-width:768px) {
   .wrapper-accomplishment-org .organization-logo {
-    width: 31.91489%;
+    width: 14.89362%;
   }
 }
 
@@ -565,7 +565,7 @@ body {
 
 @media (min-width:768px) {
   .accomplishment-statement .accomplishment-logo {
-    max-width: 15%;
+    max-width: 18%;
   }
 }
 
@@ -767,7 +767,7 @@ body {
 
   .wrapper-accomplishment-org .organization-logo {
     display: block;
-    width: 23.40426%;
+    width: 14.89362%;
     font-weight: 600;
   }
 
@@ -809,7 +809,7 @@ body {
   }
 
   .accomplishment-statement .accomplishment-logo {
-    max-width: 15%!important;
+    max-width: 25%!important;
   }
 
   .signatory {
