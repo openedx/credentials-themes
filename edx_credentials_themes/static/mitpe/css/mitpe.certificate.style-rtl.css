@@ -64,7 +64,7 @@
   display: table;
 }
 
-.list .item:last-child,.list:last-child,.list li:last-child,ul .item:last-child,ul:last-child,ul li:last-child {
+.list .item-complex:last-child,.list .item:last-child,.list:last-child,.list li:last-child,ul .item-complex:last-child,ul .item:last-child,ul:last-child,ul li:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
@@ -300,6 +300,10 @@ h6 {
 
 .list,ul {
   margin-bottom: 1.875rem;
+}
+
+.list .item-complex,ul .item-complex {
+  margin-bottom: 1.25rem;
 }
 
 .list .item-copy,ul .item-copy {
