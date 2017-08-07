@@ -43,14 +43,14 @@
   .organization-logo {
     display: block;
     margin: 0 auto spacing-vertical(small) auto;
-    width: span(8 of 12);
+    width: span(2 of 12);
 
     @include susy-breakpoint($bp-screen-sm, $susy) {
-      width: span(4 of 12);
+      width: span(2 of 12);
     }
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-      width: span(4 of 12);
+      width: span(2 of 12);
     }
   }
 
@@ -82,7 +82,7 @@
     }
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-        max-width: 15%;
+        max-width: 18%;
     }
   }
 
