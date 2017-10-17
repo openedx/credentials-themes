@@ -8,13 +8,13 @@ build.watch:
 	$(NODE_BIN)/webpack --config webpack.config.js --display-error-details --progress --watch
 
 compile_translations:
-	django-admin.py compilemessages
+	cd edx_credentials_themes && django-admin.py compilemessages
 
 extract_translations:
-	django-admin.py makemessages -l en -d django
+	cd edx_credentials_themes && django-admin.py makemessages -l en -d django
 
 i18n_requirements:
-	pip install -r ./conf/locale/requirements.txt
+	pip install -r ./requirements/i18n.txt
 
 requirements:
 	npm install
