@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2017-10-17 11:43-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-24 16:31-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -16,107 +16,149 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: edx_credentials_themes/templates/edx.org/credentials/programs/base.html:18
+#: templates/edx.org/credentials/programs/base.html:19
 msgid "About edX"
 msgstr ""
 
+#: templates/edx.org/credentials/programs/base.html:22
+#, python-brace-format
+msgid ""
+"{link_start} edX{link_end} offers interactive online classes and MOOCs from "
+"the world’s best universities, including MIT, Harvard, Berkeley, University "
+"of Texas, and many others. edX is a non-profit online initiative created by "
+"founding partners Harvard and MIT."
+msgstr ""
+
 #. Translators: MicroMasters should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/micromasters/certificate.html:6
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:8
 #, python-format
 msgid ""
 "You worked hard to earn your MicroMasters Credential from "
 "%(organization_name)s."
 msgstr ""
 
-#. Translators: MicroMasters should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/micromasters/certificate.html:13
+#. Translators: MicroMasters should not be translated, this phrase is preceded by the learner's name and followed by the course title
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:16
 msgid ""
 "has successfully completed all courses and received passing grades for a "
 "MicroMasters credential in"
 msgstr ""
 
 #. Translators: MicroMasters should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/micromasters/certificate.html:18
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters credential"
 msgstr ""
 
 #. Translators: MicroMasters should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/micromasters/certificate.html:23
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:26
 msgid "About the edX MicroMasters credential"
 msgstr ""
 
-#: edx_credentials_themes/templates/edx.org/credentials/programs/professional-certificate/certificate.html:5
+#. Translators: MicroMasters should not be translated
+#: templates/edx.org/credentials/programs/micromasters/certificate.html:31
+#, python-brace-format
+msgid ""
+"An edX MicroMasters credential signifies that the learner has completed a "
+"group of courses that add up to a rich understanding of an area of study. "
+"Completion of MicroMasters Programs requires that learners earn {link_start}"
+"Verified Certificates{link_end} from each of the courses included in the "
+"Program."
+msgstr ""
+
+#. Translators: This phrase is preceded by the learner's name and followed by the course title
+#: templates/edx.org/credentials/programs/professional-certificate/certificate.html:7
 msgid ""
 "successfully completed all courses and received passing grades for a "
 "Professional Certificate in"
 msgstr ""
 
-#: edx_credentials_themes/templates/edx.org/credentials/programs/professional-certificate/certificate.html:9
+#: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
 msgstr ""
 
-#: edx_credentials_themes/templates/edx.org/credentials/programs/professional-certificate/certificate.html:13
+#: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
 msgstr ""
 
+#: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
+#, python-brace-format
+msgid ""
+"An edX Professional Certificate signifies that the learner has completed a "
+"group of courses that add up to a rich understanding of an area of study. "
+"Completion of Professional Certificate Programs requires that learners earn "
+"{link_start}Verified Certificates{link_end} from each of the courses "
+"included in the Program."
+msgstr ""
+
 #. Translators: XSeries should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/xseries/certificate.html:6
+#: templates/edx.org/credentials/programs/xseries/certificate.html:8
 #, python-format
 msgid ""
 "You worked hard to earn your XSeries Program certificate from "
 "%(organization_name)s."
 msgstr ""
 
-#. Translators: XSeries should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/xseries/certificate.html:13
+#. Translators: XSeries should not be translated, this phrase is preceded by the learner's name and followed by the course title
+#: templates/edx.org/credentials/programs/xseries/certificate.html:16
 msgid ""
 "has successfully completed all courses and received passing grades for an "
 "XSeries Program certificate in"
 msgstr ""
 
 #. Translators: XSeries should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/xseries/certificate.html:18
+#: templates/edx.org/credentials/programs/xseries/certificate.html:21
 msgid "XSeries Program certificate"
 msgstr ""
 
 #. Translators: XSeries should not be translated
-#: edx_credentials_themes/templates/edx.org/credentials/programs/xseries/certificate.html:23
+#: templates/edx.org/credentials/programs/xseries/certificate.html:26
 msgid "About the edX XSeries Program certificate"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/_footer.html:11
+#. Translators: XSeries should not be translated
+#: templates/edx.org/credentials/programs/xseries/certificate.html:31
+#, python-brace-format
+msgid ""
+"An edX XSeries Program certificate signifies that the learner has completed "
+"a group of courses that add up to a rich understanding of an area of study. "
+"Completion of XSeries Programs requires that learners earn {link_start}"
+"Verified Certificates{link_end} from each of the courses included in the "
+"Program."
+msgstr ""
+
+#: templates/mitpe/_footer.html:12
 msgid "Terms of Service"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/_footer.html:16
+#: templates/mitpe/_footer.html:17
 msgid "Privacy Policy"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/_footer.html:27
+#: templates/mitpe/_footer.html:28
 msgid "All rights reserved except where noted."
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/_footer.html:35
+#: templates/mitpe/_footer.html:36
 msgid "Powered by Open edX"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/credentials/programs/base.html:29
+#: templates/mitpe/credentials/programs/base.html:29
 msgid "This is to certify that"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/credentials/programs/base.html:33
+#: templates/mitpe/credentials/programs/base.html:33
 msgid "has successfully completed the"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/credentials/programs/base.html:39
+#: templates/mitpe/credentials/programs/base.html:39
 msgid "held during"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/credentials/programs/base.html:51
+#: templates/mitpe/credentials/programs/base.html:51
 msgid "Noted by"
 msgstr ""
 
-#: edx_credentials_themes/templates/mitpe/credentials/programs/base.html:80
+#: templates/mitpe/credentials/programs/base.html:80
 #, python-format
 msgid ""
 "For tips and tricks on printing your certificate, view the %(link_start)sWeb "
