@@ -7,6 +7,15 @@ build:
 build.watch:
 	$(NODE_BIN)/webpack --config webpack.config.js --display-error-details --progress --watch
 
+compile_translations:
+	django-admin.py compilemessages
+
+extract_translations:
+	django-admin.py makemessages -l en -d django
+
+i18n_requirements:
+	pip install -r ./conf/locale/requirements.txt
+
 requirements:
 	npm install
 
