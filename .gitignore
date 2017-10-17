@@ -30,9 +30,6 @@ pip-log.txt
 coverage.xml
 htmlcov/
 
-# Translations
-*.mo
-
 # IDEs and text editors
 *~
 *.swp
