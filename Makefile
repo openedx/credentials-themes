@@ -21,4 +21,4 @@ requirements:
 
 test:
 	# Confirm compiled assets have not changed, indicating SASS matches CSS.
-	git diff --exit-code
+	git diff --exit-code edx_credentials_themes/
