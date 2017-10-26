@@ -2,12 +2,11 @@
 # Copyright (C) 2017 EdX
 # EdX Team <info@edx.org>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-26 13:41-0400\n"
+"POT-Creation-Date: 2017-10-27 15:09-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -16,11 +15,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/edx.org/credentials/programs/base.html:19
+#: templates/edx.org/credentials/programs/base.html:20
 msgid "About edX"
 msgstr ""
 
-#: templates/edx.org/credentials/programs/base.html:22
+#: templates/edx.org/credentials/programs/base.html:23
 #, python-brace-format
 msgid ""
 "{link_start} edX{link_end} offers interactive online classes and MOOCs from "

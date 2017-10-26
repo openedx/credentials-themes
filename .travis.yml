@@ -1,16 +1,24 @@
 sudo: false
 
-language: node_js
+language: python
 
-node_js: node
+python:
+  - 3.5
+
+addons:
+  apt:
+    packages:
+      - gettext
+      - nodejs
 
 cache:
   directories:
   - node_modules
 
 install:
-  - npm install
+  - make requirements
 
 script:
   - make build
   - make test
+  - make validate_translations
