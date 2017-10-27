@@ -24,6 +24,9 @@ generate_translations: extract_translations dummy_translations compile_translati
 i18n_requirements:
 	pip install -r ./requirements/i18n.txt
 
+pull_translations:
+	tx pull -af --mode reviewed
+
 requirements: i18n_requirements
 	npm install
 
