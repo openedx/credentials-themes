@@ -1,19 +1,19 @@
 # edX translation file.
 # Copyright (C) 2017 EdX
 # EdX Team <info@edx.org>, 2017.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-27 15:09-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
-"Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
-"Language: en\n"
+"Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: es_419\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: templates/edx.org/credentials/programs/base.html:20
@@ -37,7 +37,8 @@ msgid ""
 "%(organization_name)s."
 msgstr ""
 
-#. Translators: MicroMasters should not be translated, this phrase is preceded by the learner's name and followed by a program title
+#. Translators: MicroMasters should not be translated, this phrase is preceded
+#. by the learner's name and followed by a program title
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:16
 msgid ""
 "has successfully completed all courses and received passing grades for a "
@@ -60,12 +61,13 @@ msgstr ""
 msgid ""
 "An edX MicroMasters credential signifies that the learner has completed a "
 "group of courses that add up to a rich understanding of an area of study. "
-"Completion of MicroMasters Programs requires that learners earn {link_start}"
-"Verified Certificates{link_end} from each of the courses included in the "
-"Program."
+"Completion of MicroMasters Programs requires that learners earn "
+"{link_start}Verified Certificates{link_end} from each of the courses "
+"included in the Program."
 msgstr ""
 
-#. Translators: This phrase is preceded by the learner's name and followed by a program title
+#. Translators: This phrase is preceded by the learner's name and followed by
+#. a program title
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:7
 msgid ""
 "successfully completed all courses and received passing grades for a "
@@ -98,7 +100,8 @@ msgid ""
 "%(organization_name)s."
 msgstr ""
 
-#. Translators: XSeries should not be translated, this phrase is preceded by the learner's name and followed by a program title
+#. Translators: XSeries should not be translated, this phrase is preceded by
+#. the learner's name and followed by a program title
 #: templates/edx.org/credentials/programs/xseries/certificate.html:16
 msgid ""
 "has successfully completed all courses and received passing grades for an "
@@ -121,9 +124,9 @@ msgstr ""
 msgid ""
 "An edX XSeries Program certificate signifies that the learner has completed "
 "a group of courses that add up to a rich understanding of an area of study. "
-"Completion of XSeries Programs requires that learners earn {link_start}"
-"Verified Certificates{link_end} from each of the courses included in the "
-"Program."
+"Completion of XSeries Programs requires that learners earn "
+"{link_start}Verified Certificates{link_end} from each of the courses "
+"included in the Program."
 msgstr ""
 
 #: templates/mitpe/_footer.html:12
@@ -161,6 +164,6 @@ msgstr ""
 #: templates/mitpe/credentials/programs/base.html:81
 #, python-format
 msgid ""
-"For tips and tricks on printing your certificate, view the %(link_start)sWeb "
-"Certificates help documentation%(link_end)s."
+"For tips and tricks on printing your certificate, view the %(link_start)sWeb"
+" Certificates help documentation%(link_end)s."
 msgstr ""
