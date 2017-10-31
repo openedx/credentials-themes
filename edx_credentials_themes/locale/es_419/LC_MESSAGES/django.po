@@ -2,13 +2,15 @@
 # Copyright (C) 2017 EdX
 # EdX Team <info@edx.org>, 2017.
 # 
+# Translators:
+# Anthony Mangano <amangano@edx.org>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-10-27 15:09-0400\n"
 "PO-Revision-Date: \n"
-"Last-Translator: \n"
+"Last-Translator: Anthony Mangano <amangano@edx.org>, 2017\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -76,7 +78,7 @@ msgstr ""
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
-msgstr ""
+msgstr "Certificación profesional"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
