@@ -78,7 +78,7 @@ msgstr ""
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
-msgstr "Certificación profesional"
+msgstr "Certificación Profesional"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
