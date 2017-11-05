@@ -4,13 +4,14 @@
 # 
 # Translators:
 # Anthony Mangano <amangano@edx.org>, 2017
+# e2f_lat_r3 <e2f_lat_r3@outlook.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
 "POT-Creation-Date: 2017-10-27 15:09-0400\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Anthony Mangano <amangano@edx.org>, 2017\n"
+"Last-Translator: e2f_lat_r3 <e2f_lat_r3@outlook.com>, 2017\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,7 +21,7 @@ msgstr ""
 
 #: templates/edx.org/credentials/programs/base.html:20
 msgid "About edX"
-msgstr ""
+msgstr "Acerca de edX"
 
 #: templates/edx.org/credentials/programs/base.html:23
 #, python-brace-format
@@ -30,6 +31,11 @@ msgid ""
 "of Texas, and many others. edX is a non-profit online initiative created by "
 "founding partners Harvard and MIT."
 msgstr ""
+"{link_start} edX{link_end} ofrece clases interactivas en línea y diversos "
+"CEMA de la mano de las mejores universidades del mundo, que incluyen a MIT, "
+"Harvard, Berkeley, University of Texas y muchas más. edX es una iniciativa "
+"en línea sin fines de lucro que crearon Harvard y MIT, sus socios "
+"fundadores."
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:8
@@ -38,6 +44,8 @@ msgid ""
 "You worked hard to earn your MicroMasters Credential from "
 "%(organization_name)s."
 msgstr ""
+"Ha trabajado duro para obtener su Credencial MicroMasters de "
+"%(organization_name)s."
 
 #. Translators: MicroMasters should not be translated, this phrase is preceded
 #. by the learner's name and followed by a program title
@@ -46,16 +54,18 @@ msgid ""
 "has successfully completed all courses and received passing grades for a "
 "MicroMasters credential in"
 msgstr ""
+"ha completado correctamente todos los cursos y ha recibido las "
+"calificaciones necesarias para obtener una credencial MicroMasters en"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters credential"
-msgstr ""
+msgstr "Credencial MicroMasters"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
 msgid "About the edX MicroMasters credential"
-msgstr ""
+msgstr "Acerca de la credencial MicroMasters de edX"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:31
@@ -67,6 +77,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
+"Una credencial MicroMasters de edX implica que el estudiante ha completado "
+"un grupo de cursos que resultan en una rica comprensión de un área de "
+"estudio. La finalización de los Programas MicroMasters requiere que los "
+"estudiantes obtengan {link_start}Certificados Verificados{link_end} de cada "
+"uno de los cursos incluidos en el Programa."
 
 #. Translators: This phrase is preceded by the learner's name and followed by
 #. a program title
@@ -75,6 +90,8 @@ msgid ""
 "successfully completed all courses and received passing grades for a "
 "Professional Certificate in"
 msgstr ""
+"ha completado correctamente todos los cursos y ha recibido las "
+"calificaciones necesarias para obtener un Certificado Profesional en"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:11
 msgid "Professional Certificate"
@@ -82,7 +99,7 @@ msgstr "Certificación Profesional"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:15
 msgid "About the edX Professional Certificate"
-msgstr ""
+msgstr "Acerca del Certificado Profesional de edX"
 
 #: templates/edx.org/credentials/programs/professional-certificate/certificate.html:19
 #, python-brace-format
@@ -93,6 +110,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
+"Un Certificado Profesional de edX implica que el estudiante ha completado un"
+" grupo de cursos que resultan en una rica comprensión de un área de estudio."
+" La finalización de los Programas de Certificado Profesional requiere que "
+"los estudiantes obtengan {link_start}Certificados Verificados{link_end} de "
+"cada uno de los cursos incluidos en el Programa."
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:8
@@ -101,6 +123,8 @@ msgid ""
 "You worked hard to earn your XSeries Program certificate from "
 "%(organization_name)s."
 msgstr ""
+"Ha trabajado duro para obtener su certificado del Programa XSeries de "
+"%(organization_name)s."
 
 #. Translators: XSeries should not be translated, this phrase is preceded by
 #. the learner's name and followed by a program title
@@ -109,16 +133,19 @@ msgid ""
 "has successfully completed all courses and received passing grades for an "
 "XSeries Program certificate in"
 msgstr ""
+"ha completado correctamente todos los cursos y ha recibido las "
+"calificaciones necesarias para obtener un certificado del Programa XSeries "
+"en"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:21
 msgid "XSeries Program certificate"
-msgstr ""
+msgstr "Certificado del Programa XSeries"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:26
 msgid "About the edX XSeries Program certificate"
-msgstr ""
+msgstr "Acerca del certificado del Programa XSeries de edX"
 
 #. Translators: XSeries should not be translated
 #: templates/edx.org/credentials/programs/xseries/certificate.html:31
@@ -130,38 +157,43 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the Program."
 msgstr ""
+"Un certificado del Programa XSeries de edX implica que el estudiante ha "
+"completado un grupo de cursos que resultan en una rica comprensión de un "
+"área de estudio. La finalización de los Programas XSeries requiere que los "
+"estudiantes obtengan {link_start}Certificados Verificados{link_end} de cada "
+"uno de los cursos incluidos en el Programa."
 
 #: templates/mitpe/_footer.html:12
 msgid "Terms of Service"
-msgstr ""
+msgstr "Condiciones del servicio"
 
 #: templates/mitpe/_footer.html:17
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privacidad"
 
 #: templates/mitpe/_footer.html:28
 msgid "All rights reserved except where noted."
-msgstr ""
+msgstr "Todos los derechos reservados excepto donde se indique lo contrario."
 
 #: templates/mitpe/_footer.html:36
 msgid "Powered by Open edX"
-msgstr ""
+msgstr "Desarrollado por Open edX"
 
 #: templates/mitpe/credentials/programs/base.html:30
 msgid "This is to certify that"
-msgstr ""
+msgstr "Esto certifica que"
 
 #: templates/mitpe/credentials/programs/base.html:34
 msgid "has successfully completed the"
-msgstr ""
+msgstr "ha completado correctamente "
 
 #: templates/mitpe/credentials/programs/base.html:40
 msgid "held during"
-msgstr ""
+msgstr "que se llevó a cabo durante"
 
 #: templates/mitpe/credentials/programs/base.html:52
 msgid "Noted by"
-msgstr ""
+msgstr "Registrado por"
 
 #: templates/mitpe/credentials/programs/base.html:81
 #, python-format
@@ -169,3 +201,6 @@ msgid ""
 "For tips and tricks on printing your certificate, view the %(link_start)sWeb"
 " Certificates help documentation%(link_end)s."
 msgstr ""
+"Para obtener consejos y recomendaciones para imprimir su certificado, visite"
+" la %(link_start)sdocumentación de asistencia de Certificados "
+"Web%(link_end)s."
