@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2017-10-27 15:09-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-01 16:57+0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -126,41 +126,51 @@ msgid ""
 "Program."
 msgstr ""
 
-#: templates/mitpe/_footer.html:12
+#: templates/mitpe/_footer.html:12 templates/wharton/_footer.html:12
 msgid "Terms of Service"
 msgstr ""
 
-#: templates/mitpe/_footer.html:17
+#: templates/mitpe/_footer.html:17 templates/wharton/_footer.html:17
 msgid "Privacy Policy"
 msgstr ""
 
-#: templates/mitpe/_footer.html:28
+#: templates/mitpe/_footer.html:28 templates/wharton/_footer.html:28
 msgid "All rights reserved except where noted."
 msgstr ""
 
-#: templates/mitpe/_footer.html:36
+#: templates/mitpe/_footer.html:36 templates/wharton/_footer.html:36
 msgid "Powered by Open edX"
 msgstr ""
 
 #: templates/mitpe/credentials/programs/base.html:30
+#: templates/wharton/credentials/programs/base.html:30
 msgid "This is to certify that"
 msgstr ""
 
 #: templates/mitpe/credentials/programs/base.html:34
+#: templates/wharton/credentials/programs/base.html:32
 msgid "has successfully completed the"
 msgstr ""
 
 #: templates/mitpe/credentials/programs/base.html:40
+#: templates/wharton/credentials/programs/base.html:38
 msgid "held during"
 msgstr ""
 
 #: templates/mitpe/credentials/programs/base.html:52
+#: templates/wharton/credentials/programs/base.html:53
 msgid "Noted by"
 msgstr ""
 
 #: templates/mitpe/credentials/programs/base.html:81
+#: templates/wharton/credentials/programs/base.html:82
 #, python-format
 msgid ""
 "For tips and tricks on printing your certificate, view the %(link_start)sWeb "
 "Certificates help documentation%(link_end)s."
+msgstr ""
+
+#: templates/wharton/credentials/programs/base.html:40
+#, python-brace-format
+msgid "Awarded on {month}, {day} {year}"
 msgstr ""
