@@ -31,4 +31,6 @@ The .mo files are read by Django and are used to provide translations in the run
 
 Testing credentials-themes changes in devstack
 ----------------------------------------------
-See instructions 'here <https://openedx.atlassian.net/wiki/spaces/SOL/pages/608698737/Testing+WL+themes+in+devstack>_'.
+See instructions_ on the OpenEdX Wiki.
+
+.. _instructions: https://openedx.atlassian.net/wiki/spaces/SOL/pages/608698737/Testing+WL+themes+in+devstack
