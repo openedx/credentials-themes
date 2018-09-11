@@ -28,3 +28,7 @@ provider) where the strings can be translated.
 
 Compile translated strings by running `make compile_translations`. This will produce a .mo file for each .po in the repo.
 The .mo files are read by Django and are used to provide translations in the running application.
+
+Testing credentials-themes changes locally with your credentials repo
+---------------------------------------------------------------------
+https://openedx.atlassian.net/wiki/spaces/SOL/pages/608698737/Testing+WL+themes+in+devstack
