@@ -28,9 +28,9 @@
   @extend %depth-2;
   @include text-align(center);
   margin: 2%;
-  border: 1px solid palette(grayscale-cool, light);
+  border: 1px solid $gray-500;
   padding: 5%;
-  background-color: palette(grayscale, white);
+  background-color: $gray-100;
 
   @include susy-breakpoint($bp-screen-md, $susy) {
     padding: 2% 5%;
