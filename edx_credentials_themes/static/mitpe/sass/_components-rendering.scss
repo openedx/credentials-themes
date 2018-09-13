@@ -23,7 +23,7 @@
     margin-bottom: 0;
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-      font-size: rem(32);
+      font-size: 2rem;
       font-family: Helvetica;
       font-weight: bold;
     }
@@ -49,7 +49,7 @@
 .wrapper-accomplishment-statement {
 
   .accomplishment-statement-about {
-    font-size: font-size(large);
+    font-size: $font-large;
   }
 
   .accomplishment-summary,
@@ -65,7 +65,7 @@
     font-weight: $headings-font-weight-bold;
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-      font-size: rem(44);
+      font-size: 2.75rem;
     }
   }
 
@@ -75,7 +75,7 @@
     font-weight: $headings-font-weight-bold;
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-      font-size: rem(32);
+      font-size: 2rem;
     }
 
     .accomplishment-course-type {
@@ -99,15 +99,15 @@
 
   .accomplishment-course-dates,
   .accomplishment-course-time {
-    font-size: font-size(large);
-    font-weight: font-weight(normal);
-    line-height: line-height(large);
+    font-size: $font-large;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-large;
   }
 
   .copy {
 
     @include susy-breakpoint($bp-screen-md, $susy) {
-      font-size: font-size(large);
+      font-size: $font-large;
     }
   }
 }
@@ -131,11 +131,11 @@
   .signatory-name {
     margin-top: spacing-vertical(x-small);
     margin-bottom: 0;
-    border-top: rem(2) solid $gray-300;
+    border-top: 0.125rem solid $gray-300;
     padding-top: spacing-vertical(x-small);
     color: $headings-emphasized-color;
     font-family: TradeGothicLTStd-BdCn20;
-    font-size: rem(14);
+    font-size: $font-small;
     font-weight: $headings-font-weight-bold;
   }
 
@@ -143,7 +143,7 @@
     @extend %copy-micro;
     color: $gray-600;
     display: inline;
-    font-size: rem(14);
+    font-size: $font-small;
 
     .role {
       font-family: TradeGothicLTStd-Cn18;
