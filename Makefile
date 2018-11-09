@@ -19,7 +19,7 @@ dummy_translations:
 extract_translations:
 	cd edx_credentials_themes && django-admin.py makemessages -l en -d django
 
-generate_translations: extract_translations dummy_translations compile_translations
+fake_translations: extract_translations dummy_translations compile_translations
 
 i18n_requirements:
 	pip install -r ./requirements/i18n.txt
@@ -34,5 +34,7 @@ test:
 	# Confirm compiled assets have not changed, indicating SASS matches CSS.
 	git diff --exit-code edx_credentials_themes/
 
-validate_translations: generate_translations detect_changed_source_translations
+validate_translations: fake_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate
+
+check_translations_up_to_date: fake_translations detect_changed_source_translations
