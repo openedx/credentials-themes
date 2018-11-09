@@ -22,4 +22,4 @@ script:
   - make build
   - make test
   - make validate_translations
-  - make check_translations_up_to_date
+#  - make check_translations_up_to_date
