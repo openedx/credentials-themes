@@ -1,6 +1,5 @@
 {% load i18n %}
 {% load staticfiles %}
-{% load html %}
 
 <div class="wrapper-footer">
   <footer class="footer-app" role="contentinfo">
@@ -9,12 +8,12 @@
         <ul class="list list-legal">
           <li class="nav-item">
             <a class="action" href="{{ site.siteconfiguration.tos_url }}">
-              {% trans "Terms of Service" as tmsg %}{{ tmsg | htmlescape }}
+              {% trans "Terms of Service" as tmsg %}{{ tmsg | force_escape }}
             </a>
           </li>
           <li class="nav-item">
             <a class="action" href="{{ site.siteconfiguration.privacy_policy_url }}">
-              {% trans "Privacy Policy" as tmsg %}{{ tmsg | htmlescape }}
+              {% trans "Privacy Policy" as tmsg %}{{ tmsg | force_escape }}
             </a>
           </li>
         </ul>
@@ -25,7 +24,7 @@
             &copy; <a href="{{ site.siteconfiguration.homepage_url }}">
                       {{ site.siteconfiguration.company_name }}</a>
           </span>
-          {% trans "All rights reserved except where noted." as tmsg %}{{ tmsg | htmlescape }}
+          {% trans "All rights reserved except where noted." as tmsg %}{{ tmsg | force_escape }}
         </p>
       </div>
     </div>
