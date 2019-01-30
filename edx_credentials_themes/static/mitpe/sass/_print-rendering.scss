@@ -15,7 +15,6 @@
     // hide elements not needed for print rendering
     .wrapper-banner-user,
     .wrapper-header,
-    .wrapper-accomplishment-metadata,
     .wrapper-accomplishment-support,
     .wrapper-footer {
         @extend %print-hide;
@@ -23,53 +22,35 @@
 
     // remove layout wrappers' padding
     .wrapper-accomplishment-rendering {
+        @include make-container();
+        @include make-container-max-widths();
         @extend %print-layout-wrapper;
-    }
 
-    .accomplishment-rendering {
-        top: 0 !important;
-        box-shadow: none;
-        border: none;
-        padding: spacing-vertical(x-small) spacing-horizontal(large);
-        background-color: $white;
-        @include text-align(center);
-
-        .accomplishment-statement {
-            display: inline-block;
-            vertical-align: top;
-            width: span(8 of 12);
-            margin-top: spacing-vertical(base);
-            border-bottom: 0;
-        }
-
-        .signatory {
-
-            // One signatory override
-            &:first-child:nth-last-child(1) {
-                @include push(4);
-            }
-
-            // Two signatory override
-            &:first-child:nth-last-child(2) {
-                margin-left: span(2 of 12) + gutter(12);
-            }
-
-            &:first-child:nth-last-child(2) ~ div {
-                margin-left: span(6 of 12) + gutter(12);
-            }
-
-            @include susy-breakpoint($bp-screen-md, $susy) {
-                @include gallery(4 of 12);
-            }
-
-            &:last-child {
-                margin-bottom: 0;
-            }
+        .accomplishment-rendering {
+            top: 0 !important;
+            box-shadow: none;
+            border: none;
+            padding: 0.625rem 2.5rem !important;
+            background-color: $white;
+            @include text-align(center);
         }
     }
 
     .wrapper-accomplishment-statement {
-        margin-top: -(spacing-vertical(small));
+        @include make-row();
+        @extend %print-layout-wrapper;
+        justify-content: center !important;
+        margin-top: -1.25rem !important;
+
+        .accomplishment-statement {
+            @include make-col-ready();
+            @include make-col(8);
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 0.5rem !important;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
     }
 
     .wrapper-accomplishment-org {
@@ -77,13 +58,13 @@
 
       .organization-logo {
         display: block;
-        width: span(2 of 12);
-        font-weight: $headings-font-weight-bold;
+        width: 16%;
+        font-weight: $font-weight-bold;
       }
     }
 
-    .signatory {
-      @include gallery(4 of 12);
+    .accomplishment-signatories {
+        float: none;
     }
 }
 
@@ -94,19 +75,20 @@
 
     // accomplishment
     .accomplishment-statement {
-        margin-bottom: spacing-vertical(x-small);
+        margin-bottom: 0.625rem !important;
 
         .accomplishment-recipient {
-            @extend .hd-2;
+            @extend %h2;
         }
 
         .accomplishment-course {
-            @extend .hd-3;
+            @extend %h3;
         }
 
         .copy {
-            @extend .copy-meta;
-            color: $text-de-emphasized-color;
+            font-size: $font-large;
+            line-height: $line-height-large;
+            color: $gray-600;
         }
 
         .accomplishment-recipient,
@@ -114,7 +96,7 @@
         .accomplishment-summary,
         .accomplishment-statement-detail,
         .accomplishment-logo {
-            margin: 0 auto  spacing-vertical(x-small) auto;
+            margin: 0 auto 0.625rem auto !important;
         }
 
         .accomplishment-logo {
@@ -123,8 +105,6 @@
     }
 
     .signatory {
-        @include gallery(4 of 12);
-
         .signatory-signature {
           max-width: 50%;
           height: 40px;
@@ -132,7 +112,7 @@
 
         .signatory-name,
         .signatory-credentials {
-            margin-bottom: 2px;
+            margin-bottom: 2px !important;
             font-size: $font-xxx-small;
             line-height: $line-height-small;
         }

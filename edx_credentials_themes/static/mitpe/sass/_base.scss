@@ -1,3 +1,12 @@
+// ------------------------------
+// #GLOBAL
+// ------------------------------
+html, body {
+  // This is the font list straight from edx-bootstrap. We'll overwrite this in a second,
+  // but we want the body default to be the base version.
+  font-family: $font-family-sans-serif;
+  color: $gray-700;
+}
 
 // ------------------------------
 // #TYPOGRAPHY
