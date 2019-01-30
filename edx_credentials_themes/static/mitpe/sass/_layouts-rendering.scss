@@ -9,7 +9,6 @@
 // #ACCOMPLISHMENT - BASE
 // ------------------------------
 .header-app {
-
     .logo {
         width: 250px;
     }
@@ -25,14 +24,14 @@
 // #ACCOMPLISHMENT
 // ------------------------------
 .accomplishment-rendering {
-  @extend %depth-2;
   @include text-align(center);
   margin: 2%;
   border: 1px solid $gray-500;
   padding: 5%;
   background-color: $gray-100;
+  box-shadow: 0 1px 2px 1px rgba(167, 164, 164, 0.25);
 
-  @include susy-breakpoint($bp-screen-md, $susy) {
+  @include media-breakpoint-up(md) {
     padding: 2% 5%;
   }
 }
@@ -41,17 +40,9 @@
   margin-bottom: 0;
 
   .organization-logo {
+    @extend .mt-0, .mb-4, .mx-auto;
     display: block;
-    margin: 0 auto spacing-vertical(small) auto;
-    width: span(2 of 12);
-
-    @include susy-breakpoint($bp-screen-sm, $susy) {
-      width: span(2 of 12);
-    }
-
-    @include susy-breakpoint($bp-screen-md, $susy) {
-      width: span(2 of 12);
-    }
+    width: 16%;
   }
 
   .organization-name {
@@ -61,15 +52,15 @@
 }
 
 .accomplishment-statement {
-  margin-bottom: spacing-vertical(base);
+  @extend .mb-5;
 
   .accomplishment-recipient,
   .accomplishment-course,
   .accomplishment-summary,
   .accomplishment-statement-detail,
   .accomplishment-logo {
+    @extend .mb-4;
     display: block;
-    margin-bottom: spacing-vertical(small);
   }
 
   .accomplishment-logo {
@@ -77,59 +68,33 @@
     @include margin-left(auto);
     @include margin-right(auto);
 
-    @include susy-breakpoint($bp-screen-sm, $susy) {
+    @include media-breakpoint-up(sm) {
         max-width: 25%;
     }
 
-    @include susy-breakpoint($bp-screen-md, $susy) {
+    @include media-breakpoint-up(md) {
         max-width: 18%;
     }
   }
 
   .accomplishment-course-dates {
-    display:block;
+    display: block;
   }
-  
+
   .accomplishment-course-time {
     display: block;
-    font-size: 0.45em;
+    font-size: $font-xxx-small;
   }
 }
 
-.accomplishment-signatories {
+.wrapper-signatories {
+  @extend .container;
 
-}
+  .list-signatories {
+    @extend .row, .justify-content-center;
 
-.signatory {
-  @include gallery(12 of 12);
-  float: none; // unset the gallery float to prevent overlap
-
-    @include susy-breakpoint($bp-screen-md, $susy) {
-      @include gallery(4 of 12);
-
-      // One signatory override
-      &:first-child:nth-last-child(1) {
-        @include push(4);
-      }
-
-      // Two signatory override
-      &:first-child:nth-last-child(2) {
-        margin-left: span(2 of 12) + gutter(12);
-      }
-
-      &:first-child:nth-last-child(2) ~ div {
-        margin-left: span(6 of 12) + gutter(12);
-      }
+    .signatory {
+      @extend .col-12, .col-md-4;
     }
   }
-
-
-.accomplishment-metadata-aboutcert {
-
-  @include susy-breakpoint($bp-screen-md, $susy) {
-    @include span(6 of 12 last);
-  }
 }
-
-
-

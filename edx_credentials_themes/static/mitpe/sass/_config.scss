@@ -6,4 +6,6 @@
 // ------------------------------
 // #VARIABLES
 // ------------------------------
-$font-path: '~edx-pattern-library/pattern-library/fonts';
+
+// Without this, bootstrap's print mode is too wide
+$print-body-min-width: 0;

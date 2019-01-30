@@ -14,15 +14,14 @@
 }
 
 .wrapper-accomplishment-org {
-
   margin-bottom: 0;
 
   .organization-name {
-    @extend %hd-5;
-    color: $headings-emphasized-color;
+    @extend .h5;
+    color: $black;
     margin-bottom: 0;
 
-    @include susy-breakpoint($bp-screen-md, $susy) {
+    @include media-breakpoint-up(md) {
       font-size: 2rem;
       font-family: Helvetica;
       font-weight: bold;
@@ -31,23 +30,21 @@
 }
 
 .wrapper-accomplishment-orgs {
-
   img {
     max-width: 100%;
     max-height: 150px;
 
-    @include susy-breakpoint($bp-screen-sm, $susy) {
+    @include media-breakpoint-up(sm) {
       max-width: 300px;
     }
   }
 }
 
 .list-orgs {
-  @extend %list-unstyled;
+  @extend .list-unstyled;
 }
 
 .wrapper-accomplishment-statement {
-
   .accomplishment-statement-about {
     font-size: $font-large;
   }
@@ -56,42 +53,42 @@
   .accomplishment-statement-detail {
     font-family: TradeGothicLTStd-LightObl;
     font-style: italic;
-    font-size: 1em;
+    font-size: $font-base;
   }
 
   .accomplishment-recipient {
     line-height: 1.2;
-    color: $headings-emphasized-color;
-    font-weight: $headings-font-weight-bold;
+    color: $black;
+    font-weight: $font-weight-bold;
 
-    @include susy-breakpoint($bp-screen-md, $susy) {
+    @include media-breakpoint-up(md) {
       font-size: 2.75rem;
     }
   }
 
   .accomplishment-course {
     line-height: 1.2;
-    color: $headings-emphasized-color;
-    font-weight: $headings-font-weight-bold;
+    color: $black;
+    font-weight: $font-weight-bold;
 
-    @include susy-breakpoint($bp-screen-md, $susy) {
+    @include media-breakpoint-up(md) {
       font-size: 2rem;
     }
 
     .accomplishment-course-type {
       text-transform: uppercase;
-      font-weight: $headings-font-weight-normal;
+      font-weight: $font-weight-normal;
     }
 
     .accomplishment-course-name {
       font-family: TradeGothicLTStd-BdCn20;
-      font-size: 0.9em;
+      font-size: $font-xxx-large;
     }
 
     .accomplishment-program-type {
       display: block;
       font-family: TradeGothicLTStd-Cn18;
-      font-size: 0.8em;
+      font-size: $font-xxx-large;
       font-weight: 400;
       margin: 10px 0 15px 0;
     }
@@ -105,15 +102,13 @@
   }
 
   .copy {
-
-    @include susy-breakpoint($bp-screen-md, $susy) {
+    @include media-breakpoint-up(md) {
       font-size: $font-large;
     }
   }
 }
 
 .wrapper-signatories {
-
   img {
     max-width: 100%;
     max-height: 150px;
@@ -121,7 +116,7 @@
 }
 
 .signatory {
-  margin-top: spacing-vertical(small);
+  @extend .mt-4;
 
   .signatory-signature {
     max-width: 60%;
@@ -129,21 +124,19 @@
   }
 
   .signatory-name {
-    margin-top: spacing-vertical(x-small);
-    margin-bottom: 0;
+    @extend .mt-2, .mb-0, .pt-2;
     border-top: 0.125rem solid $gray-300;
-    padding-top: spacing-vertical(x-small);
-    color: $headings-emphasized-color;
+    color: $black;
     font-family: TradeGothicLTStd-BdCn20;
-    font-size: $font-small;
-    font-weight: $headings-font-weight-bold;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
   }
 
   .signatory-credentials {
-    @extend %copy-micro;
     color: $gray-600;
     display: inline;
-    font-size: $font-small;
+    font-size: $font-size-sm;
+    line-height: $line-height-small;
 
     .role {
       font-family: TradeGothicLTStd-Cn18;

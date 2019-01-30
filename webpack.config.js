@@ -1,7 +1,6 @@
 const path = require('path');
 const glob = require('glob');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const PurifyCSSPlugin = require('purifycss-webpack');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require('webpack');
 
 
@@ -19,11 +18,8 @@ function generateConfig(theme) {
         },
 
         plugins: [
-            new ExtractTextPlugin('css/[name].css'),
-            new PurifyCSSPlugin({
-                minimize: false,
-                verbose: true,
-                paths: glob.sync(path.join(__dirname, `edx_credentials_themes/templates/${theme}/**/*.html`))
+            new MiniCssExtractPlugin({
+                filename: 'css/[name].css'
             })
         ],
 
@@ -31,17 +27,19 @@ function generateConfig(theme) {
             rules: [
                 {
                     test: /\.s?css$/,
-                    use: ExtractTextPlugin.extract({
-                        fallback: 'style-loader',
-                        use: [
-                            {
-                                loader: 'css-loader'
-                            },
-                            {
-                                loader: 'sass-loader'
-                            }
-                        ]
-                    })
+                    use: [
+                      'style-loader',
+                      MiniCssExtractPlugin.loader,
+                      'css-loader',
+                      {
+                        loader: 'sass-loader',
+                        options: {
+                          includePaths: [
+                            path.join(__dirname, 'node_modules'),
+                          ],
+                        },
+                      },
+                    ]
                 },
                 {
                     test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
