@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2017-10-27 15:09-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 17:23+0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -40,13 +40,13 @@ msgstr ""
 #. Translators: MicroMasters should not be translated, this phrase is preceded by the learner's name and followed by a program title
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:16
 msgid ""
-"has successfully completed all courses and received passing grades for a "
-"MicroMasters credential in"
+"has successfully completed all courses and received passing grades to earn a "
+"MicroMasters program certificate in"
 msgstr ""
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
-msgid "MicroMasters credential"
+msgid "MicroMasters program certificate"
 msgstr ""
 
 #. Translators: MicroMasters should not be translated
@@ -126,19 +126,19 @@ msgid ""
 "Program."
 msgstr ""
 
-#: templates/mitpe/_footer.html:12
+#: templates/mitpe/_footer.html:11
 msgid "Terms of Service"
 msgstr ""
 
-#: templates/mitpe/_footer.html:17
+#: templates/mitpe/_footer.html:16
 msgid "Privacy Policy"
 msgstr ""
 
-#: templates/mitpe/_footer.html:28
+#: templates/mitpe/_footer.html:27
 msgid "All rights reserved except where noted."
 msgstr ""
 
-#: templates/mitpe/_footer.html:36
+#: templates/mitpe/_footer.html:35
 msgid "Powered by Open edX"
 msgstr ""
 
@@ -150,15 +150,15 @@ msgstr ""
 msgid "has successfully completed the"
 msgstr ""
 
-#: templates/mitpe/credentials/programs/base.html:40
+#: templates/mitpe/credentials/programs/base.html:47
 msgid "held during"
 msgstr ""
 
-#: templates/mitpe/credentials/programs/base.html:52
+#: templates/mitpe/credentials/programs/base.html:58
 msgid "Noted by"
 msgstr ""
 
-#: templates/mitpe/credentials/programs/base.html:81
+#: templates/mitpe/credentials/programs/base.html:87
 #, python-format
 msgid ""
 "For tips and tricks on printing your certificate, view the %(link_start)sWeb "
