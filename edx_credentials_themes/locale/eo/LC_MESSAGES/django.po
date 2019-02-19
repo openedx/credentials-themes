@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-10-27 15:09-0400\n"
+"POT-Creation-Date: 2019-02-19 17:23+0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -51,16 +51,17 @@ msgstr ""
 #. by the learner's name and followed by a program title
 #: templates/edx.org/credentials/programs/micromasters/certificate.html
 msgid ""
-"has successfully completed all courses and received passing grades for a "
-"MicroMasters credential in"
+"has successfully completed all courses and received passing grades to earn a"
+" MicroMasters program certificate in"
 msgstr ""
-"häs süççéssfüllý çömplétéd äll çöürsés änd réçéïvéd pässïng grädés för ä "
-"MïçröMästérs çrédéntïäl ïn Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт#"
+"häs süççéssfüllý çömplétéd äll çöürsés änd réçéïvéd pässïng grädés tö éärn ä"
+" MïçröMästérs prögräm çértïfïçäté ïn Ⱡ'σяєм ιρѕυм ∂σłσя#"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html
-msgid "MicroMasters credential"
-msgstr "MïçröMästérs çrédéntïäl Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σ#"
+msgid "MicroMasters program certificate"
+msgstr ""
+"MïçröMästérs prögräm çértïfïçäté Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢тє#"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html
