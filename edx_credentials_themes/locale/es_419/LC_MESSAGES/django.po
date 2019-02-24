@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
-"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
-"POT-Creation-Date: 2017-10-27 15:09-0400\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-19 17:23+0500\n"
 "PO-Revision-Date: 2017-10-17 20:43+0000\n"
 "Last-Translator: e2f_lat_r3 <e2f_lat_r3@outlook.com>, 2017\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
@@ -53,17 +53,14 @@ msgstr ""
 #. by the learner's name and followed by a program title
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:16
 msgid ""
-"has successfully completed all courses and received passing grades for a "
-"MicroMasters credential in"
+"has successfully completed all courses and received passing grades to earn a"
+" MicroMasters program certificate in"
 msgstr ""
-"ha completado correctamente todos los cursos y ha recibido las "
-"calificaciones necesarias para obtener el certificado del programa "
-"MicroMasters en"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
-msgid "MicroMasters credential"
-msgstr "Certificado MicroMasters"
+msgid "MicroMasters program certificate"
+msgstr ""
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
@@ -167,19 +164,19 @@ msgstr ""
 "estudiantes obtengan {link_start}Certificados Verificados{link_end} de cada "
 "uno de los cursos incluidos en el Programa."
 
-#: templates/mitpe/_footer.html:12
+#: templates/mitpe/_footer.html:11
 msgid "Terms of Service"
 msgstr "Condiciones del servicio"
 
-#: templates/mitpe/_footer.html:17
+#: templates/mitpe/_footer.html:16
 msgid "Privacy Policy"
 msgstr "Política de privacidad"
 
-#: templates/mitpe/_footer.html:28
+#: templates/mitpe/_footer.html:27
 msgid "All rights reserved except where noted."
 msgstr "Todos los derechos reservados excepto donde se indique lo contrario."
 
-#: templates/mitpe/_footer.html:36
+#: templates/mitpe/_footer.html:35
 msgid "Powered by Open edX"
 msgstr "Desarrollado por Open edX"
 
@@ -191,15 +188,15 @@ msgstr "Esto certifica que"
 msgid "has successfully completed the"
 msgstr "ha completado correctamente "
 
-#: templates/mitpe/credentials/programs/base.html:40
+#: templates/mitpe/credentials/programs/base.html:47
 msgid "held during"
 msgstr "que se llevó a cabo durante"
 
-#: templates/mitpe/credentials/programs/base.html:52
+#: templates/mitpe/credentials/programs/base.html:58
 msgid "Noted by"
 msgstr "Registrado por"
 
-#: templates/mitpe/credentials/programs/base.html:81
+#: templates/mitpe/credentials/programs/base.html:87
 #, python-format
 msgid ""
 "For tips and tricks on printing your certificate, view the %(link_start)sWeb"
