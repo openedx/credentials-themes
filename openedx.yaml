@@ -2,3 +2,10 @@
 # https://github.com/edx/open-edx-proposals/blob/master/oeps/oep-0002.rst
 
 owner: edx/learner
+
+oeps:
+    oep-7: true
+    oep-18: false
+
+tags:
+    - library
