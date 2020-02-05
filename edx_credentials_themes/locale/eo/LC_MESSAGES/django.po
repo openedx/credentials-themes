@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-24 10:32-0400\n"
+"POT-Creation-Date: 2020-02-05 13:58-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -36,6 +36,47 @@ msgstr ""
 " αłιqυα. υт єηιм α∂ мιηιм νєηιαм, qυιѕ ησѕтяυ∂ єχєя¢ιтαтιση υłłαм¢σ łαвσяιѕ "
 "ηιѕι υт αłιqυιρ єχ єα ¢σммσ∂σ ¢σηѕєqυαт. ∂υιѕ αυтє ιяυяє ∂σłσя ιη "
 "яєρяєнєη∂єяιт ιη νσłυρ#"
+
+#. Translators: MicroBachelors should not be translated, this phrase is
+#. preceded by the learner's name and followed by a program title
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html
+msgid ""
+"has successfully completed all courses and received passing grades to earn a"
+" MicroBachelors program certificate in"
+msgstr ""
+"häs süççéssfüllý çömplétéd äll çöürsés änd réçéïvéd pässïng grädés tö éärn ä"
+" MïçröBäçhélörs prögräm çértïfïçäté ïn Ⱡ'σяєм ιρѕυм ∂σł#"
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html
+msgid "MicroBachelors program certificate"
+msgstr ""
+"MïçröBäçhélörs prögräm çértïfïçäté Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢тєт#"
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html
+msgid "About the edX MicroBachelors program certificate"
+msgstr ""
+"Àßöüt thé édX MïçröBäçhélörs prögräm çértïfïçäté Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт "
+"αмєт, ¢σηѕє¢тєтυя α#"
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html
+#, python-brace-format
+msgid ""
+"An edX MicroBachelors credential signifies that the learner has completed a "
+"group of courses that add up to a rich understanding of an area of study. "
+"Completion of MicroBachelors programs requires that learners earn "
+"{link_start}Verified Certificates{link_end} from each of the courses "
+"included in the program."
+msgstr ""
+"Àn édX MïçröBäçhélörs çrédéntïäl sïgnïfïés thät thé léärnér häs çömplétéd ä "
+"gröüp öf çöürsés thät ädd üp tö ä rïçh ündérständïng öf än äréä öf stüdý. "
+"Çömplétïön öf MïçröBäçhélörs prögräms réqüïrés thät léärnérs éärn "
+"{link_start}Vérïfïéd Çértïfïçätés{link_end} fröm éäçh öf thé çöürsés "
+"ïnçlüdéd ïn thé prögräm. Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢тєтυя "
+"α∂ιριѕι¢ιηg єłιт, ѕє∂ ∂σ єιυѕмσ∂ тємρσя ιη¢ι∂ι∂υηт υт łαвσяє єт ∂σłσяє мαgηα"
+" αłιqυα. υт єηιм α∂ мιηιм νєηιαм, qυιѕ ησѕтяυ∂ єχєя¢ιтαтιση υłłαм¢σ łα#"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html
