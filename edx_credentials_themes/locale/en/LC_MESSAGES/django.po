@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-24 10:32-0400\n"
+"POT-Creation-Date: 2020-02-05 13:58-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -27,6 +27,34 @@ msgid ""
 "the world’s best universities, including MIT, Harvard, Berkeley, University "
 "of Texas, and many others. edX is a non-profit online initiative created by "
 "founding partners Harvard and MIT."
+msgstr ""
+
+#. Translators: MicroBachelors should not be translated, this phrase is preceded by the learner's name and followed by a program title
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html:7
+msgid ""
+"has successfully completed all courses and received passing grades to earn a "
+"MicroBachelors program certificate in"
+msgstr ""
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
+msgid "MicroBachelors program certificate"
+msgstr ""
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
+msgid "About the edX MicroBachelors program certificate"
+msgstr ""
+
+#. Translators: MicroBachelors should not be translated
+#: templates/edx.org/credentials/programs/microbachelors/certificate.html:22
+#, python-brace-format
+msgid ""
+"An edX MicroBachelors credential signifies that the learner has completed a "
+"group of courses that add up to a rich understanding of an area of study. "
+"Completion of MicroBachelors programs requires that learners earn "
+"{link_start}Verified Certificates{link_end} from each of the courses "
+"included in the program."
 msgstr ""
 
 #. Translators: MicroMasters should not be translated
