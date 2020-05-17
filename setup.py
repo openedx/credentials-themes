@@ -9,6 +9,29 @@ import sys
 from setuptools import setup
 
 
+def load_requirements(*requirements_paths):
+    """
+    Load all requirements from the specified requirements files.
+    Returns a list of requirement strings.
+    """
+    requirements = set()
+    for path in requirements_paths:
+        with open(path) as reqs:
+            requirements.update(
+                line.split('#')[0].strip() for line in reqs
+                if is_requirement(line.strip())
+            )
+    return list(requirements)
+
+
+def is_requirement(line):
+    """
+    Return True if the requirement line is a package requirement;
+    that is, it is not blank, a comment, a URL, or an included file.
+    """
+    return line and not line.startswith(('-r', '#', '-e', 'git+', '-c'))
+
+
 def get_version(*file_paths):
     """
     Extract the version string from the file at the given relative path fragments.
@@ -43,23 +66,18 @@ setup(
         'edx_credentials_themes',
     ],
     include_package_data=True,
-    install_requires=[
-        "Django>=1.8"
-    ],
+    install_requires=load_requirements('requirements/base.in'),
     zip_safe=False,
     keywords='Django edx',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'Framework :: Django',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
-        'Framework :: Django :: 1.10',
         'Intended Audience :: Developers',
         'License :: Other/Proprietary License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
+        'Programming Language :: Python',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.8',
+        'Framework :: Django',
+        'Framework :: Django :: 2.2',
     ],
 )

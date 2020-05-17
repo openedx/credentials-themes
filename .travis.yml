@@ -4,6 +4,7 @@ language: python
 
 python:
   - 3.5
+  - 3.8
 
 addons:
   apt:
@@ -17,6 +18,7 @@ cache:
 
 install:
   - make requirements
+  - pip install -r requirements/travis.txt
 
 script:
   - make build

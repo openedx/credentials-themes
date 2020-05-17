@@ -1,2 +1,0 @@
-edx-i18n-tools
-transifex-client==0.12.4
