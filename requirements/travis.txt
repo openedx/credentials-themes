@@ -4,22 +4,20 @@
 #
 #    make upgrade
 #
-certifi==2020.4.5.1       # via -r requirements/test.txt, requests
-chardet==3.0.4            # via -r requirements/test.txt, requests
-django==2.2.12            # via -r requirements/test.txt, edx-i18n-tools
-edx-i18n-tools==0.5.3     # via -r requirements/test.txt
-idna==2.9                 # via -r requirements/test.txt, requests
-importlib-metadata==1.6.0  # via -r requirements/test.txt, path
-path.py==12.4.0           # via -r requirements/test.txt, edx-i18n-tools
-path==13.1.0              # via -r requirements/test.txt, path.py
-polib==1.1.0              # via -r requirements/test.txt, edx-i18n-tools
-python-slugify==1.2.6     # via -r requirements/test.txt, transifex-client
-pytz==2020.1              # via -r requirements/test.txt, django
-pyyaml==5.3.1             # via -r requirements/test.txt, edx-i18n-tools
-requests==2.23.0          # via -r requirements/test.txt, transifex-client
-six==1.14.0               # via -r requirements/test.txt, edx-i18n-tools, transifex-client
-sqlparse==0.3.1           # via -r requirements/test.txt, django
-transifex-client==0.13.9  # via -r requirements/test.txt
-unidecode==1.1.1          # via -r requirements/test.txt, python-slugify
-urllib3==1.25.9           # via -r requirements/test.txt, requests, transifex-client
-zipp==1.2.0               # via -r requirements/test.txt, importlib-metadata
+certifi==2020.4.5.1       # via -r test.txt, requests
+chardet==3.0.4            # via -r test.txt, requests
+django==2.2.13            # via -c constraints.txt, -r test.txt, edx-i18n-tools
+edx-i18n-tools==0.5.3     # via -r test.txt
+idna==2.9                 # via -r test.txt, requests
+path.py==12.4.0           # via -r test.txt, edx-i18n-tools
+path==13.1.0              # via -r test.txt, path.py
+polib==1.1.0              # via -r test.txt, edx-i18n-tools
+python-slugify==1.2.6     # via -r test.txt, transifex-client
+pytz==2020.1              # via -r test.txt, django
+pyyaml==5.3.1             # via -r test.txt, edx-i18n-tools
+requests==2.23.0          # via -r test.txt, transifex-client
+six==1.14.0               # via -r test.txt, edx-i18n-tools, transifex-client
+sqlparse==0.3.1           # via -r test.txt, django
+transifex-client==0.13.9  # via -r test.txt
+unidecode==1.1.1          # via -r test.txt, python-slugify
+urllib3==1.25.9           # via -r test.txt, requests, transifex-client

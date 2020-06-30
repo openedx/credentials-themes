@@ -6,10 +6,9 @@
 #
 certifi==2020.4.5.1       # via requests
 chardet==3.0.4            # via requests
-django==2.2.12            # via edx-i18n-tools
-edx-i18n-tools==0.5.3     # via -r requirements/base.in
+django==2.2.13            # via -c constraints.txt, -r base.in, edx-i18n-tools
+edx-i18n-tools==0.5.3     # via -r base.in
 idna==2.9                 # via requests
-importlib-metadata==1.6.0  # via path
 path.py==12.4.0           # via edx-i18n-tools
 path==13.1.0              # via path.py
 polib==1.1.0              # via edx-i18n-tools
@@ -19,7 +18,6 @@ pyyaml==5.3.1             # via edx-i18n-tools
 requests==2.23.0          # via transifex-client
 six==1.14.0               # via edx-i18n-tools, transifex-client
 sqlparse==0.3.1           # via django
-transifex-client==0.13.9  # via -r requirements/base.in
+transifex-client==0.13.9  # via -r base.in
 unidecode==1.1.1          # via python-slugify
 urllib3==1.25.9           # via requests, transifex-client
-zipp==1.2.0               # via importlib-metadata
