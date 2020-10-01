@@ -34,3 +34,5 @@ Testing credentials-themes changes in devstack
 See instructions_ on the OpenEdX Wiki.
 
 .. _instructions: https://openedx.atlassian.net/wiki/spaces/SOL/pages/608698737/Testing+WL+themes+in+devstack
+
+Hi!
