@@ -1,7 +1,7 @@
 edX Credentials Themes  |Travis|_
 =================================
-.. |Travis| image:: https://travis-ci.org/edx/credentials-themes.svg?branch=master
-.. _Travis: https://travis-ci.org/edx/credentials-themes
+.. |Travis| image:: https://travis-ci.com/edx/credentials-themes.svg?branch=master
+.. _Travis: https://travis-ci.com/edx/credentials-themes
 
 This repository holds themes for the edX Credentials Service.
 
