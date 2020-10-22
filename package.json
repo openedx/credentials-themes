@@ -14,7 +14,7 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/edx/credentials-themes",
   "devDependencies": {
-    "@edx/edx-bootstrap": "^1.0.3",
+    "@edx/paragon": "^12.0.4",
     "bi-app-sass": "^1.1.0",
     "bootstrap": "^4.2.1",
     "css-loader": "^2.1.0",
@@ -23,7 +23,7 @@
     "imports-loader": "^0.8.0",
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.14.7",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",

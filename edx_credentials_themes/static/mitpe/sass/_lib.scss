@@ -3,5 +3,7 @@
 
 // About: third party libraries and dependencies import
 
-@import '~@edx/edx-bootstrap/sass/open-edx/theme';
-@import '~bootstrap/scss/bootstrap';
+@import "~@edx/paragon/scss/edx/fonts.scss";
+@import "~@edx/paragon/scss/edx/_variables.scss";
+@import "~@edx/paragon/scss/core/core.scss";
+@import "~@edx/paragon/scss/edx/_overrides.scss";
