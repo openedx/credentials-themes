@@ -14,6 +14,7 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/edx/credentials-themes",
   "devDependencies": {
+    "@edx/edx-bootstrap": "^1.0.3",
     "@edx/paragon": "^12.0.4",
     "bi-app-sass": "^1.1.0",
     "bootstrap": "^4.2.1",
