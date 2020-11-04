@@ -16,7 +16,7 @@ accessible by the Credentials Service when the package is installed.
 i18n
 -----
 
-Run `make i18n_requirements` to install dependencies necessary for running i18n commands. Note: this will install
+Run `make base_requirements` to install dependencies necessary for running i18n commands. Note: this will install
 Django and is best done from within a Python virtualenv.
 
 To mark strings in templates/partials for translation, simply wrap them in one of Django's built-in translation functions.

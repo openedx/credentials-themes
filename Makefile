@@ -1,5 +1,15 @@
-.DEFAULT_GOAL := test
+.DEFAULT_GOAL := help
+
+.PHONY: help build build.watch compile_translations detect_changed_source_translations dummy_translations \
+        extract_translations generate_translations base_requirements pull_translations push_translations \
+        requirements test upgrade validate_translations
+
 NODE_BIN=$(CURDIR)/node_modules/.bin
+
+# Generates a help message. Borrowed from https://github.com/pydanny/cookiecutter-djangopackage.
+help: ## display this help message
+	@echo "Please use \`make <target>\` where <target> is one of"
+	@awk -F ':.*?## ' '/^[a-zA-Z]/ && NF==2 {printf "\033[36m  %-25s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST) | sort
 
 build:
 	$(NODE_BIN)/webpack --config webpack.config.js --display-error-details --progress --optimize-minimize
@@ -24,8 +34,13 @@ generate_translations: extract_translations dummy_translations compile_translati
 base_requirements:
 	pip install -r ./requirements/base.txt
 
-pull_translations:
+# This Make target should not be removed since it is relied on by a Jenkins job (`edx-internal/tools-edx-jenkins/translation-jobs.yml`), using `ecommerce-scripts/transifex`.
+pull_translations: ## Pull translations from Transifex
 	tx pull -af --mode reviewed
+
+# This Make target should not be removed since it is relied on by a Jenkins job (`edx-internal/tools-edx-jenkins/translation-jobs.yml`), using `ecommerce-scripts/transifex`.
+push_translations: ## Push source translation files (.po) to Transifex
+	tx push -s
 
 requirements: base_requirements
 	npm install
