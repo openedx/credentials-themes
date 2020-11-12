@@ -6,6 +6,7 @@
 # Anthony Mangano <amangano@edx.org>, 2017
 # d140edf1d29adbbec4ddbec5a4f4eba5, 2017
 # Bill DeRusha <bill@edx.org>, 2018
+# Gerard Alarcón Montserrat <galarcon@edx.org>, 2020
 # 
 msgid ""
 msgstr ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-05 13:58-0500\n"
 "PO-Revision-Date: 2017-10-17 20:43+0000\n"
-"Last-Translator: Bill DeRusha <bill@edx.org>, 2018\n"
+"Last-Translator: Gerard Alarcón Montserrat <galarcon@edx.org>, 2020\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -46,16 +47,19 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroBachelors program certificate in"
 msgstr ""
+"ha completado correctamente todos los cursos y ha recibido las "
+"calificaciones necesarias para obtener el certificado del programa de "
+"MicroBachelors en"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:12
 msgid "MicroBachelors program certificate"
-msgstr ""
+msgstr "certificado de programa MicroBachelors"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:17
 msgid "About the edX MicroBachelors program certificate"
-msgstr ""
+msgstr "Acerca de la credencial MicroBachelors de edX"
 
 #. Translators: MicroBachelors should not be translated
 #: templates/edx.org/credentials/programs/microbachelors/certificate.html:22
@@ -67,6 +71,11 @@ msgid ""
 "{link_start}Verified Certificates{link_end} from each of the courses "
 "included in the program."
 msgstr ""
+"Una credencial MicroBachelors de edX implica que el estudiante ha completado"
+" un grupo de cursos que resultan en una rica comprensión de un área de "
+"estudio. La finalización de los Programas MicroBachelors requiere que los "
+"estudiantes obtengan {link_start}Certificados Verificados{link_end} de cada "
+"uno de los cursos incluidos en el Programa."
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:8
@@ -85,11 +94,14 @@ msgid ""
 "has successfully completed all courses and received passing grades to earn a"
 " MicroMasters program certificate in"
 msgstr ""
+"ha completado correctamente todos los cursos y ha recibido las "
+"calificaciones necesarias para obtener el certificado del programa de "
+"MicroMasters en"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:21
 msgid "MicroMasters program certificate"
-msgstr ""
+msgstr "certificado de programa MicroMasters"
 
 #. Translators: MicroMasters should not be translated
 #: templates/edx.org/credentials/programs/micromasters/certificate.html:26
