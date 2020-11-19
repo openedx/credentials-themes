@@ -55,7 +55,6 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	pip-compile --upgrade -o requirements/pip_tools.txt requirements/pip_tools.in
 	pip-compile --upgrade -o requirements/base.txt requirements/base.in
 	pip-compile --upgrade -o requirements/test.txt requirements/test.in
-	pip-compile --upgrade -o requirements/travis.txt requirements/travis.in
 
 validate_translations: generate_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate
