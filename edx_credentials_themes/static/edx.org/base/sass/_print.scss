@@ -1,0 +1,136 @@
+// ------------------------------
+// edX Web Certificates: Print Specific Styling
+
+// About: styling specific for print layouts.
+
+// #UTILITIES
+// #BASE
+// #LAYOUT
+// #ELEMENTS
+
+// ------------------------------
+// #UTILITIES
+// ------------------------------
+
+// page set up - only available to modern browsers now
+@page {
+    size: landscape;
+}
+
+@media print {
+    .accomplishment-title {
+        margin: 0 !important;
+    }
+
+    .wrapper-accomplishment-statement {
+        padding: 35px 0 !important;
+    }
+
+    .accomplishment-signatories {
+        float: right;
+        width: auto
+    }
+    .accomplishment-statement {
+        float: left;
+        margin: 0 !important;
+    }
+
+    .wrapper-accomplishment-orgs {
+        float: right;
+        width: auto !important;
+        margin: 0 0 30px !important;
+    }
+
+    // helpers
+    %print-no-background {
+        background: none !important;
+    }
+
+    %print-hide {
+        display: none !important;
+    }
+
+    %print-black-on-white {
+        background: $white !important;
+        color: $black !important;
+    }
+
+    %print-layout-wrapper {
+        padding: 0 !important;
+    }
+
+    %print-rendering-section {
+        margin-bottom: 1.25rem;
+        border-bottom: none !important;
+        padding-bottom: 0 !important;
+
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+}
+
+// ------------------------------
+// #BASE
+// ------------------------------
+@media print {
+
+    // prevent images from bleeding over the edge of the printed page
+    img {
+       max-width: 100% !important;
+    }
+
+    // prevent large elements from being split across multiple pages
+    ul, img {
+       page-break-inside: avoid;
+    }
+
+    // reset body/view properties
+    html,
+    body {
+        @extend %print-black-on-white;
+    }
+
+    body {
+        margin: 2.5rem 0.625rem 0 0.625rem !important;
+        padding: 0;
+        height: auto;
+    }
+
+    .wrapper-view {
+        margin-bottom: 0 !important;
+    }
+
+    [class^="wrapper"]::after {
+        display: none;
+    }
+}
+
+// force background images and colors
+@media print and (color) {
+   * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+   }
+}
+
+// ------------------------------
+// #LAYOUT
+// ------------------------------
+@media print {
+
+    // hide elements not needed for print rendering
+    .wrapper-banner-user,
+    .wrapper-header,
+    .wrapper-accomplishment-metadata,
+    .wrapper-accomplishment-support,
+    .wrapper-footer {
+        @extend %print-hide;
+    }
+
+    // remove layout wrappers' padding
+    .wrapper-accomplishment-rendering {
+        @extend %print-layout-wrapper;
+    }
+}

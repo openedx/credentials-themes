@@ -1,0 +1,12 @@
+// ------------------------------
+// edX Web Certificates: Config
+
+// About: variable and configuration overrides
+
+// ------------------------------
+// #VARIABLES
+// ------------------------------
+$fa-font-path: '~font-awesome/fonts';
+
+// Without this, bootstrap's print mode is too wide
+$print-body-min-width: 0;

@@ -1,0 +1,48 @@
+// ------------------------------
+// // edX Web Certificates: Base
+
+// About: Base resets and definitions (using shared resources from elements when appropriate).
+
+// ------------------------------
+// #RESET
+// ------------------------------
+
+// ------------------------------
+// #BASE
+// ------------------------------
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: $white;
+}
+
+// ------------------------------
+// #TYPOGRAPHY
+// ------------------------------
+a {
+  color: $blue;
+}
+
+// ------------------------------
+// #ICONS
+// ------------------------------
+.edx-e {
+    fill: $edx-e-color;
+}
+
+.edx-e-d-overlap {
+    fill: $edx-e-d-overlap-color;
+}
+
+.edx-d {
+    fill: $edx-d-color;
+}
+
+.edx-d-x-overlap {
+    fill: $edx-d-x-overlap-color;
+}
+
+.edx-x {
+    fill: $edx-x-color;
+}
