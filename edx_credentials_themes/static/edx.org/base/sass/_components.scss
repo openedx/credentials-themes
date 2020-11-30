@@ -1,0 +1,176 @@
+// ------------------------------
+// // edX Web Certificates: Components
+
+// About: styling for specific UI components ranging from global to modular.
+
+// #HEADER APP
+// #BANNER
+// #INTRODUCTION
+// #SUPPORT
+// #FOOTER
+
+// ------------------------------
+// #HEADER APP
+// ------------------------------
+.wrapper-header {
+    @extend %divider-2;
+    border-bottom-color: $gray-200;
+    background: $white;
+}
+
+.header-app {
+
+    .logo {
+        @extend %reset-link;
+    }
+}
+
+
+// ------------------------------
+// #BANNER
+// ------------------------------
+.wrapper-banner-user {
+  background-color: $gray-700;
+  border-top: 1px solid $gray-400;
+  border-bottom: 1px solid $gray-400;
+  color: $gray-100;
+}
+
+.banner-user {
+
+    .message-title {
+        @extend .h6;
+        color: $gray-100;
+        font-weight: $font-weight-bold;
+
+        @include media-breakpoint-up(md) {
+            font-size: $font-size-lg; // @extend .h5;
+        }
+    }
+
+    .message-copy {
+        @extend %text-meta;
+        color: $gray-100;
+
+        @include media-breakpoint-up(md) {
+            font-size: $font-size-base;
+        }
+    }
+
+    .message-actions-box {
+      @extend .p-1;
+      display: inline-block;
+      border: 1px solid $gray-100;
+      border-radius: $card-border-radius;
+      background-color: $gray-300;
+    }
+
+    .action {
+      @extend .btn;
+      @extend .rounded;
+      border: 1px solid transparent;
+      padding: 0.625rem;
+      background-color: transparent;
+      font-size: $font-x-large;
+      color: $gray-600;
+
+      .share-link {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .icon {
+        display: block;
+        height: 1em;
+        width: 1em;
+        margin: 0 -2px -2px 0; // center icons
+        fill: currentColor;
+        font-style: normal;
+      }
+
+        .action-label {
+          @include margin-right(0.3125rem);
+        }
+
+        // CASE: icon display only
+        &.icon-only {
+
+            .action-label {
+                @extend .sr-only;
+            }
+        }
+
+        &:hover {
+          background-color: $gray-100;
+          color: $link-hover-color;
+        }
+
+        &.action-share-facebook:hover {
+          background-color: $facebook-blue;
+          color: $gray-100;
+        }
+
+        &.action-share-twitter:hover {
+          background-color: $twitter-blue;
+          color: $gray-100;
+        }
+
+        &.action-share-linkedin:hover {
+          background-color: $linkedin-blue;
+          color: $gray-100;
+        }
+    }
+}
+
+
+// ------------------------------
+// #SUPPORT
+// ------------------------------
+.support-copy {
+  @extend %text-meta;
+}
+
+.accomplishment-metadata-title {
+  @extend %h7;
+}
+
+.accomplishment-metadata-copy {
+  @extend %text-meta;
+
+  .metadata-copy-list {
+    @extend .list-unstyled;
+    @extend .mb-4;
+  }
+
+  .emphasized {
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+// ------------------------------
+// #FOOTER
+// ------------------------------
+.footer-app {
+    @extend %text-micro;
+}
+
+.footer-app-nav {
+
+    .list {
+        @extend .list-unstyled;
+
+        .nav-item {
+          display: inline-block;
+          @extend .mr-2;
+        }
+    }
+}
+
+.footer-app-related {
+
+  .logo-openedx {
+    width: 120px;
+  }
+}
+
