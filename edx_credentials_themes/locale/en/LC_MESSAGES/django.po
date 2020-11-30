@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-05 13:58-0500\n"
+"POT-Creation-Date: 2020-11-30 14:20-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -152,43 +152,4 @@ msgid ""
 "Completion of XSeries Programs requires that learners earn {link_start}"
 "Verified Certificates{link_end} from each of the courses included in the "
 "Program."
-msgstr ""
-
-#: templates/mitpe/_footer.html:11
-msgid "Terms of Service"
-msgstr ""
-
-#: templates/mitpe/_footer.html:16
-msgid "Privacy Policy"
-msgstr ""
-
-#: templates/mitpe/_footer.html:27
-msgid "All rights reserved except where noted."
-msgstr ""
-
-#: templates/mitpe/_footer.html:35
-msgid "Powered by Open edX"
-msgstr ""
-
-#: templates/mitpe/credentials/programs/base.html:30
-msgid "This is to certify that"
-msgstr ""
-
-#: templates/mitpe/credentials/programs/base.html:34
-msgid "has successfully completed the"
-msgstr ""
-
-#: templates/mitpe/credentials/programs/base.html:47
-msgid "held during"
-msgstr ""
-
-#: templates/mitpe/credentials/programs/base.html:58
-msgid "Noted by"
-msgstr ""
-
-#: templates/mitpe/credentials/programs/base.html:87
-#, python-format
-msgid ""
-"For tips and tricks on printing your certificate, view the %(link_start)sWeb "
-"Certificates help documentation%(link_end)s."
 msgstr ""
