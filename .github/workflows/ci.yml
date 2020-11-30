@@ -23,7 +23,6 @@ jobs:
           sudo apt install gettext
           make requirements
           pip install -r requirements/test.txt
-          make build
+          # make build - Commenting out until a follow on PR where we will add in the themes for edx.org
           make test
           make validate_translations
-

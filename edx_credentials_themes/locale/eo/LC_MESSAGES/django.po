@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-05 13:58-0500\n"
+"POT-Creation-Date: 2020-11-30 14:20-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -217,46 +217,3 @@ msgstr ""
 "α∂ιριѕι¢ιηg єłιт, ѕє∂ ∂σ єιυѕмσ∂ тємρσя ιη¢ι∂ι∂υηт υт łαвσяє єт ∂σłσяє мαgηα"
 " αłιqυα. υт єηιм α∂ мιηιм νєηιαм, qυιѕ ησѕтяυ∂ єχєя¢ιтαтιση υłłαм¢σ łαвσяιѕ "
 "ηιѕι #"
-
-#: templates/mitpe/_footer.html
-msgid "Terms of Service"
-msgstr "Térms öf Sérvïçé Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αм#"
-
-#: templates/mitpe/_footer.html
-msgid "Privacy Policy"
-msgstr "Prïväçý Pölïçý Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт#"
-
-#: templates/mitpe/_footer.html
-msgid "All rights reserved except where noted."
-msgstr ""
-"Àll rïghts résérvéd éxçépt whéré nötéd. Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, "
-"¢σηѕє¢тєтυя#"
-
-#: templates/mitpe/_footer.html
-msgid "Powered by Open edX"
-msgstr "Pöwéréd ßý Öpén édX Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт,#"
-
-#: templates/mitpe/credentials/programs/base.html
-msgid "This is to certify that"
-msgstr "Thïs ïs tö çértïfý thät Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σ#"
-
-#: templates/mitpe/credentials/programs/base.html
-msgid "has successfully completed the"
-msgstr "häs süççéssfüllý çömplétéd thé Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢т#"
-
-#: templates/mitpe/credentials/programs/base.html
-msgid "held during"
-msgstr "héld dürïng Ⱡ'σяєм ιρѕυм ∂σłσя #"
-
-#: templates/mitpe/credentials/programs/base.html
-msgid "Noted by"
-msgstr "Nötéd ßý Ⱡ'σяєм ιρѕυм ∂#"
-
-#: templates/mitpe/credentials/programs/base.html
-#, python-format
-msgid ""
-"For tips and tricks on printing your certificate, view the %(link_start)sWeb"
-" Certificates help documentation%(link_end)s."
-msgstr ""
-"För tïps änd trïçks ön prïntïng ýöür çértïfïçäté, vïéw thé %(link_start)sWéß"
-" Çértïfïçätés hélp döçüméntätïön%(link_end)s. Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмє#"
