@@ -58,18 +58,4 @@ $stripe-grey: #F9FAFC;
     justify-content: flex-end;
   }
 
-  .view-record-btn {
-    border: 1px solid $btn-blue;
-    color: $btn-blue;
-    background-color: transparent;
-    display: block;
-    width: 100%;
-    white-space: normal;
-
-    &:hover,
-    &:active,
-    &:focus {
-      background: $btn-blue-hover-light;
-    }
-  }
 }
