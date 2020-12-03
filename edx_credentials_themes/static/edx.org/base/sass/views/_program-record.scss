@@ -67,23 +67,6 @@ $record-border-color: #C2C2C2;
     background-color: #008100;
   }
 
-  .btn-primary {
-    background-color: $btn-blue;
-  }
-
-  // Paragon uses btn-secondary, but we want the effect of btn-outline-primary
-  .btn-outline-primary, .btn-secondary {
-    color: $btn-blue;
-    background-color: transparent;
-
-    &:hover,
-    &:active,
-    &:focus {
-      color: $white;
-      background-color: $btn-blue;
-    }
-  }
-
   // Needed to override paragon default .disabled styles
   .modal-footer {
     button[disabled] {
