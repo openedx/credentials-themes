@@ -1,0 +1,203 @@
+// ------------------------------
+// // edX Web Certificates: Certificate Rendering - Layouts
+
+// About: (specifically for certificate rendering) styling layouts and responsive support.
+
+// #ACCOMPLISHMENT - BASE
+
+// ------------------------------
+// #ACCOMPLISHMENT - BASE
+// ------------------------------
+.accomplishment-rendering {
+  margin: 2%;
+  border: 1px solid $gray-500;
+  padding: 7% 5% 5% 5% !important;
+  background-color: $gray-100;
+  box-shadow: 0 1px 2px 1px rgba(167, 164, 164, 0.25);
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    @include text-align(left);
+    padding: 5% 5% 3% !important;
+  }
+
+  .background-watermark .watermark-svg {
+    position: absolute;
+    left: inherit;
+    top: inherit;
+    opacity: 0.03;
+  }
+
+  .micromasters-watermark {
+    fill: $micromasters-watermark-color;
+  }
+
+  .xseries-watermark {
+    fill: $xseries-color;
+  }
+
+  .professional-certificate-watermark {
+    fill: $professional-certificate-watermark-color;
+  }
+}
+
+.wrapper-accomplishment-title {
+  @extend .row;
+  @extend .ml-0, .mr-0;
+
+  .accomplishment-title {
+    @extend .col-md-6;
+    @extend .mt-2, .mb-4, .p-0;
+    display: block;
+
+    svg {
+      width: 250px;
+    }
+
+    @include media-breakpoint-up(md) {
+      display: inline-block;
+      vertical-align: middle;
+      svg {
+        width: 275px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      svg {
+        width: 300px;
+      }
+    }
+
+    .micromasters-logo {
+      fill: $micromasters-color;
+    }
+
+    .xseries-logo {
+      fill: $xseries-color;
+    }
+
+    .professional-certificate-logo {
+      fill: $professional-certificate-color;
+    }
+  }
+}
+
+.wrapper-accomplishment-orgs {
+  @extend .col-md-6;
+  @extend .mt-md-0, .mb-md-5, .mt-4, .mb-4, .p-0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    @include text-align(right);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.wrapper-accomplishment-statement {
+  @extend .row;
+  @extend .ml-0, .mr-0;
+}
+
+.accomplishment-statement {
+  @extend .col-lg-8;
+  @extend .mt-0, .mb-5, .pb-4, .pl-0, .pr-0;
+  border-bottom: 1px solid $gray-500;
+
+  @include media-breakpoint-up(lg) {
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+  }
+
+  .accomplishment-recipient,
+  .accomplishment-course,
+  .accomplishment-program,
+  .accomplishment-summary,
+  .accomplishment-statement-detail {
+    @extend .mb-4;
+    display: block;
+  }
+}
+
+.accomplishment-signatories {
+  @extend .col-lg-4;
+  @extend .pb-lg-0, .pb-4, .pl-0, .pr-0;
+  border-bottom: 1px solid $gray-500;
+
+  @include media-breakpoint-up(lg) {
+    @include text-align(right);
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 0;
+  }
+}
+
+.list-signatories {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.signatory {
+  width: 100%;
+
+  @include media-breakpoint-only(md) {
+    width: 50%;
+  }
+}
+
+.wrapper-accomplishment-stamps {
+  @extend .mt-5;
+}
+
+.accomplishment-stamps {
+  @extend .list-unstyled;
+  white-space: nowrap;
+
+  .accomplishment-stamp-platform {
+    margin-bottom: 15px;
+
+    // FIXME This is edx.org-specific and belongs in a themed stylesheet in credentials-themes
+    svg.edx-logo {
+      width: 125px;
+      height: 57.8px;
+      margin-top: 2px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      vertical-align: middle;
+      @include margin-right(25px);
+      margin-bottom: 10px;
+    }
+  }
+
+  .accomplishment-stamp-date {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      vertical-align: middle;
+      @include margin-right(25px);
+    }
+  }
+
+  .accomplishment-stamp-validity {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      vertical-align: middle;
+      @include margin-right(25px);
+    }
+  }
+
+  .accomplishment-stamp-effort {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

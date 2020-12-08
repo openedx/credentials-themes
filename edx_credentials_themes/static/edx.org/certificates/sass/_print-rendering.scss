@@ -1,0 +1,198 @@
+// ------------------------------
+// edX Web Certificates: Certificate Rendering - Print Specific Styling
+
+// About: (specifically for certificate rendering) styling specific for print layouts.
+
+// #LAYOUT
+// #ELEMENTS
+// #CASES
+
+// ------------------------------
+// #LAYOUT
+// ------------------------------
+@page {
+  size: landscape;
+}
+
+@media print {
+
+  .certificate {
+    background: $black;
+
+    .accomplishment {
+      max-width: 100%;
+
+      .accomplishment-rendering {
+        @include text-align(left);
+        top: 0 !important;
+        box-shadow: none;
+        padding: 0.625rem 2.5rem !important;
+        background-color: $white;
+
+        .wrapper-accomplishment-title {
+          @include make-row();
+
+          .accomplishment-title {
+            @include make-col-ready();
+            @include make-col(8);
+            @extend %mt-2, %mb-0;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .wrapper-accomplishment-orgs {
+          @include make-col-ready();
+          @include make-col(4);
+          display: inline-block;
+          vertical-align: middle;
+          margin-bottom: 30px !important;
+
+          img {
+            max-width: 100%;
+            max-height: 100px;
+          }
+        }
+
+        .wrapper-accomplishment-statement {
+          @include make-row();
+        }
+
+        .accomplishment-statement {
+          @include make-col-ready();
+          @include make-col(8);
+          @include text-align(left);
+          display: inline-block;
+          vertical-align: top;
+          border-bottom: 0;
+          margin: 0 !important;
+          padding-bottom: 1rem !important;
+        }
+
+        .accomplishment-signatories {
+          @include make-col-ready();
+          @include make-col(4);
+          @include text-align(right);
+          display: inline-block;
+          vertical-align: top;
+          border-bottom: 0;
+          padding-bottom: 0 !important;
+        }
+
+        .list-signatories {
+          display: flex;
+          flex-flow: row wrap;
+        }
+
+        .signatory {
+          @extend %m-0, %mb-2;
+          width: 100%;
+
+          &:last-child {
+            @extend %mb-0;
+          }
+        }
+      }
+    }
+  }
+
+  .wrapper-accomplishment-stamps {
+    margin-top: 0 !important;
+  }
+
+  .accomplishment-stamps {
+    margin-top: 0 !important;
+
+    .accomplishment-stamp-platform {
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      @include margin-right(25px);
+
+      // FIXME This is edx.org-specific and belongs in a themed stylesheet in credentials-themes
+      svg.edx-logo {
+        width: 70px;
+        height: 32.4px;
+      }
+    }
+
+    .accomplishment-stamp-date {
+      display: inline-block;
+      vertical-align: top;
+      @include margin-right(25px);
+    }
+
+    .accomplishment-stamp-validity {
+      display: inline-block;
+      vertical-align: top;
+      @include margin-right(25px);
+    }
+
+    .accomplishment-stamp-effort {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+// ------------------------------
+// #ELEMENTS
+// ------------------------------
+@media print {
+
+  // accomplishment
+  .wrapper-accomplishment-statement {
+
+    .accomplishment-recipient {
+      @extend %h2;
+    }
+
+    .accomplishment-course, .accomplishment-program {
+      @extend %h3;
+    }
+
+    .copy {
+      font-size: $font-large;
+      line-height: $line-height-large;
+      color: $gray-600;
+    }
+
+    .accomplishment-recipient,
+    .accomplishment-course,
+    .accomplishment-program,
+    .accomplishment-summary,
+    .accomplishment-statement-detail {
+      @extend %m-0, %mb-4;
+    }
+  }
+
+  .signatory {
+
+    .signatory-signature {
+      max-width: 50%;
+      height: 40px;
+    }
+
+    .signatory-name,
+    .signatory-credentials {
+      margin-bottom: 2px;
+      font-size: $font-xxx-small;
+      line-height: $line-height-small;
+    }
+  }
+
+  .accomplishment-stamps {
+
+    .title {
+      font-size: $font-xxx-small;
+      line-height: $line-height-small;
+    }
+
+    .emphasized {
+      font-weight: normal;
+      font-size: $font-xxx-small;
+      line-height: $line-height-small;
+    }
+  }
+}
