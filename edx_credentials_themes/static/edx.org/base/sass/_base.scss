@@ -21,7 +21,10 @@ html, body {
 // #TYPOGRAPHY
 // ------------------------------
 a {
-  color: $blue;
+  color: $primary-500;
+  &:hover {
+    color: $gray-700;
+  }
 }
 
 // ------------------------------
