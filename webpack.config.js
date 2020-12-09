@@ -17,9 +17,13 @@ function generateBaseConfig(theme) {
     plugins: [
       new MiniCssExtractPlugin({
         filename: 'css/[name].css'
-      })
+      }),
     ],
-    module: { 
+    output: {
+      path: path.resolve(`./edx_credentials_themes/static/${theme}/`),
+      filename: '[name].js'
+    },
+    module: {
       rules: [
         {
           test: /\.s?css$/,
