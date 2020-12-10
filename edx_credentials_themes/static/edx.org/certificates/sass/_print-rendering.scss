@@ -110,8 +110,7 @@
       padding-top: 0 !important;
       @include margin-right(25px);
 
-      // FIXME This is edx.org-specific and belongs in a themed stylesheet in credentials-themes
-      svg.edx-logo {
+      edx-logo {
         width: 70px;
         height: 32.4px;
       }

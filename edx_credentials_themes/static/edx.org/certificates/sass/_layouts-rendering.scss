@@ -26,6 +26,7 @@
     left: inherit;
     top: inherit;
     opacity: 0.03;
+    display: none;
   }
 
   .micromasters-watermark {
@@ -157,8 +158,7 @@
   .accomplishment-stamp-platform {
     margin-bottom: 15px;
 
-    // FIXME This is edx.org-specific and belongs in a themed stylesheet in credentials-themes
-    svg.edx-logo {
+    .edx-logo {
       width: 125px;
       height: 57.8px;
       margin-top: 2px;
