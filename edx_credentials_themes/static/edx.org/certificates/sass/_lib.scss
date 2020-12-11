@@ -3,4 +3,7 @@
 
 // About: third party libraries and dependencies import
 
-@import '~bootstrap/scss/bootstrap';
+@import "@edx/brand/paragon/fonts";
+@import "@edx/brand/paragon/variables";
+@import "@edx/paragon/scss/core/core";
+@import "@edx/brand/paragon/overrides";

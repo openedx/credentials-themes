@@ -158,11 +158,12 @@
     font-size: $font-small;
     font-weight: $font-weight-semi-bold;
     line-height: $line-height-large;
+    color: $gray-700
   }
 
   .signatory-credentials {
     @extend %text-micro;
-    color: $gray-600;
+    color: $gray-500;
 
     .role {
       white-space: pre-line;
