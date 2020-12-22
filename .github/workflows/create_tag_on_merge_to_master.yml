@@ -1,0 +1,27 @@
+# This workflow will run on any merge to master and will create a tag for the commit if it doesn't already exists.
+# Since `git tag` won't overwrite tags without an `-f` flag, this effectively only tags commits when the version changes
+name: Create tag on merge to master
+
+on:
+  push:
+    branches:
+      master
+
+jobs:
+  autotag:
+    name: Autotag commit
+    runs-on: ubuntu-latest
+    steps:
+      # Clone repo with user's token. If we use GITHUB_TOKEN, it won't trigger further automation.
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.EDX_DEPLOYMENT_GH_TOKEN }}
+
+      # Tag version and push
+      - name: Create tag and push
+        run: |
+          git config user.email "edx-deployment@edx.org"
+          git config user.name "Edx Deployment automation robot"
+          current_version=$(cat ./edx_credentials_themes/__init__.py | grep "__version__" | sed "s|.*\([0-9]\.[0-9]\.[0-9]*\).*|\1|g")
+          git tag -a -m "Release $current_version" $current_version HEAD
+          git push --follow-tags
