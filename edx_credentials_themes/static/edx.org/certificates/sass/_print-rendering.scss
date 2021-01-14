@@ -27,7 +27,8 @@
         box-shadow: none;
         padding: 0.625rem 2.5rem !important;
         background-color: $white;
-        height: 650px;
+        height: auto;
+        overflow: hidden;
 
         .background-watermark .watermark-svg {
           position: absolute;
@@ -209,12 +210,16 @@
       line-height: $line-height-small;
     }
   }
-}
-
-.organization {
-  text-align: right !important;
-  .organization-logo {
-    max-width: 200px !important;
-    max-height: 100px !important;
+  .organization {
+    text-align: right !important;
+    .organization-logo {
+      max-width: 200px !important;
+      max-height: 100px !important;
+    }
+  }
+  .watermark-svg {
+    display: block !important;
   }
 }
+
+
