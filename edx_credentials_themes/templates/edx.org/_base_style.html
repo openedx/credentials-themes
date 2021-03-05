@@ -1,0 +1,11 @@
+{% load i18n %}
+{% load html %}
+{% load staticfiles %}
+
+{% block style %}
+  {% if LANGUAGE_BIDI %}
+    <link href='{% static "edx.org/css/edx.org.base.style-rtl.css" %}' rel='stylesheet' type='text/css'/>
+  {% else %}
+    <link href='{% static "edx.org/css/edx.org.base.style-ltr.css" %}' rel='stylesheet' type='text/css'/>
+  {% endif %}
+{% endblock %}

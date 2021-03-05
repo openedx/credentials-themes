@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-05 13:58-0500\n"
+"POT-Creation-Date: 2020-12-06 18:40+0000\n"
 "PO-Revision-Date: 2017-10-17 20:43+0000\n"
 "Last-Translator: Gerard Alarcón Montserrat <galarcon@edx.org>, 2020\n"
 "Language-Team: Spanish (Latin America) (https://www.transifex.com/open-edx/teams/79642/es_419/)\n"
@@ -204,45 +204,3 @@ msgstr ""
 "área de estudio. La finalización de los Programas XSeries requiere que los "
 "estudiantes obtengan {link_start}Certificados Verificados{link_end} de cada "
 "uno de los cursos incluidos en el Programa."
-
-#: templates/mitpe/_footer.html:11
-msgid "Terms of Service"
-msgstr "Condiciones del servicio"
-
-#: templates/mitpe/_footer.html:16
-msgid "Privacy Policy"
-msgstr "Política de privacidad"
-
-#: templates/mitpe/_footer.html:27
-msgid "All rights reserved except where noted."
-msgstr "Todos los derechos reservados excepto donde se indique lo contrario."
-
-#: templates/mitpe/_footer.html:35
-msgid "Powered by Open edX"
-msgstr "Desarrollado por Open edX"
-
-#: templates/mitpe/credentials/programs/base.html:30
-msgid "This is to certify that"
-msgstr "Esto certifica que"
-
-#: templates/mitpe/credentials/programs/base.html:34
-msgid "has successfully completed the"
-msgstr "ha completado correctamente "
-
-#: templates/mitpe/credentials/programs/base.html:47
-msgid "held during"
-msgstr "que se llevó a cabo durante"
-
-#: templates/mitpe/credentials/programs/base.html:58
-msgid "Noted by"
-msgstr "Registrado por"
-
-#: templates/mitpe/credentials/programs/base.html:87
-#, python-format
-msgid ""
-"For tips and tricks on printing your certificate, view the %(link_start)sWeb"
-" Certificates help documentation%(link_end)s."
-msgstr ""
-"Para obtener consejos y recomendaciones para imprimir su certificado, visite"
-" la %(link_start)sdocumentación de asistencia de Certificados "
-"Web%(link_end)s."

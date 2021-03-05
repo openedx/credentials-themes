@@ -1,0 +1,59 @@
+$heading-grey: #4A4A4A;
+$btn-blue: #0075b4;
+$btn-blue-hover-light: #F2F8FB;
+
+.paragraph-grey {
+  color: $gray-700;
+}
+
+.certificate-icon {
+  display: inline-flex;
+  align-items: center;
+
+  .icon-svg {
+      height: 12px;
+      width: 12px;
+  }
+}
+
+.icon-fill {
+  fill: $black;
+
+  &.micromasters {
+    fill: $micromasters-color;
+  }
+  &.professional {
+    fill: $professional-certificate-color;
+  }
+}
+
+.text-black {
+  color: $black;
+}
+
+.top-bar-link {
+  @include ltr {
+    .fa-caret-right{
+      display: none;
+    }
+  }
+
+  @include rtl {
+    .fa-caret-left{
+      display: none;
+    }
+  }
+}
+
+.view-record-container {
+  color: $gray-700;
+  height: 100%;
+  width: 100%;
+
+   @include media-breakpoint-up(md) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+}

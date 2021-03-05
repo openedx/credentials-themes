@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="watermark-svg" viewBox="0 0 1488.09 1532.83">
+  <defs>
+    <style>
+      .cls-11 {
+        fill: #f2f0ef;
+      }
+
+      .cls-22 {
+        fill: #fbfaf9;
+      }
+    </style>
+  </defs>
+  <g id="Layer_22" data-name="Layer 22">
+    <g id="Layer_11" data-name="Layer 11">
+      <polygon class="cls-11" points="1193.71 0 1488.09 0 1161.18 1532.83 866.81 1532.83 1193.71 0" />
+      <polygon class="cls-22" points="0 0.07 1478.28 0.07 1152.28 1532.83 0 1532.83 0 0.07" />
+    </g>
+  </g>
+</svg>
