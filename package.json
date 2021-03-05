@@ -16,7 +16,7 @@
   "devDependencies": {
     "@edx/brand": "npm:@edx/brand-edx.org@1.5.0",
     "@edx/edx-bootstrap": "2.2.2",
-    "@edx/paragon": "12.4.1",
+    "@edx/paragon": "12.8.0",
     "bi-app-sass": "1.1.0",
     "bootstrap": "4.5.3",
     "css-loader": "5.0.1",
