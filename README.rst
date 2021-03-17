@@ -27,8 +27,16 @@ provider) where the strings can be translated.
 Compile translated strings by running `make compile_translations`. This will produce a .mo file for each .po in the repo.
 The .mo files are read by Django and are used to provide translations in the running application.
 
-Testing credentials-themes changes in devstack
-----------------------------------------------
-See instructions_ on the OpenEdX Wiki.
+Developing in devstack
+----------------------
+In order to develop in devstack, make sure your devstack is running, then:
 
-.. _instructions: https://openedx.atlassian.net/wiki/spaces/SOL/pages/608698737/Testing+WL+themes+in+devstack
+#. Switch your devstack to the `edX theme`_
+#. Clone this repo into ``<devstack_folder>/src/``
+#. ``cd <devstack_folder>/devstack/``
+#. ``make dev.shell.credentials``
+#. ``pip install -e /edx/src/credentials-themes``
+#. ``make requirements``
+#. ``make static``
+
+.. _`edX theme`: https://openedx.atlassian.net/wiki/spaces/microb/pages/2047673326/Switching+the+theme+in+edx-platform
