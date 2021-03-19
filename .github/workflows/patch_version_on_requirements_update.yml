@@ -1,0 +1,40 @@
+name: Update version on requirements change
+
+# This workflow is called on any PR created by the edx-requirements-bot. It will update the version in __init__.py, but
+# will *not* add anything to the changelog.
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  update_version:
+    name: Update version
+    runs-on: ubuntu-latest
+    if: startsWith( github.head_ref, 'jenkins/upgrade-python-requirements' )
+    steps:
+      # Clone repo
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.REQUIREMENTS_BOT_GITHUB_TOKEN }}
+      # Checkout current branch
+      - name: Checkout branch
+        env:
+          PR_BRANCH: ${{ github.head_ref }}
+        run: git checkout $PR_BRANCH
+      # Bump patch version in branch by one
+      - name: Update version
+        run: |
+          current_patch_version=$(cat ./edx_credentials_themes/__init__.py | grep "__version__" | sed "s|.*[0-9]\.[0-9]\.\([0-9]*\).*|\1|g")
+          new_patch_version=$((current_patch_version+1))
+          sed -i "s|\(__version__ = \"[0-9]*\.[0-9]*\.\)[0-9]*|\1$new_patch_version|g" ./edx_credentials_themes/__init__.py
+      # Set identity, commit change, squash, and push
+      - name: Commit file
+        run: |
+          git config user.email ${{ secrets.REQUIREMENTS_BOT_GITHUB_EMAIL }}
+          git config user.name "edX requirements bot"
+          git add ./edx_credentials_themes/__init__.py
+          git commit -m "Bump patch version for requirements" --squash=HEAD
+          GIT_EDITOR=true git rebase -i --autosquash HEAD~2
+          git push --force
