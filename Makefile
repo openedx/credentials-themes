@@ -12,10 +12,10 @@ help: ## display this help message
 	@awk -F ':.*?## ' '/^[a-zA-Z]/ && NF==2 {printf "\033[36m  %-25s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST) | sort
 
 build:
-	$(NODE_BIN)/webpack --config webpack.config.js --display-error-details --progress --optimize-minimize
+	$(NODE_BIN)/webpack --config webpack.config.js --progress
 
 build.watch:
-	$(NODE_BIN)/webpack --config webpack.config.js --display-error-details --progress --watch
+	$(NODE_BIN)/webpack --config webpack.config.js --progress --watch
 
 compile_translations:
 	cd edx_credentials_themes && django-admin.py compilemessages

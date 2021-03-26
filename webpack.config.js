@@ -5,8 +5,8 @@ const webpack = require('webpack');
 
 function generateBaseConfig(theme) {
   let config = {
+    mode: 'production',
     cache: true,
-
     context: path.resolve(`./edx_credentials_themes/static/${theme}`),
     entry: {
       [`${theme}.base.style-ltr`]: './base/sass/main-ltr.scss',
@@ -21,7 +21,13 @@ function generateBaseConfig(theme) {
     ],
     output: {
       path: path.resolve(`./edx_credentials_themes/static/${theme}/`),
-      filename: '[name].js'
+    },
+    stats: {
+      errors: true,
+      errorDetails: true,
+    },
+    optimization: {
+      minimize: true,
     },
     module: {
       rules: [
