@@ -22,7 +22,7 @@
     "css-loader": "5.2.0",
     "file-loader": "6.2.0",
     "font-awesome": "4.7.0",
-    "imports-loader": "1.2.0",
+    "imports-loader": "2.0.0",
     "jquery": "3.6.0",
     "mini-css-extract-plugin": "1.4.0",
     "node-sass": "5.0.0",
