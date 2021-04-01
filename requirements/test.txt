@@ -19,7 +19,7 @@ django==2.2.19
     #   edx-i18n-tools
 edx-i18n-tools==0.5.3
     # via -r requirements/base.txt
-gitdb==4.0.5
+gitdb==4.0.7
     # via
     #   -r requirements/base.txt
     #   gitpython
@@ -39,7 +39,7 @@ path==15.1.2
     # via
     #   -r requirements/base.txt
     #   path.py
-polib==1.1.0
+polib==1.1.1
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
@@ -64,7 +64,7 @@ six==1.15.0
     #   -r requirements/base.txt
     #   edx-i18n-tools
     #   transifex-client
-smmap==3.0.5
+smmap==4.0.0
     # via
     #   -r requirements/base.txt
     #   gitdb
