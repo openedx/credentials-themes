@@ -28,7 +28,7 @@ jobs:
         run: |
           current_patch_version=$(cat ./edx_credentials_themes/__init__.py | grep "__version__" | sed "s|.*[0-9]\.[0-9]\.\([0-9]*\).*|\1|g")
           new_patch_version=$((current_patch_version+1))
-          sed -i "s|\(__version__ = \"[0-9]*\.[0-9]*\.\)[0-9]*|\1$new_patch_version|g" ./edx_credentials_themes/__init__.py
+          sed -i "s|\(__version__ = '[0-9]*\.[0-9]*\.\)[0-9]*|\1$new_patch_version|g" ./edx_credentials_themes/__init__.py
       # Set identity, commit change, squash, and push
       - name: Commit file
         run: |
