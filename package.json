@@ -14,9 +14,9 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/edx/credentials-themes",
   "devDependencies": {
-    "@edx/brand": "npm:@edx/brand-edx.org@2.0.1",
+    "@edx/brand": "npm:@edx/brand-edx.org@2.0.2",
     "@edx/edx-bootstrap": "2.2.2",
-    "@edx/paragon": "14.4.0",
+    "@edx/paragon": "14.5.0",
     "bi-app-sass": "1.1.0",
     "bootstrap": "4.6.0",
     "css-loader": "5.2.0",
@@ -24,13 +24,13 @@
     "font-awesome": "4.7.0",
     "imports-loader": "2.0.0",
     "jquery": "3.6.0",
-    "mini-css-extract-plugin": "1.4.0",
+    "mini-css-extract-plugin": "1.4.1",
     "node-sass": "5.0.0",
     "popper.js": "1.16.1",
     "sass-loader": "11.0.1",
     "style-loader": "2.0.0",
     "url-loader": "4.1.1",
-    "webpack": "5.30.0",
+    "webpack": "5.31.0",
     "webpack-cli": "4.6.0"
   }
 }
