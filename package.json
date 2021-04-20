@@ -19,7 +19,7 @@
     "@edx/paragon": "14.7.0",
     "bi-app-sass": "1.1.0",
     "bootstrap": "4.6.0",
-    "css-loader": "5.2.2",
+    "css-loader": "5.2.4",
     "file-loader": "6.2.0",
     "font-awesome": "4.7.0",
     "imports-loader": "2.0.0",
