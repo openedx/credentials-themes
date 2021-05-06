@@ -12,7 +12,7 @@ chardet==4.0.0
     # via
     #   -r requirements/base.txt
     #   requests
-django==2.2.20
+django==2.2.21
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
@@ -59,7 +59,7 @@ requests==2.25.1
     # via
     #   -r requirements/base.txt
     #   transifex-client
-six==1.15.0
+six==1.16.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
