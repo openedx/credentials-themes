@@ -12,7 +12,7 @@ chardet==4.0.0
     # via
     #   -r requirements/base.txt
     #   requests
-django==2.2.20
+django==2.2.23
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
@@ -23,7 +23,7 @@ gitdb==4.0.7
     # via
     #   -r requirements/base.txt
     #   gitpython
-gitpython==3.1.16
+gitpython==3.1.17
     # via
     #   -r requirements/base.txt
     #   transifex-client
