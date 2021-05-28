@@ -39,4 +39,4 @@ In order to develop in devstack, make sure your devstack is running, then:
 #. ``make requirements``
 #. ``make static``
 
-.. _`edX theme`: https://openedx.atlassian.net/wiki/spaces/microb/pages/2047673326/Switching+the+theme+in+edx-platform
+.. _`edX theme`: https://github.com/edx/edx-themes/blob/master/docs/guides/local-development.rst
