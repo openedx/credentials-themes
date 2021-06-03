@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-certifi==2020.12.5
+certifi==2021.5.30
     # via
     #   -r requirements/base.txt
     #   requests
@@ -12,7 +12,7 @@ chardet==4.0.0
     # via
     #   -r requirements/base.txt
     #   requests
-django==2.2.23
+django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
