@@ -8,7 +8,7 @@ certifi==2021.5.30
     # via
     #   -r requirements/base.txt
     #   requests
-chardet==4.0.0
+charset-normalizer==2.0.1
     # via
     #   -r requirements/base.txt
     #   requests
@@ -27,7 +27,7 @@ gitpython==3.1.18
     # via
     #   -r requirements/base.txt
     #   transifex-client
-idna==2.10
+idna==3.2
     # via
     #   -r requirements/base.txt
     #   requests
@@ -55,7 +55,7 @@ pyyaml==5.4.1
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-requests==2.25.1
+requests==2.26.0
     # via
     #   -r requirements/base.txt
     #   transifex-client
