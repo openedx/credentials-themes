@@ -13,7 +13,7 @@ django==2.2.24
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
     #   edx-i18n-tools
-edx-i18n-tools==0.5.3
+edx-i18n-tools==0.7.0
     # via -r requirements/base.in
 gitdb==4.0.7
     # via gitpython
@@ -21,9 +21,7 @@ gitpython==3.1.18
     # via transifex-client
 idna==3.2
     # via requests
-path==16.0.0
-    # via path.py
-path.py==12.5.0
+path==16.2.0
     # via edx-i18n-tools
 polib==1.1.1
     # via edx-i18n-tools
