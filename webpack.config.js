@@ -50,7 +50,21 @@ function generateBaseConfig(theme) {
           ]
         },
         {
-          test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+          test: /\.woff2?$/,
+          // Inline small woff files and output them below font
+          use: [
+              {
+                loader: 'url-loader',
+                options: {
+                  name: 'fonts/[name]-[contenthash].[ext]',
+                  limit: 5000,
+                  mimetype: 'font/woff2',
+                }
+              }
+          ]
+        },
+        {
+          test: /\.(ttf|otf|eot|svg|)(\?[a-z0-9]+)?$/,
           use: [{
             loader: 'file-loader',
             options: {
