@@ -8,7 +8,7 @@ certifi==2021.5.30
     # via
     #   -r requirements/base.txt
     #   requests
-charset-normalizer==2.0.4
+charset-normalizer==2.0.5
     # via
     #   -r requirements/base.txt
     #   requests
@@ -64,7 +64,7 @@ smmap==4.0.0
     # via
     #   -r requirements/base.txt
     #   gitdb
-sqlparse==0.4.1
+sqlparse==0.4.2
     # via
     #   -r requirements/base.txt
     #   django
