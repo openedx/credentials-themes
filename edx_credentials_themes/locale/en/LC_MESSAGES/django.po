@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 14:20-0500\n"
+"POT-Creation-Date: 2021-10-05 15:00-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -16,17 +16,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/edx.org/credentials/programs/base.html:20
+#: templates/edx.org/credentials/programs/base.html:30
 msgid "About edX"
 msgstr ""
 
-#: templates/edx.org/credentials/programs/base.html:23
+#: templates/edx.org/credentials/programs/base.html:33
 #, python-brace-format
 msgid ""
 "{link_start} edX{link_end} offers interactive online classes and MOOCs from "
 "the world’s best universities, including MIT, Harvard, Berkeley, University "
-"of Texas, and many others. edX is a non-profit online initiative created by "
-"founding partners Harvard and MIT."
+"of Texas, and many others. edX is an online initiative created by founding "
+"partners Harvard and MIT."
 msgstr ""
 
 #. Translators: MicroBachelors should not be translated, this phrase is preceded by the learner's name and followed by a program title
