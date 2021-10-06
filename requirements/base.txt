@@ -8,12 +8,14 @@ certifi==2021.5.30
     # via requests
 charset-normalizer==2.0.6
     # via requests
+coverage==6.0
+    # via edx-i18n-tools
 django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
     #   edx-i18n-tools
-edx-i18n-tools==0.7.0
+edx-i18n-tools==0.8.0
     # via -r requirements/base.in
 gitdb==4.0.7
     # via gitpython
@@ -27,16 +29,14 @@ polib==1.1.1
     # via edx-i18n-tools
 python-slugify==4.0.1
     # via transifex-client
-pytz==2021.1
+pytz==2021.3
     # via django
 pyyaml==5.4.1
     # via edx-i18n-tools
 requests==2.26.0
     # via transifex-client
 six==1.16.0
-    # via
-    #   edx-i18n-tools
-    #   transifex-client
+    # via transifex-client
 smmap==4.0.0
     # via gitdb
 sqlparse==0.4.2
