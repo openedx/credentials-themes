@@ -29,7 +29,7 @@ python-slugify==4.0.1
     # via transifex-client
 pytz==2021.3
     # via django
-pyyaml==5.4.1
+pyyaml==6.0
     # via edx-i18n-tools
 requests==2.26.0
     # via transifex-client
