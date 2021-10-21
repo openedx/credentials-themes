@@ -47,7 +47,7 @@ pytz==2021.3
     # via
     #   -r requirements/base.txt
     #   django
-pyyaml==5.4.1
+pyyaml==6.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
