@@ -15,7 +15,7 @@ django==2.2.24
     #   edx-i18n-tools
 edx-i18n-tools==0.8.1
     # via -r requirements/base.in
-gitdb==4.0.7
+gitdb==4.0.9
     # via gitpython
 gitpython==3.1.24
     # via transifex-client
@@ -35,7 +35,7 @@ requests==2.26.0
     # via transifex-client
 six==1.16.0
     # via transifex-client
-smmap==4.0.0
+smmap==5.0.0
     # via gitdb
 sqlparse==0.4.2
     # via django
