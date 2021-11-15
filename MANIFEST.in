@@ -1,3 +1,4 @@
 include README.rst
 recursive-include edx_credentials_themes *.html *.png *.css *jpg *jpeg *svg *py *.otf *.ttf *.woff *.woff2 *.eot
 recursive-include edx_credentials_themes/locale *.mo
+include requirements/constraints.txt
