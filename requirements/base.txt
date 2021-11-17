@@ -4,11 +4,13 @@
 #
 #    make upgrade
 #
+asgiref==3.4.1
+    # via django
 certifi==2021.10.8
     # via requests
 charset-normalizer==2.0.7
     # via requests
-django==2.2.24
+django==3.2.9
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
@@ -43,7 +45,7 @@ text-unidecode==1.3
     # via python-slugify
 transifex-client==0.14.3
     # via -r requirements/base.in
-typing-extensions==3.10.0.2
+typing-extensions==4.0.0
     # via gitpython
 urllib3==1.26.7
     # via
