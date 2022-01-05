@@ -12,11 +12,11 @@ certifi==2021.10.8
     # via
     #   -r requirements/base.txt
     #   requests
-charset-normalizer==2.0.9
+charset-normalizer==2.0.10
     # via
     #   -r requirements/base.txt
     #   requests
-django==3.2.10
+django==3.2.11
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
@@ -55,7 +55,7 @@ pyyaml==6.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-requests==2.26.0
+requests==2.27.0
     # via
     #   -r requirements/base.txt
     #   transifex-client
