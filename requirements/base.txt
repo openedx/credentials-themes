@@ -19,11 +19,11 @@ edx-i18n-tools==0.8.1
     # via -r requirements/base.in
 gitdb==4.0.9
     # via gitpython
-gitpython==3.1.24
+gitpython==3.1.26
     # via transifex-client
 idna==3.3
     # via requests
-path==16.2.0
+path==16.3.0
     # via edx-i18n-tools
 polib==1.1.1
     # via edx-i18n-tools
@@ -33,7 +33,7 @@ pytz==2021.3
     # via django
 pyyaml==6.0
     # via edx-i18n-tools
-requests==2.27.0
+requests==2.27.1
     # via transifex-client
 six==1.16.0
     # via transifex-client
@@ -45,9 +45,7 @@ text-unidecode==1.3
     # via python-slugify
 transifex-client==0.14.4
     # via -r requirements/base.in
-typing-extensions==4.0.1
-    # via gitpython
-urllib3==1.26.7
+urllib3==1.26.8
     # via
     #   requests
     #   transifex-client
