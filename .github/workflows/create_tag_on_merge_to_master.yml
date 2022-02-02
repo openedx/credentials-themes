@@ -15,7 +15,7 @@ jobs:
       # Clone repo with user's token. If we use GITHUB_TOKEN, it won't trigger further automation.
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.EDX_DEPLOYMENT_GH_TOKEN }}
+          token: ${{ secrets.REQUIREMENTS_BOT_GITHUB_TOKEN }}
 
       # Tag version and push
       - name: Create tag and push
