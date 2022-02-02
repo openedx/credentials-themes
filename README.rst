@@ -8,7 +8,7 @@ This information is NOT LICENSED for usage by others.
 Building
 --------
 
-Build the assets by running `make build`. Compiled assets should be *committed* to the repository so that they are
+Build the assets by running ``make build``. Compiled assets should be *committed* to the repository so that they are
 accessible by the Credentials Service when the package is installed.
 
 i18n
