@@ -40,3 +40,5 @@ In order to develop in devstack, make sure your devstack is running, then:
 #. ``make static``
 
 .. _`edX theme`: https://github.com/edx/edx-themes/blob/master/docs/guides/local-development.rst
+
+Adding text here to test CI.
