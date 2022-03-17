@@ -1,8 +1,9 @@
 [main]
 host = https://www.transifex.com
 
-[credentials-themes.djangopo]
+[o:2uedx:p:credentials-themes:r:djangopo]
+file_filter = edx_credentials_themes/locale/<lang>/LC_MESSAGES/django.po
 source_file = edx_credentials_themes/locale/en/LC_MESSAGES/django.po
 source_lang = en
-type = PO
-file_filter = edx_credentials_themes/locale/<lang>/LC_MESSAGES/django.po
+type        = PO
+
