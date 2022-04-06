@@ -2,27 +2,29 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
 
 jobs:
-  unit_tests:
+  tests:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [12, 14, 16]
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: "3.8"
-          architecture: x64
-      - uses: actions/setup-node@v2-beta
-        with:
-          node-version: '10.19.0'
-      - name: run tests
-        run: |
-          sudo apt install gettext
-          make requirements
-          pip install -r requirements/test.txt
-          # make build - Commenting out until a follow on PR where we will add in the themes for edx.org
-          make test
-          make validate_translations
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+        architecture: x64
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: ${{ matrix.node }}
+    - name: run tests
+      run: |
+        sudo apt install gettext
+        make requirements
+        pip install -r requirements/test.txt
+        # make build - Commenting out until a follow on PR where we will add in the themes for edx.org
+        make test
+        make validate_translations

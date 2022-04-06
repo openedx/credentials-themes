@@ -5,7 +5,7 @@ name: Create tag on merge to master
 on:
   push:
     branches:
-      master
+     - master
 
 jobs:
   autotag:
