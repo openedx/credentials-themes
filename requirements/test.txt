@@ -8,7 +8,7 @@ asgiref==3.5.2
     # via
     #   -r requirements/base.txt
     #   django
-certifi==2021.10.8
+certifi==2022.5.18.1
     # via
     #   -r requirements/base.txt
     #   requests
