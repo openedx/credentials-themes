@@ -2,7 +2,7 @@
 
 .PHONY: help build build.watch compile_translations detect_changed_source_translations dummy_translations \
         extract_translations generate_translations base_requirements pull_translations push_translations \
-        requirements test upgrade validate_translations
+        requirements test upgrade validate_translations install_transifex_client
 
 NODE_BIN=$(CURDIR)/node_modules/.bin
 
@@ -58,3 +58,7 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 
 validate_translations: generate_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate
+
+install_transifex_client: ## Install the Transifex client
+	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+	git checkout -- LICENSE README.md
