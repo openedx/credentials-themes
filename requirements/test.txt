@@ -8,14 +8,6 @@ asgiref==3.5.2
     # via
     #   -r requirements/base.txt
     #   django
-certifi==2022.5.18.1
-    # via
-    #   -r requirements/base.txt
-    #   requests
-charset-normalizer==2.0.12
-    # via
-    #   -r requirements/base.txt
-    #   requests
 django==3.2.13
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
