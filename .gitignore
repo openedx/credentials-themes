@@ -69,3 +69,6 @@ tests/__init__.py
 default.db
 
 node_modules/
+
+# transifex exe
+tx
