@@ -1,5 +1,5 @@
 # This file describes this Open edX repo, as described in OEP-2:
-# https://github.com/edx/open-edx-proposals/blob/master/oeps/oep-0002.rst
+# https://github.com/openedx/open-edx-proposals/blob/master/oeps/oep-0002.rst
 
 oeps:
     oep-7: true # Python 3

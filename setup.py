@@ -104,7 +104,7 @@ setup(
     long_description=README,
     author='edX',
     author_email='oscm@edx.org',
-    url='https://github.com/edx/credentials-themes',
+    url='https://github.com/openedx/credentials-themes',
     packages=[
         'edx_credentials_themes',
     ],
