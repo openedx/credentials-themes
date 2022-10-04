@@ -14,7 +14,7 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/openedx/credentials-themes",
   "devDependencies": {
-    "@edx/brand": "npm:@edx/brand-edx.org@2.0.7",
+    "@edx/brand": "npm:@edx/brand-edx.org@2.0.8",
     "@edx/edx-bootstrap": "2.2.4",
     "@edx/paragon": "19.25.3",
     "bi-app-sass": "1.1.0",
