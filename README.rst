@@ -3,8 +3,6 @@ edX Credentials Themes
 
 This repository holds themes for the edX Credentials Service.
 
-This information is NOT LICENSED for usage by others.
-
 Building
 --------
 
