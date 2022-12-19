@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-05 15:00-0400\n"
+"POT-Creation-Date: 2022-12-19 21:23+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -15,6 +15,45 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/edx.org/_footer.html
+msgid "Legal Policies"
+msgstr "Légäl Pölïçïés Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт#"
+
+#: templates/edx.org/_footer.html
+msgid "Terms of Service & Honor Code"
+msgstr "Térms öf Sérvïçé & Hönör Çödé Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢#"
+
+#: templates/edx.org/_footer.html
+msgid "Privacy Policy"
+msgstr "Prïväçý Pölïçý Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт#"
+
+#: templates/edx.org/_footer.html
+msgid "Cookie Policy"
+msgstr "Çöökïé Pölïçý Ⱡ'σяєм ιρѕυм ∂σłσя ѕι#"
+
+#: templates/edx.org/_footer.html
+msgid "Do Not Sell My Personal Information"
+msgstr ""
+"Dö Nöt Séll Mý Pérsönäl Ìnförmätïön Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢тєт#"
+
+#: templates/edx.org/_footer.html
+msgid ""
+"All rights reserved except where noted. edX, Open edX and the edX and Open "
+"edX logos are registered trademarks or trademarks of edX Inc."
+msgstr ""
+"Àll rïghts résérvéd éxçépt whéré nötéd. édX, Öpén édX änd thé édX änd Öpén "
+"édX lögös äré régïstéréd trädémärks ör trädémärks öf édX Ìnç. Ⱡ'σяєм ιρѕυм "
+"∂σłσя ѕιт αмєт, ¢σηѕє¢тєтυя α∂ιριѕι¢ιηg єłιт, ѕє∂ ∂σ єιυѕмσ∂ тємρσя "
+"ιη¢ι∂ι∂υηт υт łαвσяє єт ∂σłσяє мαgηα αłιqυα. υт єηιм α∂ мιηιм νєηιαм, qυιѕ "
+"ησѕтяυ∂ єχєя¢ιтαтιση υłłαм¢σ łαвσяιѕ ηιѕι υт αłιqυιρ єχ єα ¢σммσ∂σ "
+"¢σηѕєqυαт. ∂υιѕ αυтє ιяυяє ∂σłσя ιη яєρяєнєη∂єяιт ιη νσłυρтαтє νєłιт єѕѕє "
+"¢ιłłυм ∂σłσяє єυ ƒυgιαт ηυłłα ραяιαтυя. єχ¢єρтєυя ѕιηт σ¢¢αє¢αт ¢υρι∂αтαт "
+"ηση ρяσι∂єηт, ѕυηт ιη ¢υłρα qυι σƒƒι¢ια ∂єѕєяυηт мσłłιт αηιм ι∂ єѕт łαвσя#"
+
+#: templates/edx.org/_footer.html
+msgid "Powered by"
+msgstr "Pöwéréd ßý Ⱡ'σяєм ιρѕυм ∂σłσ#"
 
 #: templates/edx.org/credentials/programs/base.html
 msgid "About edX"
