@@ -33,8 +33,8 @@ In order to develop in devstack, make sure your devstack is running, then:
 #. Clone this repo into ``<devstack_folder>/src/``
 #. ``cd <devstack_folder>/devstack/``
 #. ``make dev.shell.credentials``
-#. ``pip install -e /edx/src/credentials-themes``
 #. ``make requirements``
+#. ``pip install -e /edx/src/credentials-themes`` - this will override the version that was installed in the previous step
 #. ``make static``
 
 .. _`edX theme`: https://github.com/openedx/edx-themes/blob/master/docs/guides/local-development.rst
