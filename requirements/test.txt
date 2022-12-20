@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-asgiref==3.5.2
+asgiref==3.6.0
     # via
     #   -r requirements/base.txt
     #   django
@@ -23,7 +23,7 @@ polib==1.1.1
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-pytz==2022.6
+pytz==2022.7
     # via
     #   -r requirements/base.txt
     #   django
