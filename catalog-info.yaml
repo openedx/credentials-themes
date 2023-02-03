@@ -18,7 +18,7 @@ metadata:
     # This can be multiple comma-separated projects.
     openedx.org/add-to-projects: "openedx:23"
 spec:
-  type: 'service'
+  type: 'library'
   lifecycle: 'production'
   owner: 2U-aperture
 # (Optional) An array of different components or resources.
