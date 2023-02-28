@@ -19,7 +19,7 @@ path==16.6.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-polib==1.1.1
+polib==1.2.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
