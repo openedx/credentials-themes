@@ -24,13 +24,13 @@
     "font-awesome": "4.7.0",
     "imports-loader": "4.0.1",
     "jquery": "3.6.4",
-    "mini-css-extract-plugin": "2.7.3",
+    "mini-css-extract-plugin": "2.7.5",
     "popper.js": "1.16.1",
-    "sass": "1.59.2",
+    "sass": "1.59.3",
     "sass-loader": "13.2.0",
     "style-loader": "3.3.2",
     "url-loader": "4.1.1",
-    "webpack": "5.76.1",
+    "webpack": "5.76.2",
     "webpack-cli": "5.0.1"
   }
 }
