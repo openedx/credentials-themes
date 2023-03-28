@@ -23,7 +23,7 @@ polib==1.2.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-pytz==2022.7.1
+pytz==2023.2
     # via
     #   -r requirements/base.txt
     #   django
