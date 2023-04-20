@@ -6,6 +6,8 @@
 
 NODE_BIN=$(CURDIR)/node_modules/.bin
 
+THEME_NAME := edx_credentials_themes
+
 # Generates a help message. Borrowed from https://github.com/pydanny/cookiecutter-djangopackage.
 help: ## display this help message
 	@echo "Please use \`make <target>\` where <target> is one of"
@@ -18,16 +20,16 @@ build.watch:
 	$(NODE_BIN)/webpack --config webpack.config.js --progress --watch
 
 compile_translations:
-	cd edx_credentials_themes && django-admin.py compilemessages
+	cd $(THEME_NAME) && i18n_tool generate
 
 detect_changed_source_translations:
-	cd edx_credentials_themes && i18n_tool changed
+	cd $(THEME_NAME) && i18n_tool changed
 
 dummy_translations:
-	cd edx_credentials_themes && i18n_tool dummy
+	cd $(THEME_NAME) && i18n_tool dummy
 
-extract_translations:
-	cd edx_credentials_themes && django-admin.py makemessages -l en -d django
+extract_translations: ## extract strings to be translated, outputting .po files
+	cd $(THEME_NAME) && i18n_tool extract --no-segment
 
 generate_translations: extract_translations dummy_translations compile_translations
 
@@ -47,7 +49,7 @@ requirements: base_requirements
 
 test:
 	# Confirm compiled assets have not changed, indicating SASS matches CSS.
-	git diff --exit-code edx_credentials_themes/
+	git diff --exit-code $(THEME_NAME)/ ":(exclude)$(THEME_NAME)/conf"
 
 upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
 upgrade: ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
