@@ -26,7 +26,7 @@
     "jquery": "3.6.4",
     "mini-css-extract-plugin": "2.7.5",
     "popper.js": "1.16.1",
-    "sass": "1.62.0",
+    "sass": "1.62.1",
     "sass-loader": "13.2.2",
     "style-loader": "3.3.2",
     "url-loader": "4.1.1",
