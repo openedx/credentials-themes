@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1a\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-19 21:23+0000\n"
+"POT-Creation-Date: 2023-07-10 15:18+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: openedx-translation <openedx-translation@googlegroups.com>\n"
@@ -33,9 +33,8 @@ msgid "Cookie Policy"
 msgstr "Çöökïé Pölïçý Ⱡ'σяєм ιρѕυм ∂σłσя ѕι#"
 
 #: templates/edx.org/_footer.html
-msgid "Do Not Sell My Personal Information"
-msgstr ""
-"Dö Nöt Séll Mý Pérsönäl Ìnförmätïön Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, ¢σηѕє¢тєт#"
+msgid "Your Privacy Choices"
+msgstr "Ýöür Prïväçý Çhöïçés Ⱡ'σяєм ιρѕυм ∂σłσя ѕιт αмєт, #"
 
 #: templates/edx.org/_footer.html
 msgid ""
