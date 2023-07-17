@@ -10,21 +10,26 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
+        python-version: [3.8]
+        django-version: [3.2, 4.2]
         node: [18]
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.8'
+        python-version: ${{ matrix.python-version }}
         architecture: x64
     - uses: actions/setup-node@v2-beta
       with:
         node-version: ${{ matrix.node }}
-    - name: run tests
+
+    - name: run tests with Django ${{ matrix.django-version }}
       run: |
         sudo apt install gettext
-        make requirements
+        pip install "django~=${{ matrix.django-version }}.0"
         pip install -r requirements/test.txt
+        make npm_requirements
         make build
         make test
         make validate_translations

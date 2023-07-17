@@ -47,6 +47,9 @@ push_translations: ## Push source translation files (.po) to Transifex
 requirements: base_requirements
 	npm install
 
+npm_requirements:
+	npm install
+
 test:
 	# Confirm compiled assets have not changed, indicating SASS matches CSS.
 	git diff --exit-code $(THEME_NAME)/ ":(exclude)$(THEME_NAME)/conf"
@@ -60,6 +63,9 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	pip install -qr requirements/pip_tools.txt
 	pip-compile --upgrade -o requirements/base.txt requirements/base.in
 	pip-compile --upgrade -o requirements/test.txt requirements/test.in
+	# django will be install seperately for tests in ci to 32 and 42.
+	sed -i.tmp '/^[d|D]jango==/d' requirements/test.txt
+	rm requirements/test.txt.tmp
 
 validate_translations: generate_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate
