@@ -19,7 +19,7 @@ polib==1.2.0
     # via edx-i18n-tools
 pytz==2023.3
     # via django
-pyyaml==6.0
+pyyaml==6.0.1
     # via edx-i18n-tools
 sqlparse==0.4.4
     # via django
