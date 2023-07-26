@@ -15,7 +15,7 @@
   "homepage": "https://github.com/openedx/credentials-themes",
   "devDependencies": {
     "@edx/brand": "npm:@edx/brand-edx.org@2.1.2",
-    "@edx/edx-bootstrap": "2.4.2",
+    "@edx/edx-bootstrap": "2.5.0",
     "@edx/paragon": "20.45.4",
     "bi-app-sass": "1.1.0",
     "bootstrap": "4.6.2",
