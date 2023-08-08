@@ -13,7 +13,7 @@ django==3.2.20
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
     #   edx-i18n-tools
-edx-i18n-tools==1.0.0
+edx-i18n-tools==1.1.0
     # via -r requirements/base.txt
 path==16.7.1
     # via
