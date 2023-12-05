@@ -19,7 +19,7 @@ lxml==4.9.3
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-path==16.7.1
+path==16.9.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
