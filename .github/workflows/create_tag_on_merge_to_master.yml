@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Clone repo with user's token. If we use GITHUB_TOKEN, it won't trigger further automation.
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.REQUIREMENTS_BOT_GITHUB_TOKEN }}
 
