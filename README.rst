@@ -3,6 +3,9 @@ edX Credentials Themes
 
 This repository holds themes for the edX Credentials Service.
 
+Credentials-Themes contains styles and overrides for the rendering of Program Certificates awarded through edX.org.
+It does not control any styles or overrides for anything except for rendered Program Certificates.
+
 Building
 --------
 
@@ -24,17 +27,3 @@ provider) where the strings can be translated.
 
 Compile translated strings by running `make compile_translations`. This will produce a .mo file for each .po in the repo.
 The .mo files are read by Django and are used to provide translations in the running application.
-
-Developing in devstack
-----------------------
-In order to develop in devstack, make sure your devstack is running, then:
-
-#. Switch your devstack to the `edX theme`_
-#. Clone this repo into ``<devstack_folder>/src/``
-#. ``cd <devstack_folder>/devstack/``
-#. ``make dev.shell.credentials``
-#. ``make requirements``
-#. ``pip install -e /edx/src/credentials-themes`` - this will override the version that was installed in the previous step
-#. ``make static``
-
-.. _`edX theme`: https://github.com/openedx/edx-themes/blob/master/docs/guides/local-development.rst
