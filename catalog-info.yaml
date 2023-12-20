@@ -3,7 +3,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: 'Credentials Themes'
+  name: 'credentials-themes'
   description: 'A required package for the Credentials IDA. It provides the frontend layouts and visual styling used to render Program Certificates, Learner Records, and Program Records.'
   links:
     - url: 'https://github.com/openedx/credentials-themes/blob/master/README.rst'
