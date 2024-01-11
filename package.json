@@ -22,7 +22,7 @@
     "font-awesome": "4.7.0",
     "imports-loader": "4.0.1",
     "jquery": "3.7.1",
-    "mini-css-extract-plugin": "2.7.6",
+    "mini-css-extract-plugin": "2.7.7",
     "popper.js": "1.16.1",
     "sass": "1.69.7",
     "sass-loader": "13.3.3",
