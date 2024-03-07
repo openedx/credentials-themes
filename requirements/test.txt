@@ -8,6 +8,11 @@ asgiref==3.7.2
     # via
     #   -r requirements/base.txt
     #   django
+backports-zoneinfo==0.2.1 ; python_version < "3.9"
+    # via
+    #   -c requirements/constraints.txt
+    #   -r requirements/base.txt
+    #   django
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
@@ -26,10 +31,6 @@ polib==1.2.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
-pytz==2024.1
-    # via
-    #   -r requirements/base.txt
-    #   django
 pyyaml==6.0.1
     # via
     #   -r requirements/base.txt
