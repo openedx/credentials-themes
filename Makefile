@@ -1,8 +1,8 @@
 .DEFAULT_GOAL := help
 
 .PHONY: help build build.watch compile_translations detect_changed_source_translations dummy_translations \
-        extract_translations generate_translations base_requirements pull_translations push_translations \
-        requirements test upgrade validate_translations install_transifex_client
+        extract_translations generate_translations base_requirements pull_translations \
+        requirements test upgrade validate_translations
 
 NODE_BIN=$(CURDIR)/node_modules/.bin
 
@@ -36,13 +36,12 @@ generate_translations: extract_translations dummy_translations compile_translati
 base_requirements:
 	pip install -r ./requirements/base.txt
 
-# This Make target should not be removed since it is relied on by a Jenkins job (`edx-internal/tools-edx-jenkins/translation-jobs.yml`), using `ecommerce-scripts/transifex`.
-pull_translations: ## Pull translations from Transifex
-	tx pull -t -a -f --mode reviewed --minimum-perc=1
-
-# This Make target should not be removed since it is relied on by a Jenkins job (`edx-internal/tools-edx-jenkins/translation-jobs.yml`), using `ecommerce-scripts/transifex`.
-push_translations: ## Push source translation files (.po) to Transifex
-	tx push -s
+pull_translations: ## Pull translations via atlas
+	# Remove existing translation directories
+	find edx_credentials_themes/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+	atlas pull $(ATLAS_OPTIONS) \
+	           translations/credentials-themes/edx_credentials_themes/conf/locale:edx_credentials_themes/conf/locale
+	make compile_translations
 
 requirements: base_requirements
 	npm install
@@ -69,7 +68,3 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 
 validate_translations: generate_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate
-
-install_transifex_client: ## Install the Transifex client
-	curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-	git checkout -- LICENSE README.md
