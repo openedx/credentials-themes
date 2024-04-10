@@ -3,3 +3,4 @@
 
 Django
 edx-i18n-tools
+lxml[html_clean]
