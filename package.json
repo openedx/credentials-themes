@@ -24,11 +24,11 @@
     "jquery": "3.7.1",
     "mini-css-extract-plugin": "2.9.0",
     "popper.js": "1.16.1",
-    "sass": "1.77.4",
+    "sass": "1.77.5",
     "sass-loader": "14.2.1",
     "style-loader": "4.0.0",
     "url-loader": "4.1.1",
-    "webpack": "5.91.0",
+    "webpack": "5.92.0",
     "webpack-cli": "5.1.4"
   }
 }
