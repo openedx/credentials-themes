@@ -12,18 +12,18 @@ asgiref==3.8.1
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.txt
     #   edx-i18n-tools
-edx-i18n-tools==1.6.0
+edx-i18n-tools==1.6.2
     # via -r requirements/base.txt
 lxml[html-clean]==5.2.2
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
     #   lxml-html-clean
-lxml-html-clean==0.1.1
+lxml-html-clean==0.2.0
     # via
     #   -r requirements/base.txt
     #   lxml
-path==16.14.0
+path==16.16.0
     # via
     #   -r requirements/base.txt
     #   edx-i18n-tools
