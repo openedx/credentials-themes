@@ -6,21 +6,21 @@
 #
 asgiref==3.8.1
     # via django
-django==4.2.14
+django==4.2.15
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
     #   edx-i18n-tools
-edx-i18n-tools==1.6.0
+edx-i18n-tools==1.6.2
     # via -r requirements/base.in
 lxml[html-clean,html_clean]==5.2.2
     # via
     #   -r requirements/base.in
     #   edx-i18n-tools
     #   lxml-html-clean
-lxml-html-clean==0.1.1
+lxml-html-clean==0.2.0
     # via lxml
-path==16.14.0
+path==16.16.0
     # via edx-i18n-tools
 polib==1.2.0
     # via edx-i18n-tools
