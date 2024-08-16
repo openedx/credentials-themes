@@ -12,7 +12,6 @@ jobs:
       matrix:
         python-version: ['3.8', '3.12']
         django-version: ['4.2']
-        node: [18]
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -20,9 +19,11 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
+    - name: Setup Nodejs Env
+      run: echo "NODE_VER=`cat .nvmrc`" >> $GITHUB_ENV
     - uses: actions/setup-node@v2-beta
       with:
-        node-version: ${{ matrix.node }}
+        node-version: ${{ env.NODE_VER }}
 
     - name: run tests with Django ${{ matrix.django-version }}
       run: |
