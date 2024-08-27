@@ -12,7 +12,8 @@ jobs:
       matrix:
         python-version: ['3.8', '3.12']
         django-version: ['4.2']
-        node: [18]
+        node: [18, 20]
+    continue-on-error: ${{ matrix.node == 20 }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -20,7 +21,8 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-    - uses: actions/setup-node@v2-beta
+    - name: Setup Nodejs
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node }}
 
