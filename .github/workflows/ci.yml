@@ -13,7 +13,6 @@ jobs:
         python-version: ['3.8', '3.12']
         django-version: ['4.2']
         node: [18, 20]
-    continue-on-error: ${{ matrix.node == 20 }}
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python ${{ matrix.python-version }}
@@ -24,7 +23,7 @@ jobs:
     - name: Setup Nodejs
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node }}
+        node-version: ${{ env.NODE_VER }}
 
     - name: run tests with Django ${{ matrix.django-version }}
       run: |
