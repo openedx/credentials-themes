@@ -6,7 +6,7 @@
 #
 asgiref==3.8.1
     # via django
-django==4.2.16
+django==4.2.17
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
@@ -26,5 +26,5 @@ polib==1.2.0
     # via edx-i18n-tools
 pyyaml==6.0.2
     # via edx-i18n-tools
-sqlparse==0.5.2
+sqlparse==0.5.3
     # via django
