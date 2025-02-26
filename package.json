@@ -15,7 +15,7 @@
   "homepage": "https://github.com/openedx/credentials-themes",
   "devDependencies": {
     "@edx/brand": "npm:@edx/brand-edx.org@2.1.3",
-    "@openedx/paragon": "22.15.2",
+    "@openedx/paragon": "22.15.3",
     "bi-app-sass": "1.1.0",
     "css-loader": "7.1.2",
     "file-loader": "6.2.0",
