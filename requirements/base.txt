@@ -11,7 +11,7 @@ django==4.2.20
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
     #   edx-i18n-tools
-edx-i18n-tools==1.8.0
+edx-i18n-tools==1.9.0
     # via -r requirements/base.in
 lxml[html-clean,html_clean]==5.4.0
     # via
