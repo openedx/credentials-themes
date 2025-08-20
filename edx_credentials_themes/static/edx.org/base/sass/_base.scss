@@ -14,16 +14,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: $white;
+    background: var(--pgn-color-white);
 }
 
 // ------------------------------
 // #TYPOGRAPHY
 // ------------------------------
 a {
-  color: $primary-500;
+  color: var(--pgn-color-primary-500);
   &:hover {
-    color: $gray-700;
+    color: var(--pgn-color-gray-700);
   }
 }
 

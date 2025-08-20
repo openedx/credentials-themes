@@ -3,7 +3,11 @@
 
 // About: third party libraries and dependencies import
 
-@import "@edx/brand/paragon/fonts";
-@import "@edx/brand/paragon/variables";
-@import "@openedx/paragon/scss/core/core";
-@import "@edx/brand/paragon/overrides";
+// @import "@fortawesome/fontawesome-svg-core"; 
+@import "@openedx/paragon/styles/css/core/custom-media-breakpoints";
+@import "@openedx/paragon/styles/scss/core/core";
+@import "@openedx/paragon/styles/css/core/index.css";
+@import "@openedx/paragon/styles/css/themes/light/index.css";
+
+@import "@edx/brand/paragon/css/core/index.css";
+@import "@edx/brand/paragon/css/themes/light/index.css";

@@ -1,13 +1,13 @@
 .certificate {
-   background: $gray-100;
+   background: var(--pgn-color-gray-100);
 
   a {
-    color: $info-700;
-    text-decoration-color: $info-700;
+    color: var(--pgn-color-info-700);
+    text-decoration-color: var(--pgn-color-info-700);
   }
 
   .accomplishment-rendering {
-    background-color: $white;
+    background-color: var(--pgn-color-white);
     background-repeat: no-repeat;
     background-position: center 30px;
     background-size: 80% auto;

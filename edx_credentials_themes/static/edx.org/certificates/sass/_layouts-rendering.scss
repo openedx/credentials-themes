@@ -10,9 +10,9 @@
 // ------------------------------
 .accomplishment-rendering {
   margin: 2%;
-  border: 1px solid $gray-500;
+  border: 1px solid var(--pgn-color-gray-500);
   padding: 7% 5% 5% 5% !important;
-  background-color: $gray-100;
+  background-color: var(--pgn-color-gray-100);
   box-shadow: 0 1px 2px 1px rgba(167, 164, 164, 0.25);
   text-align: center;
 
@@ -111,7 +111,7 @@
 .accomplishment-statement {
   @extend .col-lg-8;
   @extend .mt-0, .mb-5, .pb-4, .pl-0, .pr-0;
-  border-bottom: 1px solid $gray-500;
+  border-bottom: 1px solid var(--pgn-color-gray-500);
 
   @include media-breakpoint-up(lg) {
     display: inline-block;
@@ -132,7 +132,7 @@
 .accomplishment-signatories {
   @extend .col-lg-4;
   @extend .pb-lg-0, .pb-4, .pl-0, .pr-0;
-  border-bottom: 1px solid $gray-500;
+  border-bottom: 1px solid var(--pgn-color-gray-500);
 
   @include media-breakpoint-up(lg) {
     @include text-align(right);

@@ -3,6 +3,7 @@
 
 // About: (specifically for certificate rendering) styling for specific UI components ranging from global to modular.
 
+@import "@openedx/paragon/styles/css/core/custom-media-breakpoints";
 // #RENDERING
 
 // ------------------------------
@@ -11,7 +12,7 @@
 .wrapper-accomplishment-title {
   .accomplishment-title {
     @extend .h1;
-    font-weight: $font-weight-light;
+    font-weight: var(--pgn-typography-font-weight-light);
     line-height: 1.1;
     text-transform: uppercase;
     color: $dark-gray;
@@ -72,7 +73,7 @@
 
   .organization-name {
     @extend .h5;
-    font-weight: $font-weight-semi-bold;
+    font-weight: var(--pgn-typography-font-weight-semi-bold);
     word-wrap: break-word;
     text-align: center;
   }
@@ -110,8 +111,8 @@
   .accomplishment-recipient {
     @extend .h2;
     line-height: 1.2;
-    font-weight: $font-weight-semi-bold;
-    color: $black;
+    font-weight: var(--pgn-typography-font-weight-semi-bold);
+    color: var(--pgn-color-black);
 
     @include media-breakpoint-up(md) {
       font-size: 2.5rem;
@@ -122,8 +123,8 @@
   .accomplishment-program {
     @extend .h3;
     line-height: 1.2;
-    font-weight: $font-weight-semi-bold;
-    color: $black;
+    font-weight: var(--pgn-typography-font-weight-semi-bold);
+    color: var(--pgn-color-black);
 
     @include media-breakpoint-up(md) {
       font-size: $font-xxx-large; // @extend .h2; extends not working
@@ -157,14 +158,14 @@
   .signatory-name {
     @extend .h6;
     font-size: $font-small;
-    font-weight: $font-weight-semi-bold;
+    font-weight: var(--pgn-typography-font-weight-semi-bold);
     line-height: $line-height-large;
-    color: $gray-700;
+    color: var(--pgn-color-gray-700);
   }
 
   .signatory-credentials {
     @extend %text-micro;
-    color: $gray-500;
+    color: var(--pgn-color-gray-500);
 
     .role {
       white-space: pre-line;
@@ -181,7 +182,7 @@
 .accomplishment-stamps {
   .title {
     @extend %h8;
-    color: $gray-600;
+    color: var(--pgn-color-gray-600);
     display: block;
     margin-bottom: 0;
   }
@@ -189,7 +190,7 @@
   .emphasized {
     @extend %text-micro;
     display: block;
-    font-weight: $font-weight-bold;
-    color: $gray-600;
+    font-weight: var(--pgn-typography-font-weight-bold);
+    color: var(--pgn-color-gray-600);
   }
 }
