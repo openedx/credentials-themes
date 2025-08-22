@@ -3,7 +3,7 @@ $btn-blue: #0075b4;
 $btn-blue-hover-light: #F2F8FB;
 
 .paragraph-grey {
-  color: $gray-700;
+  color: var(--pgn-color-gray-700);
 }
 
 .certificate-icon {
@@ -17,7 +17,7 @@ $btn-blue-hover-light: #F2F8FB;
 }
 
 .icon-fill {
-  fill: $black;
+  fill: var(--pgn-color-black);
 
   &.micromasters {
     fill: $micromasters-color;
@@ -28,7 +28,7 @@ $btn-blue-hover-light: #F2F8FB;
 }
 
 .text-black {
-  color: $black;
+  color: var(--pgn-color-black);
 }
 
 .top-bar-link {
@@ -46,7 +46,7 @@ $btn-blue-hover-light: #F2F8FB;
 }
 
 .view-record-container {
-  color: $gray-700;
+  color: var(--pgn-color-gray-700);
   height: 100%;
   width: 100%;
 

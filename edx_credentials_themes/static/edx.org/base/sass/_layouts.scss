@@ -16,7 +16,7 @@
 // ------------------------------
 %layout-wrapper {
   @extend .mb-5;
-  padding: 0 ($spacer*2);
+  padding: 0 calc(var(--pgn-spacing-spacer-base) * .2);
 }
 
 %layout {
@@ -28,7 +28,7 @@
 // ------------------------------
 // app header
 .wrapper-header {
-    border-bottom: 1px solid $gray-500;
+    border-bottom: 1px solid var(--pgn-color-gray-500);
 }
 
 .header-app {
@@ -112,7 +112,7 @@
 .record,
 .program-record-wrapper {
   @extend .container;
-  background-color: $white;
+  background-color: var(--pgn-color-white);
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 2em 0;
@@ -148,10 +148,10 @@
 
 .record-card {
   margin-bottom: 0;
-  background: $gray-200;
+  background: var(--pgn-color-gray-200);
 
   &:nth-of-type(even){
-    background: $white;
+    background: var(--pgn-color-white);
   }
 
   .record-data-col {
@@ -183,7 +183,7 @@
 
   .inline-data {
     padding-right: 0.4em;
-    color: $primary-700;
+    color: var(--pgn-color-primary-700);
   }
 
 }
@@ -270,7 +270,7 @@
   @extend .row;
   @extend .p-4;
   margin: 0 auto;
-  border-top: $hr-border-width solid $hr-border-color;
+  border-top: var(--pgn-size-hr-border-width) solid var(--pgn-color-hr-border);
 }
 
 .footer-app-legal {

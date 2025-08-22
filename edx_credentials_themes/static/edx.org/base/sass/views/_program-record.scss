@@ -1,9 +1,9 @@
 $btn-blue: #0075b4;
-$table-border-color: #D3D2D2;
+$table-border-color: var(--pgn-color-table-border) !default;
 $record-border-color: #C2C2C2;
 
 .program-record-wrapper {
-  color: $gray-700;
+  color: var(--pgn-color-gray-700);
 
   .alert-success {
     @extend .alert-success;
@@ -48,7 +48,7 @@ $record-border-color: #C2C2C2;
     }
 
     .btn {
-      color: $black;
+      color: var(--pgn-color-black);
       border: none;
     }
   }
@@ -100,7 +100,7 @@ $record-border-color: #C2C2C2;
       border: {
         top: none;
         right: none;
-        bottom: 2px solid $table-border-color;
+        bottom: 2px solid var(--pgn-color-table-border);
         left: none;
       };
     }
@@ -133,7 +133,7 @@ $record-border-color: #C2C2C2;
     .program-type {
       display: flex;
       align-items: center;
-      color: $gray-500;
+      color: var(--pgn-color-gray-500);
     }
 
     .program-icon {

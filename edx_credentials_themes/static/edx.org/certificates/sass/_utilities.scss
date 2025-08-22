@@ -29,11 +29,11 @@ $font-xx-small:0.688rem;
 $font-xxx-small:0.625rem;
 
 // Font weights
-$font-weight-normal:400;
-$font-weight-light:300;
+$font-weight-normal: var(--pgn-typography-font-weight-normal) !default;
+$font-weight-light: var(--pgn-typography-font-weight-light) !default;
 $font-weight-x-light:200;
-$font-weight-semi-bold:600;
-$font-weight-bold:700;
+$font-weight-semi-bold: var(--pgn-typography-font-weight-semi-bold) !default;
+$font-weight-bold: var(--pgn-typography-font-weight-bold) !default;
 
 //Line height vars
 $line-height-large: 1.6;
@@ -91,13 +91,13 @@ $line-height-small: 1.5;
 
 %text-meta {
   font-size: $font-size-sm;
-  line-height: $line-height-lg;
+  line-height: var(--pgn-typography-line-height-lg);
 }
 
 %h8 {
   @extend .h6;
   @extend %text-micro;
-  font-weight: $font-weight-semi-bold;
+  font-weight: var(--pgn-typography-font-weight-semi-bold);
   text-transform: uppercase;
   letter-spacing: 0.03125rem;
 }

@@ -51,8 +51,8 @@
     }
 
     %print-black-on-white {
-        background: $white !important;
-        color: $black !important;
+        background: var(--pgn-color-white) !important;
+        color: var(--pgn-color-black) !important;
     }
 
     %print-layout-wrapper {
