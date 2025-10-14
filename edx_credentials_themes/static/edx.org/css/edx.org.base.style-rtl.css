@@ -53,11 +53,11 @@
  */
 
 :root {
-  --pgn-size-border-width: 1px; /* Default border width. */
-  --pgn-size-border-radius-base: 0.375rem; /* Default border radius. */
-  --pgn-size-border-radius-lg: 0.425rem; /* Large border radius. */
-  --pgn-size-border-radius-sm: 0.25rem; /* Small border radius. */
-  --pgn-size-rounded-pill: 50rem; /* Pill border radius. */
+  --pgn-size-border-width: 1px; /** Default border width. */
+  --pgn-size-border-radius-base: 0.375rem; /** Default border radius. */
+  --pgn-size-border-radius-lg: 0.425rem; /** Large border radius. */
+  --pgn-size-border-radius-sm: 0.25rem; /** Small border radius. */
+  --pgn-size-rounded-pill: 50rem; /** Pill border radius. */
   --pgn-size-alert-border-width: 0;
   --pgn-size-annotation-arrow-border-width: 0.5rem;
   --pgn-size-annotation-max-width: 18.75rem;
@@ -190,12 +190,12 @@
   --pgn-size-tooltip-arrow-width: 0.8rem;
   --pgn-size-caret-width: 0.3em;
   --pgn-size-input-btn-focus-width: 1px;
-  --pgn-size-breakpoint-xs: 0px; /* Starting breakpoint for portrait phones. */
-  --pgn-size-breakpoint-sm: 576px; /* Starting breakpoint for landscape phones. */
-  --pgn-size-breakpoint-md: 768px; /* Starting breakpoint for tablets. */
-  --pgn-size-breakpoint-lg: 992px; /* Starting breakpoint for desktops. */
-  --pgn-size-breakpoint-xl: 1200px; /* Starting breakpoint for large desktops. */
-  --pgn-size-breakpoint-xxl: 1400px; /* Starting breakpoint for large desktops, more than 1400px. */
+  --pgn-size-breakpoint-xs: 0px; /** Starting breakpoint for portrait phones. */
+  --pgn-size-breakpoint-sm: 576px; /** Starting breakpoint for landscape phones. */
+  --pgn-size-breakpoint-md: 768px; /** Starting breakpoint for tablets. */
+  --pgn-size-breakpoint-lg: 992px; /** Starting breakpoint for desktops. */
+  --pgn-size-breakpoint-xl: 1200px; /** Starting breakpoint for large desktops. */
+  --pgn-size-breakpoint-xxl: 1400px; /** Starting breakpoint for large desktops, more than 1400px. */
   --pgn-spacing-action-row-gap-x: 0.5rem;
   --pgn-spacing-action-row-gap-y: 0.5rem;
   --pgn-spacing-alert-padding-y: 1.5rem;
@@ -341,12 +341,12 @@
   --pgn-spacing-list-group-item-padding-x: 1.25rem;
   --pgn-spacing-paragraph-margin-bottom: 1rem;
   --pgn-spacing-mark-padding: 0.2em;
-  --pgn-spacing-spacer-0: 0; /* Space value of level 0 */
-  --pgn-spacing-spacer-base: 1rem; /* Basic space value */
-  --pgn-spacing-label-margin-bottom: 0.5rem; /* Margin bottom for label. */
-  --pgn-spacing-table-cell-padding-base: 0.75rem; /* Padding for tables. */
-  --pgn-spacing-table-cell-padding-sm: 0.3rem; /* Padding sm for tables. */
-  --pgn-spacing-grid-gutter-width: 24px; /* Grid gutter width value. */
+  --pgn-spacing-spacer-0: 0; /** Space value of level 0 */
+  --pgn-spacing-spacer-base: 1rem; /** Basic space value */
+  --pgn-spacing-label-margin-bottom: 0.5rem; /** Margin bottom for label. */
+  --pgn-spacing-table-cell-padding-base: 0.75rem; /** Padding for tables. */
+  --pgn-spacing-table-cell-padding-sm: 0.3rem; /** Padding sm for tables. */
+  --pgn-spacing-grid-gutter-width: 24px; /** Grid gutter width value. */
   --pgn-typography-alert-font-size: 0.875rem;
   --pgn-typography-alert-line-height: 1.5rem;
   --pgn-typography-badge-font-size: 75%;
@@ -380,39 +380,39 @@
   --pgn-typography-link-decoration-brand-hover: underline;
   --pgn-typography-link-decoration-brand-inline-base: underline;
   --pgn-typography-link-decoration-brand-inline-hover: underline;
-  --pgn-typography-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /* Sans-serif font family. */
-  --pgn-typography-font-family-serif: serif; /* Serif font family. */
-  --pgn-typography-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; /* Monospace font family. */
-  --pgn-typography-font-size-base: 1.125rem; /* Base font size. */
-  --pgn-typography-font-size-sm: 87.5%; /* Small font size. */
-  --pgn-typography-font-size-xs: 75%; /* X-small font size. */
-  --pgn-typography-font-size-micro: 0.688rem; /* Micro utils text font size. */
-  --pgn-typography-font-size-h1-base: 2.5rem; /* Base font size of heading level 1. */
-  --pgn-typography-font-size-h1-mobile: 2.25rem; /* Mobile font size of heading level 1. */
-  --pgn-typography-font-size-h2-base: 2rem; /* Font size of heading level 2. */
-  --pgn-typography-font-size-h3-base: 1.375rem; /* Font size of heading level 3. */
-  --pgn-typography-font-size-h4-base: 1.125rem; /* Font size of heading level 4. */
-  --pgn-typography-font-size-h5-base: 0.875rem; /* Font size of heading level 5. */
-  --pgn-typography-font-size-h6-base: 0.75rem; /* Font size of heading level 6. */
-  --pgn-typography-font-size-display-1: 3.75rem; /* Font size for heading of level 1. */
-  --pgn-typography-font-size-display-2: 4.875rem; /* Font size for heading of level 2. */
-  --pgn-typography-font-size-display-3: 5.625rem; /* Font size for heading of level 3. */
-  --pgn-typography-font-size-display-4: 7.5rem; /* Font size for heading of level 4. */
-  --pgn-typography-font-size-display-mobile-1: 3.25rem; /* Mobile font size for heading of level 1. */
-  --pgn-typography-font-weight-lighter: lighter; /* Lighter font weight. */
-  --pgn-typography-font-weight-light: 300; /* Light font weight. */
-  --pgn-typography-font-weight-normal: 400; /* Normal font weight. */
-  --pgn-typography-font-weight-semi-bold: 500; /* Semi-bold font weight. */
-  --pgn-typography-font-weight-bold: 700; /* Bold font weight. */
-  --pgn-typography-font-weight-bolder: bolder; /* Bolder font weight. */
-  --pgn-typography-font-weight-lead: inherit; /* Lead text font weight. */
-  --pgn-typography-font-weight-table-th: 700; /* Table th font weight. */
-  --pgn-typography-line-height-base: 1.5556; /* Basic line height. */
-  --pgn-typography-line-height-lg: 1.5; /* Large line height. */
-  --pgn-typography-line-height-sm: 1.5; /* Small line height. */
-  --pgn-typography-line-height-micro: 0.938rem; /* Micro utils line height. */
-  --pgn-typography-line-height-display-base: 1; /* Standard display line height. */
-  --pgn-typography-line-height-display-mobile: 3.5rem; /* Mobile display line height. */
+  --pgn-typography-font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /** Sans-serif font family. */
+  --pgn-typography-font-family-serif: serif; /** Serif font family. */
+  --pgn-typography-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; /** Monospace font family. */
+  --pgn-typography-font-size-base: 1.125rem; /** Base font size. */
+  --pgn-typography-font-size-sm: 87.5%; /** Small font size. */
+  --pgn-typography-font-size-xs: 75%; /** X-small font size. */
+  --pgn-typography-font-size-micro: 0.688rem; /** Micro utils text font size. */
+  --pgn-typography-font-size-h1-base: 2.5rem; /** Base font size of heading level 1. */
+  --pgn-typography-font-size-h1-mobile: 2.25rem; /** Mobile font size of heading level 1. */
+  --pgn-typography-font-size-h2-base: 2rem; /** Font size of heading level 2. */
+  --pgn-typography-font-size-h3-base: 1.375rem; /** Font size of heading level 3. */
+  --pgn-typography-font-size-h4-base: 1.125rem; /** Font size of heading level 4. */
+  --pgn-typography-font-size-h5-base: 0.875rem; /** Font size of heading level 5. */
+  --pgn-typography-font-size-h6-base: 0.75rem; /** Font size of heading level 6. */
+  --pgn-typography-font-size-display-1: 3.75rem; /** Font size for heading of level 1. */
+  --pgn-typography-font-size-display-2: 4.875rem; /** Font size for heading of level 2. */
+  --pgn-typography-font-size-display-3: 5.625rem; /** Font size for heading of level 3. */
+  --pgn-typography-font-size-display-4: 7.5rem; /** Font size for heading of level 4. */
+  --pgn-typography-font-size-display-mobile-1: 3.25rem; /** Mobile font size for heading of level 1. */
+  --pgn-typography-font-weight-lighter: lighter; /** Lighter font weight. */
+  --pgn-typography-font-weight-light: 300; /** Light font weight. */
+  --pgn-typography-font-weight-normal: 400; /** Normal font weight. */
+  --pgn-typography-font-weight-semi-bold: 500; /** Semi-bold font weight. */
+  --pgn-typography-font-weight-bold: 700; /** Bold font weight. */
+  --pgn-typography-font-weight-bolder: bolder; /** Bolder font weight. */
+  --pgn-typography-font-weight-lead: inherit; /** Lead text font weight. */
+  --pgn-typography-font-weight-table-th: 700; /** Table th font weight. */
+  --pgn-typography-line-height-base: 1.5556; /** Basic line height. */
+  --pgn-typography-line-height-lg: 1.5; /** Large line height. */
+  --pgn-typography-line-height-sm: 1.5; /** Small line height. */
+  --pgn-typography-line-height-micro: 0.938rem; /** Micro utils line height. */
+  --pgn-typography-line-height-display-base: 1; /** Standard display line height. */
+  --pgn-typography-line-height-display-mobile: 3.5rem; /** Mobile display line height. */
   --pgn-transition-badge: none;
   --pgn-transition-btn: none;
   --pgn-transition-carousel-base-property: transform;
@@ -463,26 +463,26 @@
   --pgn-transition-progress-bar-transition-timing-function: ease;
   --pgn-transition-progress-bar-transition-delay: 0s;
   --pgn-transition-progress-bar-transition-behavior: normal;
-  --pgn-transition-base-property: all; /* Generic transition for any property change */
-  --pgn-transition-base-duration: 0.2s; /* Generic transition for any property change */
-  --pgn-transition-base-timing-function: ease-in-out; /* Generic transition for any property change */
-  --pgn-transition-base-delay: 0s; /* Generic transition for any property change */
-  --pgn-transition-base-behavior: normal; /* Generic transition for any property change */
-  --pgn-transition-fade-property: opacity; /* Opacity transition that takes 150ms */
-  --pgn-transition-fade-duration: 0.15s; /* Opacity transition that takes 150ms */
-  --pgn-transition-fade-timing-function: linear; /* Opacity transition that takes 150ms */
-  --pgn-transition-fade-delay: 0s; /* Opacity transition that takes 150ms */
-  --pgn-transition-fade-behavior: normal; /* Opacity transition that takes 150ms */
-  --pgn-transition-collapse-height-property: height; /* Collapse transition for height that takes 350ms */
-  --pgn-transition-collapse-height-duration: 0.35s; /* Collapse transition for height that takes 350ms */
-  --pgn-transition-collapse-height-timing-function: ease; /* Collapse transition for height that takes 350ms */
-  --pgn-transition-collapse-height-delay: 0s; /* Collapse transition for height that takes 350ms */
-  --pgn-transition-collapse-height-behavior: normal; /* Collapse transition for height that takes 350ms */
-  --pgn-transition-collapse-width-property: width; /* Collapse transition for width that takes 350ms */
-  --pgn-transition-collapse-width-duration: 0.35s; /* Collapse transition for width that takes 350ms */
-  --pgn-transition-collapse-width-timing-function: ease; /* Collapse transition for width that takes 350ms */
-  --pgn-transition-collapse-width-delay: 0s; /* Collapse transition for width that takes 350ms */
-  --pgn-transition-collapse-width-behavior: normal; /* Collapse transition for width that takes 350ms */
+  --pgn-transition-base-property: all; /** Generic transition for any property change */
+  --pgn-transition-base-duration: 0.2s; /** Generic transition for any property change */
+  --pgn-transition-base-timing-function: ease-in-out; /** Generic transition for any property change */
+  --pgn-transition-base-delay: 0s; /** Generic transition for any property change */
+  --pgn-transition-base-behavior: normal; /** Generic transition for any property change */
+  --pgn-transition-fade-property: opacity; /** Opacity transition that takes 150ms */
+  --pgn-transition-fade-duration: 0.15s; /** Opacity transition that takes 150ms */
+  --pgn-transition-fade-timing-function: linear; /** Opacity transition that takes 150ms */
+  --pgn-transition-fade-delay: 0s; /** Opacity transition that takes 150ms */
+  --pgn-transition-fade-behavior: normal; /** Opacity transition that takes 150ms */
+  --pgn-transition-collapse-height-property: height; /** Collapse transition for height that takes 350ms */
+  --pgn-transition-collapse-height-duration: 0.35s; /** Collapse transition for height that takes 350ms */
+  --pgn-transition-collapse-height-timing-function: ease; /** Collapse transition for height that takes 350ms */
+  --pgn-transition-collapse-height-delay: 0s; /** Collapse transition for height that takes 350ms */
+  --pgn-transition-collapse-height-behavior: normal; /** Collapse transition for height that takes 350ms */
+  --pgn-transition-collapse-width-property: width; /** Collapse transition for width that takes 350ms */
+  --pgn-transition-collapse-width-duration: 0.35s; /** Collapse transition for width that takes 350ms */
+  --pgn-transition-collapse-width-timing-function: ease; /** Collapse transition for width that takes 350ms */
+  --pgn-transition-collapse-width-delay: 0s; /** Collapse transition for width that takes 350ms */
+  --pgn-transition-collapse-width-behavior: normal; /** Collapse transition for width that takes 350ms */
   --pgn-elevation-dropdown-zindex: 1000;
   --pgn-elevation-modal-backdrop-zindex: 1040;
   --pgn-elevation-modal-zindex: 1050;
@@ -491,19 +491,19 @@
   --pgn-elevation-sheet-zindex-backdrop: 1031;
   --pgn-elevation-sheet-zindex-main: 1032;
   --pgn-elevation-tooltip-zindex: 1070;
-  --pgn-elevation-zindex-0: 0; /* z-index of level 0. */
-  --pgn-elevation-zindex-200: 200; /* z-index of level 200. */
-  --pgn-elevation-zindex-400: 400; /* z-index of level 400. */
-  --pgn-elevation-zindex-600: 600; /* z-index of level 600. */
-  --pgn-elevation-zindex-800: 800; /* z-index of level 800. */
-  --pgn-elevation-zindex-1000: 1000; /* z-index of level 1000. */
-  --pgn-elevation-zindex-1200: 1200; /* z-index of level 1200. */
-  --pgn-elevation-zindex-1400: 1400; /* z-index of level 1400. */
-  --pgn-elevation-zindex-1600: 1600; /* z-index of level 1600. */
-  --pgn-elevation-zindex-1800: 1800; /* z-index of level 1800. */
-  --pgn-elevation-zindex-2000: 2000; /* z-index of level 2000. */
-  --pgn-elevation-zindex-sticky: 1020; /* z-index for sticky element. */
-  --pgn-elevation-zindex-fixed: 1030; /* z-index of for fixed element. */
+  --pgn-elevation-zindex-0: 0; /** z-index of level 0. */
+  --pgn-elevation-zindex-200: 200; /** z-index of level 200. */
+  --pgn-elevation-zindex-400: 400; /** z-index of level 400. */
+  --pgn-elevation-zindex-600: 600; /** z-index of level 600. */
+  --pgn-elevation-zindex-800: 800; /** z-index of level 800. */
+  --pgn-elevation-zindex-1000: 1000; /** z-index of level 1000. */
+  --pgn-elevation-zindex-1200: 1200; /** z-index of level 1200. */
+  --pgn-elevation-zindex-1400: 1400; /** z-index of level 1400. */
+  --pgn-elevation-zindex-1600: 1600; /** z-index of level 1600. */
+  --pgn-elevation-zindex-1800: 1800; /** z-index of level 1800. */
+  --pgn-elevation-zindex-2000: 2000; /** z-index of level 2000. */
+  --pgn-elevation-zindex-sticky: 1020; /** z-index for sticky element. */
+  --pgn-elevation-zindex-fixed: 1030; /** z-index of for fixed element. */
   --pgn-other-form-control-cursor: auto;
   --pgn-other-form-control-range-track-cursor: pointer;
   --pgn-other-form-control-custom-file-lang: en;
@@ -588,17 +588,17 @@
   --pgn-spacing-tab-more-link-dropdown-toggle-padding-y: var(--pgn-spacing-spacer-base);
   --pgn-spacing-tab-inverse-pills-link-dropdown-toggle-padding-y: var(--pgn-spacing-spacer-base);
   --pgn-spacing-tab-inverse-tabs-link-dropdown-toggle-padding-y: var(--pgn-spacing-spacer-base);
-  --pgn-spacing-spacer-1: calc(var(--pgn-spacing-spacer-base) * .25); /* Space value of level 1 */
-  --pgn-spacing-spacer-2: calc(var(--pgn-spacing-spacer-base) * .5); /* Space value of level 2 */
-  --pgn-spacing-spacer-3: var(--pgn-spacing-spacer-base); /* Space value of level 3 */
-  --pgn-spacing-spacer-4: calc(var(--pgn-spacing-spacer-base) * 1.5); /* Space value of level 4 */
-  --pgn-spacing-spacer-5: calc(var(--pgn-spacing-spacer-base) * 3); /* Space value of level 5 */
-  --pgn-spacing-spacer-6: calc(var(--pgn-spacing-spacer-base) * 5); /* Space value of level 6 */
-  --pgn-spacing-spacer-1-5: calc(var(--pgn-spacing-spacer-base) * .375); /* Space value of level 1.5 */
-  --pgn-spacing-spacer-2-5: calc(var(--pgn-spacing-spacer-base) * .75); /* Space value of level 2.5 */
-  --pgn-spacing-spacer-3-5: calc(var(--pgn-spacing-spacer-base) * 1.25); /* Space value of level 3.5 */
-  --pgn-spacing-spacer-4-5: calc(var(--pgn-spacing-spacer-base) * 2); /* Space value of level 4.5 */
-  --pgn-spacing-spacer-5-5: calc(var(--pgn-spacing-spacer-base) * 4); /* Space value of level 5.5 */
+  --pgn-spacing-spacer-1: calc(var(--pgn-spacing-spacer-base) * .25); /** Space value of level 1 */
+  --pgn-spacing-spacer-2: calc(var(--pgn-spacing-spacer-base) * .5); /** Space value of level 2 */
+  --pgn-spacing-spacer-3: var(--pgn-spacing-spacer-base); /** Space value of level 3 */
+  --pgn-spacing-spacer-4: calc(var(--pgn-spacing-spacer-base) * 1.5); /** Space value of level 4 */
+  --pgn-spacing-spacer-5: calc(var(--pgn-spacing-spacer-base) * 3); /** Space value of level 5 */
+  --pgn-spacing-spacer-6: calc(var(--pgn-spacing-spacer-base) * 5); /** Space value of level 6 */
+  --pgn-spacing-spacer-1-5: calc(var(--pgn-spacing-spacer-base) * .375); /** Space value of level 1.5 */
+  --pgn-spacing-spacer-2-5: calc(var(--pgn-spacing-spacer-base) * .75); /** Space value of level 2.5 */
+  --pgn-spacing-spacer-3-5: calc(var(--pgn-spacing-spacer-base) * 1.25); /** Space value of level 3.5 */
+  --pgn-spacing-spacer-4-5: calc(var(--pgn-spacing-spacer-base) * 2); /** Space value of level 4.5 */
+  --pgn-spacing-spacer-5-5: calc(var(--pgn-spacing-spacer-base) * 4); /** Space value of level 5.5 */
   --pgn-typography-alert-font-weight-link: var(--pgn-typography-font-weight-normal);
   --pgn-typography-annotation-font-size: var(--pgn-typography-font-size-sm);
   --pgn-typography-annotation-line-height: var(--pgn-typography-line-height-sm);
@@ -636,21 +636,21 @@
   --pgn-typography-dt-font-weight: var(--pgn-typography-font-weight-bold);
   --pgn-typography-blockquote-small-font-size: var(--pgn-typography-font-size-sm);
   --pgn-typography-blockquote-font-size: calc(var(--pgn-typography-font-size-base) * 1.25);
-  --pgn-typography-font-family-base: var(--pgn-typography-font-family-sans-serif); /* Basic font family. */
-  --pgn-typography-font-size-lg: calc(var(--pgn-typography-font-size-base) * 1.25); /* Lead text font size. */
-  --pgn-typography-font-size-h2-mobile: var(--pgn-typography-font-size-h2-base); /* Mobile font size of heading level 2. */
-  --pgn-typography-font-size-h3-mobile: var(--pgn-typography-font-size-h3-base); /* Mobile font size of heading level 3. */
-  --pgn-typography-font-size-h4-mobile: var(--pgn-typography-font-size-h4-base); /* Mobile font size of heading level 4. */
-  --pgn-typography-font-size-h5-mobile: var(--pgn-typography-font-size-h5-base); /* Mobile font size of heading level 5. */
-  --pgn-typography-font-size-h6-mobile: var(--pgn-typography-font-size-h6-base); /* Mobile font size of heading level 6. */
-  --pgn-typography-font-size-display-mobile-2: var(--pgn-typography-font-size-display-mobile-1); /* Mobile font size for heading of level 2. */
-  --pgn-typography-font-size-display-mobile-3: var(--pgn-typography-font-size-display-mobile-1); /* Mobile font size for heading of level 3. */
-  --pgn-typography-font-size-display-mobile-4: var(--pgn-typography-font-size-display-mobile-1); /* Mobile font size for heading of level 4. */
-  --pgn-typography-font-weight-base: var(--pgn-typography-font-weight-normal); /* Basic font weight. */
-  --pgn-typography-font-weight-display-1: var(--pgn-typography-font-weight-bold); /* Font weight of display level 1. */
-  --pgn-typography-font-weight-display-2: var(--pgn-typography-font-weight-bold); /* Font weight of display level 2. */
-  --pgn-typography-font-weight-display-3: var(--pgn-typography-font-weight-bold); /* Font weight of display level 3. */
-  --pgn-typography-font-weight-display-4: var(--pgn-typography-font-weight-bold); /* Font weight of display level 4. */
+  --pgn-typography-font-family-base: var(--pgn-typography-font-family-sans-serif); /** Basic font family. */
+  --pgn-typography-font-size-lg: calc(var(--pgn-typography-font-size-base) * 1.25); /** Lead text font size. */
+  --pgn-typography-font-size-h2-mobile: var(--pgn-typography-font-size-h2-base); /** Mobile font size of heading level 2. */
+  --pgn-typography-font-size-h3-mobile: var(--pgn-typography-font-size-h3-base); /** Mobile font size of heading level 3. */
+  --pgn-typography-font-size-h4-mobile: var(--pgn-typography-font-size-h4-base); /** Mobile font size of heading level 4. */
+  --pgn-typography-font-size-h5-mobile: var(--pgn-typography-font-size-h5-base); /** Mobile font size of heading level 5. */
+  --pgn-typography-font-size-h6-mobile: var(--pgn-typography-font-size-h6-base); /** Mobile font size of heading level 6. */
+  --pgn-typography-font-size-display-mobile-2: var(--pgn-typography-font-size-display-mobile-1); /** Mobile font size for heading of level 2. */
+  --pgn-typography-font-size-display-mobile-3: var(--pgn-typography-font-size-display-mobile-1); /** Mobile font size for heading of level 3. */
+  --pgn-typography-font-size-display-mobile-4: var(--pgn-typography-font-size-display-mobile-1); /** Mobile font size for heading of level 4. */
+  --pgn-typography-font-weight-base: var(--pgn-typography-font-weight-normal); /** Basic font weight. */
+  --pgn-typography-font-weight-display-1: var(--pgn-typography-font-weight-bold); /** Font weight of display level 1. */
+  --pgn-typography-font-weight-display-2: var(--pgn-typography-font-weight-bold); /** Font weight of display level 2. */
+  --pgn-typography-font-weight-display-3: var(--pgn-typography-font-weight-bold); /** Font weight of display level 3. */
+  --pgn-typography-font-weight-display-4: var(--pgn-typography-font-weight-bold); /** Font weight of display level 4. */
   --pgn-transition-carousel-base-duration: var(--pgn-transition-carousel-duration);
   --pgn-transition-carousel-indicator-duration: var(--pgn-transition-carousel-duration);
   --pgn-size-btn-border-width: var(--pgn-size-input-btn-border-width);
@@ -997,258 +997,258 @@
   --pgn-elevation-input-btn-focus-box-shadow-offset-x: 0;
   --pgn-elevation-input-btn-focus-box-shadow-offset-y: 0;
   --pgn-elevation-input-btn-focus-box-shadow-blur: 0;
-  --pgn-elevation-box-shadow-level-1-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-1-offset-x: 0; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-1-offset-y: 0.0625rem; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-1-blur: 0.125rem; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-2-offset-x: 0; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-2-offset-y: 0.0625rem; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-1-2-blur: 0.25rem; /* Basic box shadow of level 1. */
-  --pgn-elevation-box-shadow-level-2-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-1-offset-x: 0; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-1-offset-y: 0.125rem; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-1-blur: 0.25rem; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-2-offset-x: 0; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-2-offset-y: 0.125rem; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-2-2-blur: 0.5rem; /* Basic box shadow of level 2. */
-  --pgn-elevation-box-shadow-level-3-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-1-offset-x: 0; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-1-offset-y: 0; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-1-blur: 0.625rem; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-2-offset-x: 0; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-2-offset-y: 0; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-3-2-blur: 1rem; /* Basic box shadow of level 3. */
-  --pgn-elevation-box-shadow-level-4-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-1-offset-x: 0; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-1-offset-y: 0.625rem; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-1-blur: 1.25rem; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-2-offset-x: 0; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-2-offset-y: 0.5rem; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-4-2-blur: 1.25rem; /* Basic box shadow of level 4. */
-  --pgn-elevation-box-shadow-level-5-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-1-offset-x: 0; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-1-offset-y: 1.25rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-1-blur: 2.5rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-2-offset-x: 0; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-2-offset-y: 0.5rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-level-5-2-blur: 3rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-base-color: rgba(0, 0, 0, 0.3); /* Default box shadow. */
-  --pgn-elevation-box-shadow-base-offset-x: 0; /* Default box shadow. */
-  --pgn-elevation-box-shadow-base-offset-y: 0.125rem; /* Default box shadow. */
-  --pgn-elevation-box-shadow-base-blur: 0.25rem; /* Default box shadow. */
-  --pgn-elevation-box-shadow-sm-color: rgba(0, 0, 0, 0.2); /* Small box shadow. */
-  --pgn-elevation-box-shadow-sm-offset-x: 0; /* Small box shadow. */
-  --pgn-elevation-box-shadow-sm-offset-y: 0.0625rem; /* Small box shadow. */
-  --pgn-elevation-box-shadow-sm-blur: 0.125rem; /* Small box shadow. */
-  --pgn-elevation-box-shadow-lg-color: rgba(0, 0, 0, 0.3); /* Large box shadow. */
-  --pgn-elevation-box-shadow-lg-offset-x: 0; /* Large box shadow. */
-  --pgn-elevation-box-shadow-lg-offset-y: 0.25rem; /* Large box shadow. */
-  --pgn-elevation-box-shadow-lg-blur: 0.5rem; /* Large box shadow. */
-  --pgn-elevation-box-shadow-down-1-1-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-1-offset-x: 0; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-1-offset-y: 0.0625rem; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-1-blur: 0.125rem; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-2-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-2-offset-x: 0; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-2-offset-y: 0.0625rem; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-1-2-blur: 0.25rem; /* Bottom box shadow of level 1. */
-  --pgn-elevation-box-shadow-down-2-1-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-1-offset-x: 0; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-1-offset-y: 0.125rem; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-1-blur: 0.25rem; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-2-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-2-offset-x: 0; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-2-offset-y: 0.125rem; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-2-2-blur: 0.5rem; /* Bottom box shadow of level 2. */
-  --pgn-elevation-box-shadow-down-3-1-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-1-offset-x: 0; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-1-offset-y: 0.5rem; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-1-blur: 1rem; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-2-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-2-offset-x: 0; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-2-offset-y: 0.25rem; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-3-2-blur: 0.625rem; /* Bottom box shadow of level 3. */
-  --pgn-elevation-box-shadow-down-4-1-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-1-offset-x: 0; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-1-offset-y: 0.625rem; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-1-blur: 1.25rem; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-2-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-2-offset-x: 0; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-2-offset-y: 0.5rem; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-4-2-blur: 1.25rem; /* Bottom box shadow of level 4. */
-  --pgn-elevation-box-shadow-down-5-1-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-1-offset-x: 0; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-1-offset-y: 1.25rem; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-1-blur: 2.5rem; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-2-color: rgba(0, 0, 0, 0.15); /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-2-offset-x: 0; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-2-offset-y: 0.5rem; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-down-5-2-blur: 3rem; /* Bottom box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-1-1-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-1-offset-x: -0.0625rem; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-1-offset-y: 0; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-1-blur: 0.125rem; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-2-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-2-offset-x: -0.0625rem; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-2-offset-y: 0; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-1-2-blur: 0.25rem; /* Left box shadow of level 1. */
-  --pgn-elevation-box-shadow-left-2-1-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-1-offset-x: -0.125rem; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-1-offset-y: 0; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-1-blur: 0.25rem; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-2-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-2-offset-x: -0.125rem; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-2-offset-y: 0; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-2-2-blur: 0.5rem; /* Left box shadow of level 2. */
-  --pgn-elevation-box-shadow-left-3-1-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-1-offset-x: -0.5rem; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-1-offset-y: 0; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-1-blur: 1rem; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-2-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-2-offset-x: -0.25rem; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-2-offset-y: 0; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-3-2-blur: 0.625rem; /* Left box shadow of level 3. */
-  --pgn-elevation-box-shadow-left-4-1-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-1-offset-x: -0.625rem; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-1-offset-y: 0; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-1-blur: 1.25rem; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-2-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-2-offset-x: -0.5rem; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-2-offset-y: 0; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-4-2-blur: 1.25rem; /* Left box shadow of level 4. */
-  --pgn-elevation-box-shadow-left-5-1-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-1-offset-x: -1.25rem; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-1-offset-y: 0; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-1-blur: 2.5rem; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-2-color: rgba(0, 0, 0, 0.15); /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-2-offset-x: -0.5rem; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-2-offset-y: 0; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-left-5-2-blur: 3rem; /* Left box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-1-1-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-1-offset-x: 0; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-1-offset-y: -0.0625rem; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-1-blur: 0.125rem; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-2-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-2-offset-x: 0; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-2-offset-y: -0.0625rem; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-1-2-blur: 0.25rem; /* Top box shadow of level 1. */
-  --pgn-elevation-box-shadow-up-2-1-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-1-offset-x: 0; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-1-offset-y: -0.125rem; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-1-blur: 0.25rem; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-2-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-2-offset-x: 0; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-2-offset-y: -0.125rem; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-2-2-blur: 0.5rem; /* Top box shadow of level 2. */
-  --pgn-elevation-box-shadow-up-3-1-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-1-offset-x: 0; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-1-offset-y: -0.5rem; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-1-blur: 1rem; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-2-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-2-offset-x: 0; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-2-offset-y: -0.25rem; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-3-2-blur: 0.625rem; /* Top box shadow of level 3. */
-  --pgn-elevation-box-shadow-up-4-1-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-1-offset-x: 0; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-1-offset-y: -0.625rem; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-1-blur: 1.25rem; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-2-color: rgba(0, 0, 0, 0.15); /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-2-offset-x: 0; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-2-offset-y: -0.5rem; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-4-2-blur: 1.25rem; /* Top box shadow of level 4. */
-  --pgn-elevation-box-shadow-up-5-1-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-1-offset-x: 0; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-1-offset-y: -1.25rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-1-blur: 2.5rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-2-color: rgba(0, 0, 0, 0.15); /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-2-offset-x: 0; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-2-offset-y: -0.5rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-up-5-2-blur: 3rem; /* Basic box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-1-1-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-1-offset-x: 0.0625rem; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-1-offset-y: 0; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-1-blur: 0.125rem; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-2-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-2-offset-x: 0.0625rem; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-2-offset-y: 0; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-1-2-blur: 0.25rem; /* Right box shadow of level 1. */
-  --pgn-elevation-box-shadow-right-2-1-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-1-offset-x: 0.125rem; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-1-offset-y: 0; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-1-blur: 0.25rem; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-2-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-2-offset-x: 0.125rem; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-2-offset-y: 0; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-2-2-blur: 0.5rem; /* Right box shadow of level 2. */
-  --pgn-elevation-box-shadow-right-3-1-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-1-offset-x: 0.5rem; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-1-offset-y: 0; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-1-blur: 1rem; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-2-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-2-offset-x: 0.25rem; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-2-offset-y: 0; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-3-2-blur: 0.625rem; /* Right box shadow of level 3. */
-  --pgn-elevation-box-shadow-right-4-1-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-1-offset-x: 0.625rem; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-1-offset-y: 0; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-1-blur: 1.25rem; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-2-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-2-offset-x: 0.5rem; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-2-offset-y: 0; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-4-2-blur: 1.25rem; /* Right box shadow of level 4. */
-  --pgn-elevation-box-shadow-right-5-1-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-1-offset-x: 1.25rem; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-1-offset-y: 0; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-1-blur: 2.5rem; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-2-color: rgba(0, 0, 0, 0.15); /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-2-offset-x: 0.5rem; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-2-offset-y: 0; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-right-5-2-blur: 3rem; /* Right box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-1-1-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-1-offset-x: 0; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-1-offset-y: 0; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-1-blur: 0.125rem; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-2-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-2-offset-x: 0; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-2-offset-y: 0; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-1-2-blur: 0.25rem; /* Centered box shadow of level 1. */
-  --pgn-elevation-box-shadow-centered-2-1-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-1-offset-x: 0; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-1-offset-y: 0; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-1-blur: 0.25rem; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-2-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-2-offset-x: 0; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-2-offset-y: 0; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-2-2-blur: 0.5rem; /* Centered box shadow of level 2. */
-  --pgn-elevation-box-shadow-centered-3-1-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-1-offset-x: 0; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-1-offset-y: 0; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-1-blur: 0.625rem; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-2-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-2-offset-x: 0; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-2-offset-y: 0; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-3-2-blur: 1rem; /* Centered box shadow of level 3. */
-  --pgn-elevation-box-shadow-centered-4-1-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-1-offset-x: 0; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-1-offset-y: 0; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-1-blur: 1.25rem; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-2-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-2-offset-x: 0; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-2-offset-y: 0; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-4-2-blur: 1.25rem; /* Centered box shadow of level 4. */
-  --pgn-elevation-box-shadow-centered-5-1-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-1-offset-x: 0; /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-1-offset-y: 0; /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-1-blur: 2.5rem; /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-2-color: rgba(0, 0, 0, 0.15); /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-2-offset-x: 0; /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-2-offset-y: 0; /* Centered box shadow of level 5. */
-  --pgn-elevation-box-shadow-centered-5-2-blur: 3rem; /* Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-1-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-1-offset-x: 0; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-1-offset-y: 0.0625rem; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-1-blur: 0.125rem; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-2-offset-x: 0; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-2-offset-y: 0.0625rem; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-1-2-blur: 0.25rem; /** Basic box shadow of level 1. */
+  --pgn-elevation-box-shadow-level-2-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-1-offset-x: 0; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-1-offset-y: 0.125rem; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-1-blur: 0.25rem; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-2-offset-x: 0; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-2-offset-y: 0.125rem; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-2-2-blur: 0.5rem; /** Basic box shadow of level 2. */
+  --pgn-elevation-box-shadow-level-3-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-1-offset-x: 0; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-1-offset-y: 0; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-1-blur: 0.625rem; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-2-offset-x: 0; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-2-offset-y: 0; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-3-2-blur: 1rem; /** Basic box shadow of level 3. */
+  --pgn-elevation-box-shadow-level-4-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-1-offset-x: 0; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-1-offset-y: 0.625rem; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-1-blur: 1.25rem; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-2-offset-x: 0; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-2-offset-y: 0.5rem; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-4-2-blur: 1.25rem; /** Basic box shadow of level 4. */
+  --pgn-elevation-box-shadow-level-5-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-1-offset-x: 0; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-1-offset-y: 1.25rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-1-blur: 2.5rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-2-offset-x: 0; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-2-offset-y: 0.5rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-level-5-2-blur: 3rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-base-color: rgba(0, 0, 0, 0.3); /** Default box shadow. */
+  --pgn-elevation-box-shadow-base-offset-x: 0; /** Default box shadow. */
+  --pgn-elevation-box-shadow-base-offset-y: 0.125rem; /** Default box shadow. */
+  --pgn-elevation-box-shadow-base-blur: 0.25rem; /** Default box shadow. */
+  --pgn-elevation-box-shadow-sm-color: rgba(0, 0, 0, 0.2); /** Small box shadow. */
+  --pgn-elevation-box-shadow-sm-offset-x: 0; /** Small box shadow. */
+  --pgn-elevation-box-shadow-sm-offset-y: 0.0625rem; /** Small box shadow. */
+  --pgn-elevation-box-shadow-sm-blur: 0.125rem; /** Small box shadow. */
+  --pgn-elevation-box-shadow-lg-color: rgba(0, 0, 0, 0.3); /** Large box shadow. */
+  --pgn-elevation-box-shadow-lg-offset-x: 0; /** Large box shadow. */
+  --pgn-elevation-box-shadow-lg-offset-y: 0.25rem; /** Large box shadow. */
+  --pgn-elevation-box-shadow-lg-blur: 0.5rem; /** Large box shadow. */
+  --pgn-elevation-box-shadow-down-1-1-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-1-offset-x: 0; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-1-offset-y: 0.0625rem; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-1-blur: 0.125rem; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-2-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-2-offset-x: 0; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-2-offset-y: 0.0625rem; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-1-2-blur: 0.25rem; /** Bottom box shadow of level 1. */
+  --pgn-elevation-box-shadow-down-2-1-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-1-offset-x: 0; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-1-offset-y: 0.125rem; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-1-blur: 0.25rem; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-2-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-2-offset-x: 0; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-2-offset-y: 0.125rem; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-2-2-blur: 0.5rem; /** Bottom box shadow of level 2. */
+  --pgn-elevation-box-shadow-down-3-1-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-1-offset-x: 0; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-1-offset-y: 0.5rem; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-1-blur: 1rem; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-2-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-2-offset-x: 0; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-2-offset-y: 0.25rem; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-3-2-blur: 0.625rem; /** Bottom box shadow of level 3. */
+  --pgn-elevation-box-shadow-down-4-1-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-1-offset-x: 0; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-1-offset-y: 0.625rem; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-1-blur: 1.25rem; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-2-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-2-offset-x: 0; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-2-offset-y: 0.5rem; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-4-2-blur: 1.25rem; /** Bottom box shadow of level 4. */
+  --pgn-elevation-box-shadow-down-5-1-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-1-offset-x: 0; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-1-offset-y: 1.25rem; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-1-blur: 2.5rem; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-2-color: rgba(0, 0, 0, 0.15); /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-2-offset-x: 0; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-2-offset-y: 0.5rem; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-down-5-2-blur: 3rem; /** Bottom box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-1-1-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-1-offset-x: -0.0625rem; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-1-offset-y: 0; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-1-blur: 0.125rem; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-2-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-2-offset-x: -0.0625rem; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-2-offset-y: 0; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-1-2-blur: 0.25rem; /** Left box shadow of level 1. */
+  --pgn-elevation-box-shadow-left-2-1-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-1-offset-x: -0.125rem; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-1-offset-y: 0; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-1-blur: 0.25rem; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-2-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-2-offset-x: -0.125rem; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-2-offset-y: 0; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-2-2-blur: 0.5rem; /** Left box shadow of level 2. */
+  --pgn-elevation-box-shadow-left-3-1-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-1-offset-x: -0.5rem; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-1-offset-y: 0; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-1-blur: 1rem; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-2-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-2-offset-x: -0.25rem; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-2-offset-y: 0; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-3-2-blur: 0.625rem; /** Left box shadow of level 3. */
+  --pgn-elevation-box-shadow-left-4-1-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-1-offset-x: -0.625rem; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-1-offset-y: 0; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-1-blur: 1.25rem; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-2-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-2-offset-x: -0.5rem; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-2-offset-y: 0; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-4-2-blur: 1.25rem; /** Left box shadow of level 4. */
+  --pgn-elevation-box-shadow-left-5-1-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-1-offset-x: -1.25rem; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-1-offset-y: 0; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-1-blur: 2.5rem; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-2-color: rgba(0, 0, 0, 0.15); /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-2-offset-x: -0.5rem; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-2-offset-y: 0; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-left-5-2-blur: 3rem; /** Left box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-1-1-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-1-offset-x: 0; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-1-offset-y: -0.0625rem; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-1-blur: 0.125rem; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-2-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-2-offset-x: 0; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-2-offset-y: -0.0625rem; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-1-2-blur: 0.25rem; /** Top box shadow of level 1. */
+  --pgn-elevation-box-shadow-up-2-1-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-1-offset-x: 0; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-1-offset-y: -0.125rem; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-1-blur: 0.25rem; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-2-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-2-offset-x: 0; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-2-offset-y: -0.125rem; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-2-2-blur: 0.5rem; /** Top box shadow of level 2. */
+  --pgn-elevation-box-shadow-up-3-1-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-1-offset-x: 0; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-1-offset-y: -0.5rem; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-1-blur: 1rem; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-2-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-2-offset-x: 0; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-2-offset-y: -0.25rem; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-3-2-blur: 0.625rem; /** Top box shadow of level 3. */
+  --pgn-elevation-box-shadow-up-4-1-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-1-offset-x: 0; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-1-offset-y: -0.625rem; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-1-blur: 1.25rem; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-2-color: rgba(0, 0, 0, 0.15); /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-2-offset-x: 0; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-2-offset-y: -0.5rem; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-4-2-blur: 1.25rem; /** Top box shadow of level 4. */
+  --pgn-elevation-box-shadow-up-5-1-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-1-offset-x: 0; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-1-offset-y: -1.25rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-1-blur: 2.5rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-2-color: rgba(0, 0, 0, 0.15); /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-2-offset-x: 0; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-2-offset-y: -0.5rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-up-5-2-blur: 3rem; /** Basic box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-1-1-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-1-offset-x: 0.0625rem; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-1-offset-y: 0; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-1-blur: 0.125rem; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-2-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-2-offset-x: 0.0625rem; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-2-offset-y: 0; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-1-2-blur: 0.25rem; /** Right box shadow of level 1. */
+  --pgn-elevation-box-shadow-right-2-1-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-1-offset-x: 0.125rem; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-1-offset-y: 0; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-1-blur: 0.25rem; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-2-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-2-offset-x: 0.125rem; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-2-offset-y: 0; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-2-2-blur: 0.5rem; /** Right box shadow of level 2. */
+  --pgn-elevation-box-shadow-right-3-1-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-1-offset-x: 0.5rem; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-1-offset-y: 0; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-1-blur: 1rem; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-2-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-2-offset-x: 0.25rem; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-2-offset-y: 0; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-3-2-blur: 0.625rem; /** Right box shadow of level 3. */
+  --pgn-elevation-box-shadow-right-4-1-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-1-offset-x: 0.625rem; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-1-offset-y: 0; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-1-blur: 1.25rem; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-2-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-2-offset-x: 0.5rem; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-2-offset-y: 0; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-4-2-blur: 1.25rem; /** Right box shadow of level 4. */
+  --pgn-elevation-box-shadow-right-5-1-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-1-offset-x: 1.25rem; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-1-offset-y: 0; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-1-blur: 2.5rem; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-2-color: rgba(0, 0, 0, 0.15); /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-2-offset-x: 0.5rem; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-2-offset-y: 0; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-right-5-2-blur: 3rem; /** Right box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-1-1-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-1-offset-x: 0; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-1-offset-y: 0; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-1-blur: 0.125rem; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-2-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-2-offset-x: 0; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-2-offset-y: 0; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-1-2-blur: 0.25rem; /** Centered box shadow of level 1. */
+  --pgn-elevation-box-shadow-centered-2-1-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-1-offset-x: 0; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-1-offset-y: 0; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-1-blur: 0.25rem; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-2-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-2-offset-x: 0; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-2-offset-y: 0; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-2-2-blur: 0.5rem; /** Centered box shadow of level 2. */
+  --pgn-elevation-box-shadow-centered-3-1-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-1-offset-x: 0; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-1-offset-y: 0; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-1-blur: 0.625rem; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-2-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-2-offset-x: 0; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-2-offset-y: 0; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-3-2-blur: 1rem; /** Centered box shadow of level 3. */
+  --pgn-elevation-box-shadow-centered-4-1-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-1-offset-x: 0; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-1-offset-y: 0; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-1-blur: 1.25rem; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-2-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-2-offset-x: 0; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-2-offset-y: 0; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-4-2-blur: 1.25rem; /** Centered box shadow of level 4. */
+  --pgn-elevation-box-shadow-centered-5-1-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-1-offset-x: 0; /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-1-offset-y: 0; /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-1-blur: 2.5rem; /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-2-color: rgba(0, 0, 0, 0.15); /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-2-offset-x: 0; /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-2-offset-y: 0; /** Centered box shadow of level 5. */
+  --pgn-elevation-box-shadow-centered-5-2-blur: 3rem; /** Centered box shadow of level 5. */
   --pgn-other-form-feedback-tooltip-opacity: .9;
   --pgn-other-btn-disabled-opacity: .65;
   --pgn-other-carousel-control-opacity-base: .5;
@@ -1413,28 +1413,28 @@
   --pgn-color-toast-base: inherit;
   --pgn-color-list-group-base: inherit;
   --pgn-color-mark-bg: #FFF243FF;
-  --pgn-color-white: #FFFFFFFF; /* White color. */
-  --pgn-color-black: #000000FF; /* Black color. */
-  --pgn-color-blue: #23419FFF; /* Blue color. */
-  --pgn-color-red: #C32D3AFF; /* Red color. */
-  --pgn-color-green: #178253FF; /* Green color. */
-  --pgn-color-yellow: #FFD900FF; /* Yellow color. */
-  --pgn-color-teal: #006DAAFF; /* Teal color. */
-  --pgn-color-accent-a: #00BBF9FF; /* Accent-A color. */
-  --pgn-color-accent-b: #FFEE88FF; /* Accent-B color. */
-  --pgn-color-gray-100: #EBEBEBFF; /* Gray color of level 100. */
-  --pgn-color-gray-200: #CCCCCCFF; /* Gray color of level 200. */
-  --pgn-color-gray-300: #ADADADFF; /* Gray color of level 300. */
-  --pgn-color-gray-400: #8F8F8FFF; /* Gray color of level 400. */
-  --pgn-color-gray-600: #5C5C5CFF; /* Gray color of level 600. */
-  --pgn-color-gray-700: #454545FF; /* Gray color of level 700. */
-  --pgn-color-gray-800: #333333FF; /* Gray color of level 800. */
-  --pgn-color-gray-900: #212529FF; /* Gray color of level 900. */
-  --pgn-color-gray-base: #707070FF; /* Basic gray color. */
-  --pgn-color-primary-base: #0A3055FF; /* Basic primary color. */
-  --pgn-color-brand-base: #9D0054FF; /* Basic brand color. */
-  --pgn-color-light-base: #E1DDDBFF; /* Basic light color. */
-  --pgn-color-dark-base: #273F2FFF; /* Basic dark color. */
+  --pgn-color-white: #FFFFFFFF; /** White color. */
+  --pgn-color-black: #000000FF; /** Black color. */
+  --pgn-color-blue: #23419FFF; /** Blue color. */
+  --pgn-color-red: #C32D3AFF; /** Red color. */
+  --pgn-color-green: #178253FF; /** Green color. */
+  --pgn-color-yellow: #FFD900FF; /** Yellow color. */
+  --pgn-color-teal: #006DAAFF; /** Teal color. */
+  --pgn-color-accent-a: #00BBF9FF; /** Accent-A color. */
+  --pgn-color-accent-b: #FFEE88FF; /** Accent-B color. */
+  --pgn-color-gray-100: #EBEBEBFF; /** Gray color of level 100. */
+  --pgn-color-gray-200: #CCCCCCFF; /** Gray color of level 200. */
+  --pgn-color-gray-300: #ADADADFF; /** Gray color of level 300. */
+  --pgn-color-gray-400: #8F8F8FFF; /** Gray color of level 400. */
+  --pgn-color-gray-600: #5C5C5CFF; /** Gray color of level 600. */
+  --pgn-color-gray-700: #454545FF; /** Gray color of level 700. */
+  --pgn-color-gray-800: #333333FF; /** Gray color of level 800. */
+  --pgn-color-gray-900: #212529FF; /** Gray color of level 900. */
+  --pgn-color-gray-base: #707070FF; /** Basic gray color. */
+  --pgn-color-primary-base: #0A3055FF; /** Basic primary color. */
+  --pgn-color-brand-base: #9D0054FF; /** Basic brand color. */
+  --pgn-color-light-base: #E1DDDBFF; /** Basic light color. */
+  --pgn-color-dark-base: #273F2FFF; /** Basic dark color. */
   --pgn-border-color-nav-tabs-link-border-hover-top: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-right: transparent;
   --pgn-border-color-nav-tabs-link-border-hover-left: transparent;
@@ -1464,15 +1464,15 @@
   --pgn-elevation-pagination-focus-box-shadow-spread: var(--pgn-size-input-btn-focus-width);
   --pgn-elevation-scrollable-body-box-shadow: #0000008C;
   --pgn-elevation-input-btn-focus-box-shadow-spread: var(--pgn-size-input-btn-focus-width);
-  --pgn-color-bg-base: var(--pgn-color-white); /* Basic background color. */
-  --pgn-color-text-50-black: #00000080; /* Black text color with transparency of 50%. */
-  --pgn-color-text-50-white: #FFFFFF80; /* White text color with transparency of 50%. */
-  --pgn-color-active: var(--pgn-color-white); /* Color for active element. */
-  --pgn-color-border: var(--pgn-color-gray-200); /* Border color. */
-  --pgn-color-theme-bg-gray: var(--pgn-color-gray-100); /* Theme-specific gray background color. */
-  --pgn-color-theme-border-gray: var(--pgn-color-gray-200); /* Theme-specific gray border color. */
-  --pgn-color-theme-hover-gray: var(--pgn-color-gray-700); /* Theme-specific gray hover color. */
-  --pgn-color-theme-active-gray: var(--pgn-color-gray-900); /* Theme-specific gray active color. */
+  --pgn-color-bg-base: var(--pgn-color-white); /** Basic background color. */
+  --pgn-color-text-50-black: #00000080; /** Black text color with transparency of 50%. */
+  --pgn-color-text-50-white: #FFFFFF80; /** White text color with transparency of 50%. */
+  --pgn-color-active: var(--pgn-color-white); /** Color for active element. */
+  --pgn-color-border: var(--pgn-color-gray-200); /** Border color. */
+  --pgn-color-theme-bg-gray: var(--pgn-color-gray-100); /** Theme-specific gray background color. */
+  --pgn-color-theme-border-gray: var(--pgn-color-gray-200); /** Theme-specific gray border color. */
+  --pgn-color-theme-hover-gray: var(--pgn-color-gray-700); /** Theme-specific gray hover color. */
+  --pgn-color-theme-active-gray: var(--pgn-color-gray-900); /** Theme-specific gray active color. */
   --pgn-color-alert-title: var(--pgn-color-black);
   --pgn-color-alert-content: var(--pgn-color-gray-700);
   --pgn-color-annotation-text-success: var(--pgn-color-white);
@@ -1734,48 +1734,48 @@
   --pgn-color-list-group-action-base: var(--pgn-color-gray-700);
   --pgn-color-list-group-action-active-bg: var(--pgn-color-gray-200);
   --pgn-color-yiq-light: var(--pgn-color-white);
-  --pgn-color-gray-500: var(--pgn-color-gray-base); /* Gray color of level 500. */
-  --pgn-color-primary-100: #F0F3F5FF; /* Primary color of level 100. */
-  --pgn-color-primary-200: #C2CBD5FF; /* Primary color of level 200. */
-  --pgn-color-primary-300: #8598AAFF; /* Primary color of level 300. */
-  --pgn-color-primary-400: #476480FF; /* Primary color of level 400. */
-  --pgn-color-primary-500: var(--pgn-color-primary-base); /* Primary color of level 500. */
-  --pgn-color-primary-600: #092B4DFF; /* Primary color of level 600. */
-  --pgn-color-primary-700: #082644FF; /* Primary color of level 700. */
-  --pgn-color-primary-800: #082440FF; /* Primary color of level 800. */
-  --pgn-color-primary-900: #07223CFF; /* Primary color of level 900. */
-  --pgn-color-secondary-base: var(--pgn-color-gray-700); /* Basic secondary color. */
-  --pgn-color-brand-100: #F9F0F5FF; /* Brand color of level 100. */
-  --pgn-color-brand-200: #E7BFD4FF; /* Brand color of level 200. */
-  --pgn-color-brand-300: #CE80AAFF; /* Brand color of level 300. */
-  --pgn-color-brand-400: #B6407FFF; /* Brand color of level 400. */
-  --pgn-color-brand-500: var(--pgn-color-brand-base); /* Brand color of level 500. */
-  --pgn-color-brand-600: #8D004CFF; /* Brand color of level 600. */
-  --pgn-color-brand-700: #7E0043FF; /* Brand color of level 700. */
-  --pgn-color-brand-800: #76003FFF; /* Brand color of level 800. */
-  --pgn-color-brand-900: #6E003BFF; /* Brand color of level 900. */
-  --pgn-color-success-base: var(--pgn-color-green); /* Basic success color. */
-  --pgn-color-info-base: var(--pgn-color-teal); /* Basic info color. */
-  --pgn-color-warning-base: var(--pgn-color-yellow); /* Basic warning color. */
-  --pgn-color-danger-base: var(--pgn-color-red); /* Basic danger color. */
-  --pgn-color-light-100: #FDFDFDFF; /* Light color of level 100. */
-  --pgn-color-light-200: #F8F7F6FF; /* Light color of level 200. */
-  --pgn-color-light-300: #F0EEEDFF; /* Light color of level 300. */
-  --pgn-color-light-400: #E9E6E4FF; /* Light color of level 400. */
-  --pgn-color-light-500: var(--pgn-color-light-base); /* Light color of level 500. */
-  --pgn-color-light-600: #CBC7C5FF; /* Light color of level 600. */
-  --pgn-color-light-700: #B4B1AFFF; /* Light color of level 700. */
-  --pgn-color-light-800: #A9A6A4FF; /* Light color of level 800. */
-  --pgn-color-light-900: #9E9B99FF; /* Light color of level 900. */
-  --pgn-color-dark-100: #F2F3F3FF; /* Dark color of level 100. */
-  --pgn-color-dark-200: #C9CFCBFF; /* Dark color of level 200. */
-  --pgn-color-dark-300: #939F97FF; /* Dark color of level 300. */
-  --pgn-color-dark-400: #5D6F63FF; /* Dark color of level 400. */
-  --pgn-color-dark-500: var(--pgn-color-dark-base); /* Dark color of level 500. */
-  --pgn-color-dark-600: #23392AFF; /* Dark color of level 600. */
-  --pgn-color-dark-700: #1F3226FF; /* Info color of level 700. */
-  --pgn-color-dark-800: #1D2F23FF; /* Dark color of level 800. */
-  --pgn-color-dark-900: #1B2C21FF; /* Dark color of level 900. */
+  --pgn-color-gray-500: var(--pgn-color-gray-base); /** Gray color of level 500. */
+  --pgn-color-primary-100: #F0F3F5FF; /** Primary color of level 100. */
+  --pgn-color-primary-200: #C2CBD5FF; /** Primary color of level 200. */
+  --pgn-color-primary-300: #8598AAFF; /** Primary color of level 300. */
+  --pgn-color-primary-400: #476480FF; /** Primary color of level 400. */
+  --pgn-color-primary-500: var(--pgn-color-primary-base); /** Primary color of level 500. */
+  --pgn-color-primary-600: #092B4DFF; /** Primary color of level 600. */
+  --pgn-color-primary-700: #082644FF; /** Primary color of level 700. */
+  --pgn-color-primary-800: #082440FF; /** Primary color of level 800. */
+  --pgn-color-primary-900: #07223CFF; /** Primary color of level 900. */
+  --pgn-color-secondary-base: var(--pgn-color-gray-700); /** Basic secondary color. */
+  --pgn-color-brand-100: #F9F0F5FF; /** Brand color of level 100. */
+  --pgn-color-brand-200: #E7BFD4FF; /** Brand color of level 200. */
+  --pgn-color-brand-300: #CE80AAFF; /** Brand color of level 300. */
+  --pgn-color-brand-400: #B6407FFF; /** Brand color of level 400. */
+  --pgn-color-brand-500: var(--pgn-color-brand-base); /** Brand color of level 500. */
+  --pgn-color-brand-600: #8D004CFF; /** Brand color of level 600. */
+  --pgn-color-brand-700: #7E0043FF; /** Brand color of level 700. */
+  --pgn-color-brand-800: #76003FFF; /** Brand color of level 800. */
+  --pgn-color-brand-900: #6E003BFF; /** Brand color of level 900. */
+  --pgn-color-success-base: var(--pgn-color-green); /** Basic success color. */
+  --pgn-color-info-base: var(--pgn-color-teal); /** Basic info color. */
+  --pgn-color-warning-base: var(--pgn-color-yellow); /** Basic warning color. */
+  --pgn-color-danger-base: var(--pgn-color-red); /** Basic danger color. */
+  --pgn-color-light-100: #FDFDFDFF; /** Light color of level 100. */
+  --pgn-color-light-200: #F8F7F6FF; /** Light color of level 200. */
+  --pgn-color-light-300: #F0EEEDFF; /** Light color of level 300. */
+  --pgn-color-light-400: #E9E6E4FF; /** Light color of level 400. */
+  --pgn-color-light-500: var(--pgn-color-light-base); /** Light color of level 500. */
+  --pgn-color-light-600: #CBC7C5FF; /** Light color of level 600. */
+  --pgn-color-light-700: #B4B1AFFF; /** Light color of level 700. */
+  --pgn-color-light-800: #A9A6A4FF; /** Light color of level 800. */
+  --pgn-color-light-900: #9E9B99FF; /** Light color of level 900. */
+  --pgn-color-dark-100: #F2F3F3FF; /** Dark color of level 100. */
+  --pgn-color-dark-200: #C9CFCBFF; /** Dark color of level 200. */
+  --pgn-color-dark-300: #939F97FF; /** Dark color of level 300. */
+  --pgn-color-dark-400: #5D6F63FF; /** Dark color of level 400. */
+  --pgn-color-dark-500: var(--pgn-color-dark-base); /** Dark color of level 500. */
+  --pgn-color-dark-600: #23392AFF; /** Dark color of level 600. */
+  --pgn-color-dark-700: #1F3226FF; /** Info color of level 700. */
+  --pgn-color-dark-800: #1D2F23FF; /** Dark color of level 800. */
+  --pgn-color-dark-900: #1B2C21FF; /** Dark color of level 900. */
   --pgn-color-action-default-gray-100: #D2D2D2FF;
   --pgn-color-action-default-gray-200: #B3B3B3FF;
   --pgn-color-action-default-gray-300: #949494FF;
@@ -1809,36 +1809,36 @@
   --pgn-elevation-icon-button-box-shadow-black-base-color: var(--pgn-color-icon-button-text-black-base);
   --pgn-elevation-icon-button-box-shadow-black-inverse-color: var(--pgn-color-icon-button-accent);
   --pgn-other-content-form-control-select-bg-offset-y: var(--pgn-spacing-form-input-padding-y-base);
-  --pgn-color-bg-active: var(--pgn-color-primary-500); /* Active background color. */
-  --pgn-color-disabled: var(--pgn-color-gray-500); /* Color for disabled element. */
-  --pgn-color-input-focus: var(--pgn-color-primary-500); /* Focused input value color. */
-  --pgn-color-table-border: var(--pgn-color-border); /* Table border color. */
-  --pgn-color-theme-bg-primary: var(--pgn-color-primary-100); /* Theme-specific primary background color. */
-  --pgn-color-theme-bg-brand: var(--pgn-color-brand-100); /* Theme-specific brand background color. */
-  --pgn-color-theme-bg-light: var(--pgn-color-light-100); /* Theme-specific light background color. */
-  --pgn-color-theme-bg-dark: var(--pgn-color-dark-100); /* Theme-specific dark background color. */
-  --pgn-color-theme-border-primary: var(--pgn-color-primary-200); /* Theme-specific primary border color. */
-  --pgn-color-theme-border-brand: var(--pgn-color-brand-200); /* Theme-specific brand border color. */
-  --pgn-color-theme-border-light: var(--pgn-color-light-200); /* Theme-specific light border color. */
-  --pgn-color-theme-border-dark: var(--pgn-color-dark-200); /* Theme-specific dark border color. */
-  --pgn-color-theme-focus-primary: var(--pgn-color-primary-500); /* Theme-specific primary focus color. */
-  --pgn-color-theme-focus-brand: var(--pgn-color-brand-500); /* Theme-specific brand focus color. */
-  --pgn-color-theme-focus-light: var(--pgn-color-light-500); /* Theme-specific light focus color. */
-  --pgn-color-theme-focus-dark: var(--pgn-color-dark-500); /* Theme-specific dark focus color. */
-  --pgn-color-theme-focus-gray: var(--pgn-color-gray-500); /* Theme-specific gray focus color. */
-  --pgn-color-theme-default-primary: var(--pgn-color-primary-500); /* Theme-specific primary default color. */
-  --pgn-color-theme-default-brand: var(--pgn-color-brand-500); /* Theme-specific brand default color. */
-  --pgn-color-theme-default-light: var(--pgn-color-light-500); /* Theme-specific light default color. */
-  --pgn-color-theme-default-dark: var(--pgn-color-dark-500); /* Theme-specific dark default color. */
-  --pgn-color-theme-default-gray: var(--pgn-color-gray-500); /* Theme-specific gray default color. */
-  --pgn-color-theme-hover-primary: var(--pgn-color-primary-700); /* Theme-specific primary hover color. */
-  --pgn-color-theme-hover-brand: var(--pgn-color-brand-700); /* Theme-specific brand hover color. */
-  --pgn-color-theme-hover-light: var(--pgn-color-light-700); /* Theme-specific light hover color. */
-  --pgn-color-theme-hover-dark: var(--pgn-color-dark-700); /* Theme-specific dark hover color. */
-  --pgn-color-theme-active-primary: var(--pgn-color-primary-900); /* Theme-specific primary active color. */
-  --pgn-color-theme-active-brand: var(--pgn-color-brand-900); /* Theme-specific brand active color. */
-  --pgn-color-theme-active-light: var(--pgn-color-light-900); /* Theme-specific light active color. */
-  --pgn-color-theme-active-dark: var(--pgn-color-dark-900); /* Theme-specific dark active color. */
+  --pgn-color-bg-active: var(--pgn-color-primary-500); /** Active background color. */
+  --pgn-color-disabled: var(--pgn-color-gray-500); /** Color for disabled element. */
+  --pgn-color-input-focus: var(--pgn-color-primary-500); /** Focused input value color. */
+  --pgn-color-table-border: var(--pgn-color-border); /** Table border color. */
+  --pgn-color-theme-bg-primary: var(--pgn-color-primary-100); /** Theme-specific primary background color. */
+  --pgn-color-theme-bg-brand: var(--pgn-color-brand-100); /** Theme-specific brand background color. */
+  --pgn-color-theme-bg-light: var(--pgn-color-light-100); /** Theme-specific light background color. */
+  --pgn-color-theme-bg-dark: var(--pgn-color-dark-100); /** Theme-specific dark background color. */
+  --pgn-color-theme-border-primary: var(--pgn-color-primary-200); /** Theme-specific primary border color. */
+  --pgn-color-theme-border-brand: var(--pgn-color-brand-200); /** Theme-specific brand border color. */
+  --pgn-color-theme-border-light: var(--pgn-color-light-200); /** Theme-specific light border color. */
+  --pgn-color-theme-border-dark: var(--pgn-color-dark-200); /** Theme-specific dark border color. */
+  --pgn-color-theme-focus-primary: var(--pgn-color-primary-500); /** Theme-specific primary focus color. */
+  --pgn-color-theme-focus-brand: var(--pgn-color-brand-500); /** Theme-specific brand focus color. */
+  --pgn-color-theme-focus-light: var(--pgn-color-light-500); /** Theme-specific light focus color. */
+  --pgn-color-theme-focus-dark: var(--pgn-color-dark-500); /** Theme-specific dark focus color. */
+  --pgn-color-theme-focus-gray: var(--pgn-color-gray-500); /** Theme-specific gray focus color. */
+  --pgn-color-theme-default-primary: var(--pgn-color-primary-500); /** Theme-specific primary default color. */
+  --pgn-color-theme-default-brand: var(--pgn-color-brand-500); /** Theme-specific brand default color. */
+  --pgn-color-theme-default-light: var(--pgn-color-light-500); /** Theme-specific light default color. */
+  --pgn-color-theme-default-dark: var(--pgn-color-dark-500); /** Theme-specific dark default color. */
+  --pgn-color-theme-default-gray: var(--pgn-color-gray-500); /** Theme-specific gray default color. */
+  --pgn-color-theme-hover-primary: var(--pgn-color-primary-700); /** Theme-specific primary hover color. */
+  --pgn-color-theme-hover-brand: var(--pgn-color-brand-700); /** Theme-specific brand hover color. */
+  --pgn-color-theme-hover-light: var(--pgn-color-light-700); /** Theme-specific light hover color. */
+  --pgn-color-theme-hover-dark: var(--pgn-color-dark-700); /** Theme-specific dark hover color. */
+  --pgn-color-theme-active-primary: var(--pgn-color-primary-900); /** Theme-specific primary active color. */
+  --pgn-color-theme-active-brand: var(--pgn-color-brand-900); /** Theme-specific brand active color. */
+  --pgn-color-theme-active-light: var(--pgn-color-light-900); /** Theme-specific light active color. */
+  --pgn-color-theme-active-dark: var(--pgn-color-dark-900); /** Theme-specific dark active color. */
   --pgn-color-annotation-text-light: var(--pgn-color-primary-500);
   --pgn-color-annotation-bg-success: var(--pgn-color-success-base);
   --pgn-color-annotation-bg-error: var(--pgn-color-danger-base);
@@ -2240,51 +2240,51 @@
   --pgn-color-list-group-action-active-base: var(--pgn-color-body-base);
   --pgn-color-text-muted: var(--pgn-color-gray-500);
   --pgn-color-blockquote-small: var(--pgn-color-gray-500);
-  --pgn-color-secondary-100: #F4F4F4FF; /* Secondary color of level 100. */
-  --pgn-color-secondary-200: #D1D1D1FF; /* Secondary color of level 200. */
-  --pgn-color-secondary-300: #A2A2A2FF; /* Secondary color of level 300. */
-  --pgn-color-secondary-400: #747474FF; /* Secondary color of level 400. */
-  --pgn-color-secondary-500: var(--pgn-color-secondary-base); /* Secondary color of level 500. */
-  --pgn-color-secondary-600: #3E3E3EFF; /* Secondary color of level 600. */
-  --pgn-color-secondary-700: #373737FF; /* Secondary color of level 700. */
-  --pgn-color-secondary-800: #343434FF; /* Secondary color of level 800. */
-  --pgn-color-secondary-900: #303030FF; /* Secondary color of level 900. */
-  --pgn-color-success-100: #F1F8F5FF; /* Success color of level 100. */
-  --pgn-color-success-200: #C5E0D4FF; /* Success color of level 200. */
-  --pgn-color-success-300: #8BC1A9FF; /* Success color of level 300. */
-  --pgn-color-success-400: #51A17EFF; /* Success color of level 400. */
-  --pgn-color-success-500: var(--pgn-color-success-base); /* Success color of level 500. */
-  --pgn-color-success-600: #15754BFF; /* Success color of level 600. */
-  --pgn-color-success-700: #126842FF; /* Success color of level 700. */
-  --pgn-color-success-800: #11623EFF; /* Success color of level 800. */
-  --pgn-color-success-900: #105B3AFF; /* Success color of level 900. */
-  --pgn-color-info-100: #F0F6FAFF; /* Info color of level 100. */
-  --pgn-color-info-200: #BFDBEAFF; /* Info color of level 200. */
-  --pgn-color-info-300: #80B6D5FF; /* Info color of level 300. */
-  --pgn-color-info-400: #4092BFFF; /* Info color of level 400. */
-  --pgn-color-info-500: var(--pgn-color-info-base); /* Info color of level 500. */
-  --pgn-color-info-600: #006299FF; /* Info color of level 600. */
-  --pgn-color-info-700: #005788FF; /* Info color of level 700. */
-  --pgn-color-info-800: #005280FF; /* Info color of level 800. */
-  --pgn-color-info-900: #004C77FF; /* Info color of level 900. */
-  --pgn-color-warning-100: #FFFDF0FF; /* Warning color of level 100. */
-  --pgn-color-warning-200: #FFF6BFFF; /* Warning color of level 200. */
-  --pgn-color-warning-300: #FFEC80FF; /* Warning color of level 300. */
-  --pgn-color-warning-400: #FFE340FF; /* Warning color of level 400. */
-  --pgn-color-warning-500: var(--pgn-color-warning-base); /* Warning color of level 500. */
-  --pgn-color-warning-600: #E6C300FF; /* Warning color of level 600. */
-  --pgn-color-warning-700: #CCAE00FF; /* Warning color of level 700. */
-  --pgn-color-warning-800: #BFA300FF; /* Warning color of level 800. */
-  --pgn-color-warning-900: #B39800FF; /* Warning color of level 900. */
-  --pgn-color-danger-100: #FBF2F3FF; /* Danger color of level 100. */
-  --pgn-color-danger-200: #F0CBCEFF; /* Danger color of level 200. */
-  --pgn-color-danger-300: #E1969DFF; /* Danger color of level 300. */
-  --pgn-color-danger-400: #D2626BFF; /* Danger color of level 400. */
-  --pgn-color-danger-500: var(--pgn-color-danger-base); /* Danger color of level 500. */
-  --pgn-color-danger-600: #B02934FF; /* Danger color of level 600. */
-  --pgn-color-danger-700: #9C242EFF; /* Danger color of level 700. */
-  --pgn-color-danger-800: #92222CFF; /* Danger color of level 800. */
-  --pgn-color-danger-900: #892029FF; /* Danger color of level 900. */
+  --pgn-color-secondary-100: #F4F4F4FF; /** Secondary color of level 100. */
+  --pgn-color-secondary-200: #D1D1D1FF; /** Secondary color of level 200. */
+  --pgn-color-secondary-300: #A2A2A2FF; /** Secondary color of level 300. */
+  --pgn-color-secondary-400: #747474FF; /** Secondary color of level 400. */
+  --pgn-color-secondary-500: var(--pgn-color-secondary-base); /** Secondary color of level 500. */
+  --pgn-color-secondary-600: #3E3E3EFF; /** Secondary color of level 600. */
+  --pgn-color-secondary-700: #373737FF; /** Secondary color of level 700. */
+  --pgn-color-secondary-800: #343434FF; /** Secondary color of level 800. */
+  --pgn-color-secondary-900: #303030FF; /** Secondary color of level 900. */
+  --pgn-color-success-100: #F1F8F5FF; /** Success color of level 100. */
+  --pgn-color-success-200: #C5E0D4FF; /** Success color of level 200. */
+  --pgn-color-success-300: #8BC1A9FF; /** Success color of level 300. */
+  --pgn-color-success-400: #51A17EFF; /** Success color of level 400. */
+  --pgn-color-success-500: var(--pgn-color-success-base); /** Success color of level 500. */
+  --pgn-color-success-600: #15754BFF; /** Success color of level 600. */
+  --pgn-color-success-700: #126842FF; /** Success color of level 700. */
+  --pgn-color-success-800: #11623EFF; /** Success color of level 800. */
+  --pgn-color-success-900: #105B3AFF; /** Success color of level 900. */
+  --pgn-color-info-100: #F0F6FAFF; /** Info color of level 100. */
+  --pgn-color-info-200: #BFDBEAFF; /** Info color of level 200. */
+  --pgn-color-info-300: #80B6D5FF; /** Info color of level 300. */
+  --pgn-color-info-400: #4092BFFF; /** Info color of level 400. */
+  --pgn-color-info-500: var(--pgn-color-info-base); /** Info color of level 500. */
+  --pgn-color-info-600: #006299FF; /** Info color of level 600. */
+  --pgn-color-info-700: #005788FF; /** Info color of level 700. */
+  --pgn-color-info-800: #005280FF; /** Info color of level 800. */
+  --pgn-color-info-900: #004C77FF; /** Info color of level 900. */
+  --pgn-color-warning-100: #FFFDF0FF; /** Warning color of level 100. */
+  --pgn-color-warning-200: #FFF6BFFF; /** Warning color of level 200. */
+  --pgn-color-warning-300: #FFEC80FF; /** Warning color of level 300. */
+  --pgn-color-warning-400: #FFE340FF; /** Warning color of level 400. */
+  --pgn-color-warning-500: var(--pgn-color-warning-base); /** Warning color of level 500. */
+  --pgn-color-warning-600: #E6C300FF; /** Warning color of level 600. */
+  --pgn-color-warning-700: #CCAE00FF; /** Warning color of level 700. */
+  --pgn-color-warning-800: #BFA300FF; /** Warning color of level 800. */
+  --pgn-color-warning-900: #B39800FF; /** Warning color of level 900. */
+  --pgn-color-danger-100: #FBF2F3FF; /** Danger color of level 100. */
+  --pgn-color-danger-200: #F0CBCEFF; /** Danger color of level 200. */
+  --pgn-color-danger-300: #E1969DFF; /** Danger color of level 300. */
+  --pgn-color-danger-400: #D2626BFF; /** Danger color of level 400. */
+  --pgn-color-danger-500: var(--pgn-color-danger-base); /** Danger color of level 500. */
+  --pgn-color-danger-600: #B02934FF; /** Danger color of level 600. */
+  --pgn-color-danger-700: #9C242EFF; /** Danger color of level 700. */
+  --pgn-color-danger-800: #92222CFF; /** Danger color of level 800. */
+  --pgn-color-danger-900: #892029FF; /** Danger color of level 900. */
   --pgn-color-action-default-gray-500: #575757FF;
   --pgn-color-action-default-primary-100: #D1DBE1FF;
   --pgn-color-action-default-primary-200: #A4B1C0FF;
@@ -2347,37 +2347,37 @@
   --pgn-other-content-form-control-switch-indicator-icon-on: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27%23FFFFFFFF%27/%3e%3c/svg%3e");
   --pgn-other-content-form-control-select-indicator-icon: url("data:image/svg+xml,<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16.59 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.59 8.58984Z\" fill=\"%23454545FF\"/></svg>");
   --pgn-color-input-btn-focus: var(--pgn-color-bg-active);
-  --pgn-color-table-caption: var(--pgn-color-text-muted); /* Table caption color. */
-  --pgn-color-theme-bg-secondary: var(--pgn-color-secondary-100); /* Theme-specific secondary background color. */
-  --pgn-color-theme-bg-success: var(--pgn-color-success-100); /* Theme-specific success background color. */
-  --pgn-color-theme-bg-info: var(--pgn-color-info-100); /* Theme-specific info background color. */
-  --pgn-color-theme-bg-warning: var(--pgn-color-warning-100); /* Theme-specific warning background color. */
-  --pgn-color-theme-bg-danger: var(--pgn-color-danger-100); /* Theme-specific danger background color. */
-  --pgn-color-theme-border-secondary: var(--pgn-color-secondary-200); /* Theme-specific secondary border color. */
-  --pgn-color-theme-border-success: var(--pgn-color-success-200); /* Theme-specific success border color. */
-  --pgn-color-theme-border-info: var(--pgn-color-info-200); /* Theme-specific info border color. */
-  --pgn-color-theme-border-warning: var(--pgn-color-warning-200); /* Theme-specific warning border color. */
-  --pgn-color-theme-border-danger: var(--pgn-color-danger-200); /* Theme-specific danger border color. */
-  --pgn-color-theme-focus-secondary: var(--pgn-color-secondary-500); /* Theme-specific secondary focus color. */
-  --pgn-color-theme-focus-success: var(--pgn-color-success-500); /* Theme-specific success focus color. */
-  --pgn-color-theme-focus-info: var(--pgn-color-info-500); /* Theme-specific info focus color. */
-  --pgn-color-theme-focus-warning: var(--pgn-color-warning-500); /* Theme-specific warning focus color. */
-  --pgn-color-theme-focus-danger: var(--pgn-color-danger-500); /* Theme-specific danger focus color. */
-  --pgn-color-theme-default-secondary: var(--pgn-color-secondary-500); /* Theme-specific secondary default color. */
-  --pgn-color-theme-default-success: var(--pgn-color-success-500); /* Theme-specific success default color. */
-  --pgn-color-theme-default-info: var(--pgn-color-info-500); /* Theme-specific info default color. */
-  --pgn-color-theme-default-warning: var(--pgn-color-warning-500); /* Theme-specific warning default color. */
-  --pgn-color-theme-default-danger: var(--pgn-color-danger-500); /* Theme-specific danger default color. */
-  --pgn-color-theme-hover-secondary: var(--pgn-color-secondary-700); /* Theme-specific secondary hover color. */
-  --pgn-color-theme-hover-success: var(--pgn-color-success-700); /* Theme-specific success hover color. */
-  --pgn-color-theme-hover-info: var(--pgn-color-info-700); /* Theme-specific info hover color. */
-  --pgn-color-theme-hover-warning: var(--pgn-color-warning-700); /* Theme-specific warning hover color. */
-  --pgn-color-theme-hover-danger: var(--pgn-color-danger-700); /* Theme-specific danger hover color. */
-  --pgn-color-theme-active-secondary: var(--pgn-color-secondary-900); /* Theme-specific secondary active color. */
-  --pgn-color-theme-active-success: var(--pgn-color-success-900); /* Theme-specific success active color. */
-  --pgn-color-theme-active-info: var(--pgn-color-info-900); /* Theme-specific info active color. */
-  --pgn-color-theme-active-warning: var(--pgn-color-warning-900); /* Theme-specific warning active color. */
-  --pgn-color-theme-active-danger: var(--pgn-color-danger-900); /* Theme-specific danger active color. */
+  --pgn-color-table-caption: var(--pgn-color-text-muted); /** Table caption color. */
+  --pgn-color-theme-bg-secondary: var(--pgn-color-secondary-100); /** Theme-specific secondary background color. */
+  --pgn-color-theme-bg-success: var(--pgn-color-success-100); /** Theme-specific success background color. */
+  --pgn-color-theme-bg-info: var(--pgn-color-info-100); /** Theme-specific info background color. */
+  --pgn-color-theme-bg-warning: var(--pgn-color-warning-100); /** Theme-specific warning background color. */
+  --pgn-color-theme-bg-danger: var(--pgn-color-danger-100); /** Theme-specific danger background color. */
+  --pgn-color-theme-border-secondary: var(--pgn-color-secondary-200); /** Theme-specific secondary border color. */
+  --pgn-color-theme-border-success: var(--pgn-color-success-200); /** Theme-specific success border color. */
+  --pgn-color-theme-border-info: var(--pgn-color-info-200); /** Theme-specific info border color. */
+  --pgn-color-theme-border-warning: var(--pgn-color-warning-200); /** Theme-specific warning border color. */
+  --pgn-color-theme-border-danger: var(--pgn-color-danger-200); /** Theme-specific danger border color. */
+  --pgn-color-theme-focus-secondary: var(--pgn-color-secondary-500); /** Theme-specific secondary focus color. */
+  --pgn-color-theme-focus-success: var(--pgn-color-success-500); /** Theme-specific success focus color. */
+  --pgn-color-theme-focus-info: var(--pgn-color-info-500); /** Theme-specific info focus color. */
+  --pgn-color-theme-focus-warning: var(--pgn-color-warning-500); /** Theme-specific warning focus color. */
+  --pgn-color-theme-focus-danger: var(--pgn-color-danger-500); /** Theme-specific danger focus color. */
+  --pgn-color-theme-default-secondary: var(--pgn-color-secondary-500); /** Theme-specific secondary default color. */
+  --pgn-color-theme-default-success: var(--pgn-color-success-500); /** Theme-specific success default color. */
+  --pgn-color-theme-default-info: var(--pgn-color-info-500); /** Theme-specific info default color. */
+  --pgn-color-theme-default-warning: var(--pgn-color-warning-500); /** Theme-specific warning default color. */
+  --pgn-color-theme-default-danger: var(--pgn-color-danger-500); /** Theme-specific danger default color. */
+  --pgn-color-theme-hover-secondary: var(--pgn-color-secondary-700); /** Theme-specific secondary hover color. */
+  --pgn-color-theme-hover-success: var(--pgn-color-success-700); /** Theme-specific success hover color. */
+  --pgn-color-theme-hover-info: var(--pgn-color-info-700); /** Theme-specific info hover color. */
+  --pgn-color-theme-hover-warning: var(--pgn-color-warning-700); /** Theme-specific warning hover color. */
+  --pgn-color-theme-hover-danger: var(--pgn-color-danger-700); /** Theme-specific danger hover color. */
+  --pgn-color-theme-active-secondary: var(--pgn-color-secondary-900); /** Theme-specific secondary active color. */
+  --pgn-color-theme-active-success: var(--pgn-color-success-900); /** Theme-specific success active color. */
+  --pgn-color-theme-active-info: var(--pgn-color-info-900); /** Theme-specific info active color. */
+  --pgn-color-theme-active-warning: var(--pgn-color-warning-900); /** Theme-specific warning active color. */
+  --pgn-color-theme-active-danger: var(--pgn-color-danger-900); /** Theme-specific danger active color. */
   --pgn-color-badge-focus-secondary: var(--pgn-color-badge-text-secondary);
   --pgn-color-badge-focus-success: var(--pgn-color-badge-text-success);
   --pgn-color-badge-focus-warning: var(--pgn-color-badge-text-warning);
