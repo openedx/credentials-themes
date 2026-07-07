@@ -1,0 +1,137 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edx-credentials-themes"
+version = "0.5.8"
+description = "Themes for the edX Credentials Service"
+readme = "README.rst"
+requires-python = ">=3.12"
+license = "AGPL-3.0"
+authors = [
+    {name = "Open edX Project", email = "oscm@openedx.org"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = [
+    "Python",
+    "edx",
+    "openedx",
+    "credentials",
+    "themes",
+]
+dependencies = [
+    "Django",
+    "edx-i18n-tools",
+    "lxml[html_clean]",
+]
+
+[project.urls]
+Repository = "https://github.com/openedx/credentials-themes"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = ["edx_credentials_themes", "edx_credentials_themes.*"]
+
+[tool.setuptools.package-data]
+# Mirrors MANIFEST.in: recursive-include edx_credentials_themes *.html *.png *.css *.jpg *.jpeg *.svg *.otf *.ttf *.woff *.woff2 *.eot
+# and: recursive-include edx_credentials_themes/locale *.mo
+"edx_credentials_themes" = [
+    "**/*.html",
+    "**/*.png",
+    "**/*.css",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "**/*.svg",
+    "**/*.otf",
+    "**/*.ttf",
+    "**/*.woff",
+    "**/*.woff2",
+    "**/*.eot",
+    "conf/locale/*.mo",
+]
+
+# uv configuration
+# https://docs.astral.sh/uv/reference/settings/
+[tool.uv]
+package = true
+conflicts = [
+    [
+        {group = "test"},
+        {group = "django42"},
+    ],
+]
+
+# constraint-dependencies is machine-managed by edx-lint — do not edit directly.
+# To regenerate, run: uv run --with edx-lint edx_lint write_uv_constraints pyproject.toml
+constraint-dependencies = [
+    "Django<6.0",
+    "elasticsearch<7.14.0",
+]
+
+[dependency-groups]
+# Default test group: current supported Django version
+# Update Django pin here when bumping the default; add a legacy group for older versions
+test = [
+    "Django>=5.2,<6.0",
+]
+# Legacy Django 4.2 support
+django42 = [
+    "Django>=4.2,<5.0",
+]
+quality = [
+    "ruff",
+]
+ci = [
+    "tox",
+    "tox-uv",
+]
+dev = [
+    {include-group = "test"},
+    {include-group = "quality"},
+    {include-group = "ci"},
+]
+
+[tool.edx_lint]
+uv_constraints = []
+
+# Ruff configuration
+# https://docs.astral.sh/ruff/configuration/
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "B",      # flake8-bugbear
+    "C4",     # flake8-comprehensions
+    "UP",     # pyupgrade
+    "DJ",     # flake8-django
+]
+ignore = [
+    "E501",   # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.isort]
+known-third-party = ["django"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
