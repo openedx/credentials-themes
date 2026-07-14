@@ -81,6 +81,7 @@ wheels = [
 
 [[package]]
 name = "edx-credentials-themes"
+version = "0.5.8"
 source = { editable = "." }
 dependencies = [
     { name = "django", version = "4.2.30", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-22-edx-credentials-themes-django42'" },

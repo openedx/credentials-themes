@@ -52,6 +52,7 @@ include = ["edx_credentials_themes", "edx_credentials_themes.*"]
     "**/*.html",
     "**/*.png",
     "**/*.css",
+    "**/*.scss",
     "**/*.jpg",
     "**/*.jpeg",
     "**/*.svg",
@@ -60,6 +61,8 @@ include = ["edx_credentials_themes", "edx_credentials_themes.*"]
     "**/*.woff",
     "**/*.woff2",
     "**/*.eot",
+    "**/config.yaml",
+    "**/.gitignore",
     "conf/locale/*.mo",
 ]
 
@@ -129,7 +132,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-third-party = ["django"]
+known-third-party = ["django", "xblock"]
 
 [tool.ruff.format]
 quote-style = "double"
