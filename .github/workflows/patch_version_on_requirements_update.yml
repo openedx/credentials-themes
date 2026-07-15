@@ -1,7 +1,7 @@
 name: Update version on requirements change
 
-# This workflow is called on any PR created by the edx-requirements-bot. It will update the version in
-# pyproject.toml, but will *not* add anything to the changelog.
+# This workflow is called on any PR created by the edx-requirements-bot. It will update the version in pyproject.toml, but
+# will *not* add anything to the changelog.
 on:
   pull_request:
     types:
