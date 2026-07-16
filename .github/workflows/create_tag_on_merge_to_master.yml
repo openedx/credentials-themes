@@ -22,6 +22,6 @@ jobs:
         run: |
           git config user.email "edx-deployment@edx.org"
           git config user.name "Edx Deployment automation robot"
-          current_version=$(cat ./edx_credentials_themes/__init__.py | grep "__version__" | sed "s|.*\([0-9]\.[0-9]\.[0-9]*\).*|\1|g")
+          current_version=$(grep -oP '(?<=^version = ")[^"]+' pyproject.toml)
           git tag -a -m "Release $current_version" $current_version HEAD
           git push --follow-tags
