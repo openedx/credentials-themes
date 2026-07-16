@@ -6,7 +6,7 @@
 
 NODE_BIN=$(CURDIR)/node_modules/.bin
 
-THEME_NAME := edx_credentials_themes
+THEME_NAME := src/edx_credentials_themes
 
 # Generates a help message. Borrowed from https://github.com/pydanny/cookiecutter-djangopackage.
 help: ## display this help message
@@ -52,10 +52,10 @@ generate_translations: extract_translations dummy_translations compile_translati
 
 pull_translations: ## Pull translations via atlas
 	# Remove existing translation directories
-	find edx_credentials_themes/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
+	find $(THEME_NAME)/conf/locale -mindepth 1 -maxdepth 1 -type d -exec rm -r {} \;
 	atlas pull $(ATLAS_OPTIONS) \
-	           translations/credentials-themes/edx_credentials_themes/conf/locale:edx_credentials_themes/conf/locale
+	           translations/credentials-themes/edx_credentials_themes/conf/locale:$(THEME_NAME)/conf/locale
 	make compile_translations
 
 validate_translations: generate_translations detect_changed_source_translations ## validate translations
-	cd edx_credentials_themes && i18n_tool validate
+	cd $(THEME_NAME) && i18n_tool validate

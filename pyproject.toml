@@ -43,7 +43,8 @@ Repository = "https://github.com/openedx/credentials-themes"
 include-package-data = false
 
 [tool.setuptools.packages.find]
-include = ["edx_credentials_themes", "edx_credentials_themes.*"]
+where = ["src"]
+exclude = ["tests*", "*.tests", "*.tests.*", "docs*"]
 
 [tool.setuptools.package-data]
 # Mirrors MANIFEST.in: recursive-include edx_credentials_themes *.html *.png *.css *.jpg *.jpeg *.svg *.otf *.ttf *.woff *.woff2 *.eot

@@ -6,7 +6,7 @@ function generateBaseConfig(theme) {
   let config = {
     mode: 'production',
     cache: true,
-    context: path.resolve(`./edx_credentials_themes/static/${theme}`),
+    context: path.resolve(`./src/edx_credentials_themes/static/${theme}`),
     entry: {
       [`${theme}.base.style-ltr`]: './base/sass/main-ltr.scss',
       [`${theme}.base.style-rtl`]: './base/sass/main-rtl.scss',
@@ -19,7 +19,7 @@ function generateBaseConfig(theme) {
       }),
     ],
     output: {
-      path: path.resolve(`./edx_credentials_themes/static/${theme}/`),
+      path: path.resolve(`./src/edx_credentials_themes/static/${theme}/`),
     },
     stats: {
       errors: true,
