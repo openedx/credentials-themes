@@ -34,7 +34,8 @@ extract_translations: ## extract strings to be translated, outputting .po files
 generate_translations: extract_translations dummy_translations compile_translations
 
 base_requirements:
-	pip install -r ./requirements/base.txt
+	uv sync --group dev
+	uv tool install tox --with tox-uv
 
 pull_translations: ## Pull translations via atlas
 	# Remove existing translation directories
@@ -53,18 +54,9 @@ test:
 	# Confirm compiled assets have not changed, indicating SASS matches CSS.
 	git diff --exit-code $(THEME_NAME)/ ":(exclude)$(THEME_NAME)/conf"
 
-upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
-upgrade: ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
-	pip install -q -r requirements/pip_tools.txt
-	pip-compile --upgrade --rebuild --allow-unsafe -o requirements/pip.txt requirements/pip.in
-	pip-compile --upgrade -o requirements/pip_tools.txt requirements/pip_tools.in
-	pip install -qr requirements/pip.txt
-	pip install -qr requirements/pip_tools.txt
-	pip-compile --upgrade -o requirements/base.txt requirements/base.in
-	pip-compile --upgrade -o requirements/test.txt requirements/test.in
-	# django will be install seperately for tests in ci to 32 and 42.
-	sed -i.tmp '/^[d|D]jango==/d' requirements/test.txt
-	rm requirements/test.txt.tmp
+upgrade: ## update python dependencies
+	uv run --with edx-lint edx_lint write_uv_constraints pyproject.toml
+	uv lock --upgrade
 
 validate_translations: generate_translations detect_changed_source_translations
 	cd edx_credentials_themes && i18n_tool validate

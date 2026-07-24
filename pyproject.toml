@@ -1,0 +1,108 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edx_credentials_themes"
+version = "0.5.9"
+description = "Themes for the edX Credentials Service"
+readme = "README.rst"
+requires-python = ">=3.12"
+license = "AGPL-3.0"
+license-files = ["LICENSE*"]
+authors = [
+    {name = "Open edX Project", email = "oscm@openedx.org"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.2",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = [
+    "Python",
+    "edx",
+]
+
+dependencies = [
+    "Django",
+    "edx-i18n-tools",
+    "lxml[html-clean]",
+]
+
+[project.urls]
+Homepage = "https://github.com/openedx/credentials-themes"
+Repository = "https://github.com/openedx/credentials-themes"
+
+[dependency-groups]
+# requirements/test.in had only "-r base.txt" (no extra test-only packages).
+# Base dependencies are declared in [project].dependencies (runtime deps) and
+# are installed automatically when syncing with package=true.
+# Django is pinned per-group for the multi-Django matrix.
+django52 = [
+    "Django>=5.2,<6.0",
+]
+django42 = [
+    "Django>=4.2,<5.0",
+]
+ci = [
+    "tox",
+    "tox-uv",
+]
+dev = [
+    {include-group = "django52"},
+    {include-group = "ci"},
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = ["tests*", "*.tests", "*.tests.*"]
+
+[tool.setuptools.package-data]
+"edx_credentials_themes" = [
+    "**/*.html",
+    "**/*.png",
+    "**/*.css",
+    "**/*jpg",
+    "**/*jpeg",
+    "**/*svg",
+    "**/*.otf",
+    "**/*.ttf",
+    "**/*.woff",
+    "**/*.woff2",
+    "**/*.eot",
+    "**/*.scss",
+    "**/*.yaml",
+    "**/locale/*.mo",
+]
+
+[tool.uv]
+package = true
+conflicts = [
+    [{group = "django52"}, {group = "django42"}],
+    [{group = "dev"}, {group = "django42"}],
+]
+#  DO NOT EDIT constraint-dependencies DIRECTLY.
+#  This list is managed by `edx_lint write_uv_constraints`
+#  and will be overwritten the next time `make upgrade` is run.
+#  - GLOBAL constraints: edit edx_lint/files/common_constraints.txt
+#  - REPO-SPECIFIC constraints: edit [tool.edx_lint].uv_constraints in this file
+constraint-dependencies = [
+    "Django<6.0",
+    "elasticsearch<7.14.0",
+]
+
+[tool.edx_lint]
+# Repo-specific uv constraints merged with edx-lint's global constraints.
+# Local entries override global ones for the same package.
+# Run `make upgrade` to regenerate [tool.uv].constraint-dependencies.
+uv_constraints = [
+    # "some-package<=X.Y.Z",  # Date: YYYY-MM-DD — reason / link to issue
+]
