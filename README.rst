@@ -13,17 +13,18 @@ Credentials-Themes updates from automated processes such as `renovate` may requi
 assets statically and commit them to the repository.
 
 For renovate or Python requirements update PRs:
-1. Ensure that the credentials-themes version in __init__.py is bumped before approving / merging.
-2. PRs might fail because they do a diff on the built static assets. If they do:: bash
 
-    git checkout # put branchname of PR
-    npm i; pip install -r requirements/base.txt  # update your packages so that they match the PRs
-    make build
-    git add # put names of changed static files
-    vim edx_credentials_themes/__init__.py  # or editor of choice to bump the version number as above
-    git add edx_credentials_themes/__init__.py
-    git commit
-    git push
+1. Ensure that the credentials-themes version in __init__.py is bumped before approving / merging.
+2. PRs might fail because they do a diff on the built static assets. If they do::
+ 
+        git checkout # put branchname of PR
+        npm i; pip install -r requirements/base.txt  # update your packages so that they match the PRs
+        make build
+        git add # put names of changed static files
+        vim edx_credentials_themes/__init__.py  # or editor of choice to bump the version number as above
+        git add edx_credentials_themes/__init__.py
+        git commit
+        git push
 
 
 Building
